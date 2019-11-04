@@ -1,5 +1,5 @@
 # [Λpocrypha] Discord Bot
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![MIT Licence](https://img.shields.io/github/license/teknirekt/Apocrypha2)](https://opensource.org/licenses/mit-license.php)![Issue Tracker](https://img.shields.io/github/issues/teknirekt/Apocrypha2)
 ## For **private use only** on ᵀᴴᴱ [RΞDΛCTΞD] Discord Server
 > It's hard-coded for that server. *MAY* be adapted later for general use
 
@@ -21,5 +21,3 @@
 ### Dependancies / Built with:
 - Discord.js *MASTER*
 - Bungie-net-api
-
-### Licenced - MIT

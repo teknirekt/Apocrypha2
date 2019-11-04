@@ -1,4 +1,5 @@
 # [Λpocrypha] Discord Bot
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 ## For **private use only** on ᵀᴴᴱ [RΞDΛCTΞD] Discord Server
 > It's hard-coded for that server. *MAY* be adapted later for general use
 

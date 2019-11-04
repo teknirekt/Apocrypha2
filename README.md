@@ -1,4 +1,4 @@
-# Apocrypha Discord Bot
+# [Λpocrypha] Discord Bot
 ## For **private use only** on ᵀᴴᴱ [RΞDΛCTΞD] Discord Server
 > It's hard-coded for that server. *MAY* be adapted later for general use
 

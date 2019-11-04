@@ -3,13 +3,13 @@
 > It's hard-coded for that server. *MAY* be adapted later for general use
 
 ### Current Objectives:
-- [] Total re-write to drop Discord.js-Commando.
-- [] Integrate API function calls into usable commands.
-- [] Adapt bot for general use on multiple servers for Destiny 2.
-- [] Server role persistance.
-- [] Stream announce.
-- [] Xur Wishlists.
-- [] Rule the world.
+- [ ] Total re-write to drop Discord.js-Commando.
+- [ ] Integrate API function calls into usable commands.
+- [ ] Adapt bot for general use on multiple servers for Destiny 2.
+- [ ] Server role persistance.
+- [ ] Stream announce.
+- [ ] Xur Wishlists.
+- [ ] Rule the world.
 
 ### Current Features:
 - [x] Auto-assignment of server roles.

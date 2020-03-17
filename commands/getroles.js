@@ -1,0 +1,145 @@
+const Discord = require('discord.js');
+
+module.exports = {
+	name: 'getroles',
+	guildOnly: true,
+	args: false,
+	aliases: ['getrole', 'roles', 'rolemenu', 'assign', 'assignroles'],
+	category: 'general',
+	description: 'Grants roles to the member.',
+	async execute(message) {
+
+		const access = message.guild.roles.cache.find(r => r.name === 'IronWolves');
+		const receivedEmbed = message.embeds[0];
+
+		const rolemenu = new Discord.MessageEmbed()
+			.setTitle(`Get new roles for ${message.guild.name}!`)
+			.setFooter('Select the corresponding reaction to continue.')
+			.setThumbnail('https://i.ibb.co/7kwjpRq/redactedpng.png')
+			.setColor('#ff7373')
+			.addField('__**Available menu options**__', '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n\n*Note: region/platform required, others optional.*');
+
+		const region = new Discord.MessageEmbed(receivedEmbed)
+			.setTitle('__Supported Regions/Platforms__')
+			.setDescription('*Oceanic Region, PS4, or Stadia not supported.*')
+			.addFields([
+				{ name: '__**North American Region**__', value: '<:PC_NA:688503043561619491> Steam PC\n<:XB1_NA:688514143778635881> XBOX ONE' },
+				{ name: '__**European Union Region**__', value: '<:PC_EU:688503037894852697> Steam PC\n<:XB1_EU:688514142071816248> XBOX ONE' },
+				{ name: '__**Additional Information**__', value: '*Note: If you select the incorrect region/platform, remove the incorrect emoji first, then select the correct one afterwards.*'}
+			])
+			.setThumbnail('https://i.ibb.co/80htxGF/globe.png', true)
+			.setColor('#2F2FD0')
+			.setFooter('Select your PRIMARY platform to be identified as here.');
+
+		const xs = new Discord.MessageEmbed(receivedEmbed)
+			.setTitle('__Available Cross-Save Platforms__')
+			.setDescription('<:XS_PC:619986510825127947> **Steam PC**\n<:XS_XB:619986511051358210> **XBOX ONE**\n<:XS_PS:619986517485682689> **Playstation 4**\n<:XS_ST:619986521407356964> **Google Stadia**')
+			.setThumbnail('https://i.ibb.co/drSwC8N/cs.jpg')
+			.setColor('#2F2FD0')
+			.setFooter('Select any NON-PRIMARY cross-save enabled system.');
+		
+		const d2 = new Discord.MessageEmbed(receivedEmbed)
+			.setTitle('__Available Destiny 2 LFG Roles__')
+			.setDescription('<:raid:611595872580534326> **Raids & General PVE**\n<:gambit:611595618900639806> **Gambit/Reckoning**\n<:pvp:611595656175419398> **Standard PVP**\n<:comp:611595575195992067> **Comp & Trials**')
+			.setThumbnail('https://i.ibb.co/bPLXJ6q/vanilla.jpg', true)
+			.setColor('#2F2FD0')
+			.setFooter('Selecting a role will notify you if someone is LFG.');
+		
+		const others = new Discord.MessageEmbed(receivedEmbed)
+			.setTitle('__Currently Available Game Roles__')
+			.addFields([
+				{ name: '__**Individual Games**__', value: '<:W_F:611695174615040074> ► Warframe\n<:HALO:651458650711392266> ► Halo\n<:BL_3:611821316005167113> ► Borderlands\n<:M_C:611695109318115374> ► Minecraft\n<:MTGA:688618832780197901> ► MTG: Arena' },
+				{ name: '__**Game Categories**__', value: '<:TFPS:688804913911824433> ► Team-based FPS (OW/CS/R6S)\n<:V_R:611691183650898102> ► Virtual Reality\n<:B_R:651463106634973205> ► Battle Royale Games\n<:MMO:623548135360430090> ► MMORPGs' }
+			])
+			.setThumbnail('https://i.ibb.co/GvBd0md/download.jpg')
+			.setColor('#2F2FD0')
+			.setFooter('Selecting a role will open access to that channel.');
+
+		const filter = (reaction, user) => ['🌐', '🕹', 'destiny', '🎲'].includes(reaction.emoji.name) && user.id === message.author.id;
+		
+		if (!message.member.roles.cache.some(r => ('RΞDΛCTΞD').includes(r.name))) {
+			message.channel.send('You must be a verified [RΞDΛCTΞD] member in order to use this command. If this is in error, please try again after a short time playing to update the API.')
+				.then(message => {
+					if (message.channel.name !== 'landing') {
+						message.delete({ timeout: 10000 });
+					}
+				});
+			return;
+		} 
+		else message.member.roles.add(access);
+		message.channel.send(rolemenu).then(message => {
+			message.react('🌐')
+				.then(() => message.react('🕹'))
+				.then(() => message.react(':destiny:688465591715102745'))
+				.then(() => message.react('🎲'));
+
+			message.awaitReactions(filter, {
+				max: 1,
+				time: 30000,
+				error: ['time'],
+			}).then(collected => {
+
+				const reaction = collected.first();
+
+				if (reaction.emoji.name === '🌐') {
+
+					message.edit(region).then(() => message.reactions.removeAll())
+						.then(() => message.react(':PC_NA:688503043561619491'))
+						.then(() => message.react(':XB1_NA:688514143778635881'))
+						.then(() => message.react(':PC_EU:688503037894852697'))
+						.then(() => message.react(':XB1_EU:688514142071816248'))
+						.then(() => { 
+							if (message.channel.name !== 'landing') {
+								message.delete({ timeout: 30000 });
+							}});
+				}
+				if (reaction.emoji.name === '🕹') {
+					message.edit(xs).then(() => message.reactions.removeAll())
+						.then(() => message.react(':XS_PC:619986510825127947'))
+						.then(() => message.react(':XS_XB:619986511051358210'))
+						.then(() => message.react(':XS_PS:619986517485682689'))
+						.then(() => message.react(':XS_ST:619986521407356964'))
+						.then(() => { 
+							if (message.channel.name !== 'landing') {
+								message.delete({ timeout: 30000 });
+							}});
+				}
+				if (reaction.emoji.name === 'destiny') {
+
+					message.edit(d2).then(() => message.reactions.removeAll())
+						.then(() => message.react(':raid:611595872580534326'))
+						.then(() => message.react(':gambit:611595618900639806'))
+						.then(() => message.react(':pvp:611595656175419398'))
+						.then(() => message.react(':comp:611595575195992067'))
+						.then(() => { 
+							if (message.channel.name !== 'landing') {
+								message.delete({ timeout: 30000 });
+							}});
+				}
+				if (reaction.emoji.name === '🎲') {
+					message.edit(others).then(() => message.reactions.removeAll())
+						.then(() => message.react(':W_F:611695174615040074'))
+						.then(() => message.react(':HALO:651458650711392266'))
+						.then(() => message.react(':BL_3:611821316005167113'))
+						.then(() => message.react(':M_C:611695109318115374'))
+						.then(() => message.react(':MTGA:688618832780197901'))
+						.then(() => message.react(':TFPS:688804913911824433'))
+						.then(() => message.react(':V_R:611691183650898102'))
+						.then(() => message.react(':B_R:651463106634973205'))
+						.then(() => message.react(':MMO:623548135360430090')).then(() => { 
+							if (message.channel.name !== 'landing') {
+								message.delete({ timeout: 30000 });
+							}});
+				}
+			}).catch(() => {
+				message.edit('The command timed out.').then(message => message.reactions.removeAll())
+					.then(message => {
+						if (message.channel.name !== 'landing') {
+							message.delete({ timeout: 10000	});
+						}
+					});
+				return;
+			});
+		}).catch(error => console.log(error));
+	}
+};

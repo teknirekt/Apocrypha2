@@ -1,0 +1,14 @@
+{
+    "tek": {
+        "loc": "Missouri, USA",
+        "age": "35",
+        "bg": "Fledgling JS Dev\nA+ & CCNA (IT)\nHobbyist Graphic Designer\nClan/Server Owner",
+        "bio": "Father of 3 and avid multimedia creator, albiet amateur in the latter. I enjoy programming and playing either D2(obviously), Overwatch (Orisa is bae), and FFXIV (Behemoth) just to name a few."
+    },
+    "bot": {
+        "loc":"Heroku",
+        "age":"v1.0.9 Beta",
+        "bg": "JavaScript\nDiscord.js-Commando\nMongoDB",
+        "bio":"I was written by Teknirekt#8401 for exclusive use on ᵀᴴᴱ[RΞDΛCTΞD] Community Discord Server. My core is written in JavaScript using the discord.js-commando library with additional modules installed for various command usage. To see a full list of available commands, use `-help` and I shall DM you what is available."
+    }
+}

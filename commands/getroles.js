@@ -3,11 +3,12 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'getroles',
 	guildOnly: true,
-	args: false,
 	aliases: ['getrole', 'roles', 'rolemenu', 'assign', 'assignroles'],
 	category: 'general',
 	description: 'Grants roles to the member.',
-	async execute(message) {
+	async execute(message, args) {
+
+		const role = message.member.roles.cache.find( r => ['XB1_NA', 'XB1_EU', 'PC_NA', 'PC_EU'].includes(r.name));
 
 		const access = message.guild.roles.cache.find(r => r.name === 'IronWolves');
 		const receivedEmbed = message.embeds[0];
@@ -66,7 +67,28 @@ module.exports = {
 				});
 			return;
 		} 
-		else message.member.roles.add(access);
+		if (args[0] === 'reset') {
+			message.channel.send(`You have been removed from the ${role.name} role, please re-assign the correct one below.`)
+				.then(message.member.roles.remove(role)
+					.then(message.member.setNickname(message.member.user.username))
+					.then(message => { 
+						if (message.channel.name !== 'landing') {
+							message.delete({ timeout: 30000 });
+						}
+					}));
+			await message.channel.send(region)
+				.then(() => message.react(':PC_NA:688503043561619491'))
+				.then(() => message.react(':XB1_NA:688514143778635881'))
+				.then(() => message.react(':PC_EU:688503037894852697'))
+				.then(() => message.react(':XB1_EU:688514142071816248'))
+				.then(message => { 
+					if (message.channel.name !== 'landing') {
+						message.delete({ timeout: 30000 });
+					}});
+			return;
+		} 
+		else
+			message.member.roles.add(access);
 		message.channel.send(rolemenu).then(message => {
 			message.react('🌐')
 				.then(() => message.react('🕹'))

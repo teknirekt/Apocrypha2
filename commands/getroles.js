@@ -18,7 +18,7 @@ module.exports = {
 			.setFooter('Select the corresponding reaction to continue.')
 			.setThumbnail('https://i.ibb.co/7kwjpRq/redactedpng.png')
 			.setColor('#ff7373')
-			.addField('__**Available menu options**__', '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n\n*Note: region/platform required, others optional.*');
+			.addField('__**Available menu options**__', '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n\n*Note: region/platform required, others optional.*\n**Reset your platform:** type `-getroles reset` and follow the prompt.');
 
 		const region = new Discord.MessageEmbed(receivedEmbed)
 			.setTitle('__Supported Regions/Platforms__')
@@ -26,7 +26,7 @@ module.exports = {
 			.addFields([
 				{ name: '__**North American Region**__', value: '<:PC_NA:688503043561619491> Steam PC\n<:XB1_NA:688514143778635881> XBOX ONE' },
 				{ name: '__**European Union Region**__', value: '<:PC_EU:688503037894852697> Steam PC\n<:XB1_EU:688514142071816248> XBOX ONE' },
-				{ name: '__**Additional Information**__', value: '*Note: If you select the incorrect region/platform, remove the incorrect emoji first, then select the correct one afterwards.*'}
+				{ name: '__**Additional Information**__', value: '*Note: If you select the incorrect region/platform, please remove the incorrect emoji first, then select the correct one afterwards while this menu is active.*'}
 			])
 			.setThumbnail('https://i.ibb.co/80htxGF/globe.png', true)
 			.setColor('#2F2FD0')
@@ -68,20 +68,29 @@ module.exports = {
 			return;
 		} 
 		if (args[0] === 'reset') {
-			message.channel.send(`You have been removed from the ${role.name} role, please re-assign the correct one below.`)
-				.then(message.member.roles.remove(role)
-					.then(message.member.setNickname(message.member.user.username))
+			if (!role) {
+				message.channel.send('You do not have a Region/Platform roll currently assigned. Please use *just* `-getroles` to assign one.')
 					.then(message => { 
 						if (message.channel.name !== 'landing') {
 							message.delete({ timeout: 30000 });
 						}
-					}));
+					}).catch(console.error);
+				return;
+			} else
+				message.channel.send(`You have been removed from the ${role.name} role, please re-assign the correct one below.`)
+					.then(message.member.roles.remove(role)
+						.then(message.member.setNickname(message.member.user.username))
+						.then(message => { 
+							if (message.channel.name !== 'landing') {
+								message.delete({ timeout: 30000 });
+							}
+						}));
 			await message.channel.send(region)
-				.then(() => message.react(':PC_NA:688503043561619491'))
+				.then(message => message.react(':PC_NA:688503043561619491'))
 				.then(() => message.react(':XB1_NA:688514143778635881'))
 				.then(() => message.react(':PC_EU:688503037894852697'))
 				.then(() => message.react(':XB1_EU:688514142071816248'))
-				.then(message => { 
+				.then(() => { 
 					if (message.channel.name !== 'landing') {
 						message.delete({ timeout: 30000 });
 					}});

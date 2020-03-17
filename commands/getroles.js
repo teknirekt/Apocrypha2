@@ -18,7 +18,8 @@ module.exports = {
 			.setFooter('Select the corresponding reaction to continue.')
 			.setThumbnail('https://i.ibb.co/7kwjpRq/redactedpng.png')
 			.setColor('#ff7373')
-			.addField('__**Available menu options**__', '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n\n*Note: region/platform required, others optional.*\n**Reset your platform:** type `-getroles reset` and follow the prompt.');
+			.addField('__**Available Menu Options**__', '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n\n*Note: region/platform required, others optional.*\n**Reset your platform:** type `-getroles reset` and follow the prompt.')
+			.addField('__**Additional Information**__', '*If you need to change your primary platform after it has been set, use the command modifier `-getroles reset` to change to the correct one.*');
 
 		const region = new Discord.MessageEmbed(receivedEmbed)
 			.setTitle('__Supported Regions/Platforms__')
@@ -77,23 +78,20 @@ module.exports = {
 					}).catch(console.error);
 				return;
 			} else
-				message.channel.send(`You have been removed from the ${role.name} role, please re-assign the correct one below.`)
-					.then(message.member.roles.remove(role)
-						.then(message.member.setNickname(message.member.user.username))
-						.then(message => { 
-							if (message.channel.name !== 'landing') {
-								message.delete({ timeout: 30000 });
-							}
-						}));
-			await message.channel.send(region)
-				.then(message => message.react(':PC_NA:688503043561619491'))
-				.then(() => message.react(':XB1_NA:688514143778635881'))
-				.then(() => message.react(':PC_EU:688503037894852697'))
-				.then(() => message.react(':XB1_EU:688514142071816248'))
-				.then(() => { 
-					if (message.channel.name !== 'landing') {
-						message.delete({ timeout: 30000 });
-					}});
+				message.channel.send(`You have been removed from the ${role.name} role, please re-assign the correct one below.`, region)
+					.then(message => {
+						message.react(':PC_NA:688503043561619491')
+							.then(() => message.react(':XB1_NA:688514143778635881'))
+							.then(() => message.react(':PC_EU:688503037894852697'))
+							.then(() => message.react(':XB1_EU:688514142071816248'))
+							.then(() => { 
+								if (message.channel.name !== 'landing') {
+									message.delete({ timeout: 30000 });
+								}
+							});
+					});
+			message.member.roles.remove(role);
+			message.member.setNickname(message.member.user.username);
 			return;
 		} 
 		else

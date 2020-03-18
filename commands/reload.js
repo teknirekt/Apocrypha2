@@ -6,7 +6,7 @@ module.exports = {
 	execute(message, args) {
 		const commandName = args[0].toLowerCase();
 		const command = message.client.commands.get(commandName) ||
-            message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+			message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
 		if (!command) {
 			return message.channel.send(`There is no command with name or alias \`${commandName}\`, ${message.author}!`);
@@ -21,6 +21,13 @@ module.exports = {
 			console.log(error);
 			return message.channel.send(`There was an error while reloading a command \`${commandName}\`:\n\`${error.message}\``);
 		}
-		message.channel.send(`Command \`${commandName}\` was reloaded!`);
+		message.channel.send(`Command \`${commandName}\` was reloaded!`)
+			.then(message => {
+				if (message.channel.name !== 'landing') {
+					message.delete({
+						timeout: 10000
+					});
+				}
+			});
 	},
 };

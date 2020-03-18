@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 
 module.exports = {
-	name: 'kick',
+	name: 'ban',
 	args: true,
 	category: 'mod',
-	description: 'Kicks the user mentioned.',
-	usage: ['<@member mention> being a troll.'],
+	description: 'Bans the user mentioned.',
+	usage: ['<@member mention> Repeated offenses.'],
 	guildOnly: true,
 	async execute(message, args) {
 
@@ -13,33 +13,33 @@ module.exports = {
 		const reason = args.slice(1).join(' ');
 
 		const modEmbed = new Discord.MessageEmbed()
-			.setTitle(`Member Kicked: ${taggedUser.displayName}`)
+			.setTitle(`Member Banned: ${taggedUser.displayName}`)
 			.setDescription('*' + taggedUser.user.tag + '*')
 			.setThumbnail(taggedUser.user.displayAvatarURL())
 			.setFooter(`USER ID: ${taggedUser.user.id}`)
-			.setColor('#ff7400')
+			.setColor('#c70000')
 			.addFields([
 				{ name: '__**Moderator:**__', value: message.member.displayName },
-				{ name: '__**Reason for KICK:**__', value: reason }
+				{ name: '__**Reason for BAN:**__', value: reason }
 			])
 			.setTimestamp();
-
+        
 		const dmEmbed = new Discord.MessageEmbed()
 			.setTitle('__**Moderation Notification**__')
 			.setThumbnail(message.guild.iconURL())
-			.setDescription(`You were \`KICKED\` from ${message.guild.name}`)
-			.setColor('#ff7400')
-			.setFooter('Note: Visitors removed in this way can rejoin at any time.')
+			.setDescription(`You were \`BANNED\` from ${message.guild.name}`)
+			.setColor('#c70000')
+			.setFooter('Note: Being banned takes something special, don\'t bother asking for reversal.')
 			.addFields([
 				{ name: '__**Moderator Responsible:**__', value: message.member.displayName },
-				{ name: '__**Kick Reason:**__', value: reason }
+				{ name: '__**Reason for ban:**__', value: reason }
 			])
 			.setTimestamp();
 
 		const reportChannel = message.member.guild.channels.cache.find(ch => ch.name === 'modlog');
 
-		if (!taggedUser.kickable || taggedUser.roles.cache.some(r => r.name ==='Osmium Court')) {
-			message.channel.send(`I am unable to \`KICK\` ${taggedUser.displayName} from ${message.guild.name}!\n`)
+		if (!taggedUser.bannable || taggedUser.roles.cache.some(r => r.name ==='Osmium Court')) {
+			message.channel.send(`I am unable to \`BAN\` ${taggedUser.displayName} from ${message.guild.name}!\n`)
 				.then(message => {
 					if (message.channel.name !== 'landing') {
 						message.delete({
@@ -50,7 +50,7 @@ module.exports = {
 			return;
 		}
 		if (taggedUser.user.bot) {
-			message.channel.send('I refuse to `KICK` another `BOT` like myself, do your own bidding human.')
+			message.channel.send('I refuse to `BAN` another `BOT` like myself, do your own bidding human.')
 				.then(message => {
 					if (message.channel.name !== 'landing') {
 						message.delete({ timeout: 10000 });
@@ -59,7 +59,7 @@ module.exports = {
 			return;
 		}
 		await taggedUser.send(dmEmbed)
-			.then(taggedUser.kick([reason])).catch(console.error);
+			.then(taggedUser.ban({ reason: reason })).catch(console.error);
 		if (!reportChannel) {
 			return;
 		} else

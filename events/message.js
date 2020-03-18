@@ -32,10 +32,22 @@ module.exports = (client, message) => {
 
 	if (!command) return;
 	if (command.category === 'mod' && !message.member.roles.cache.some(role => role.name === 'Osmium Court')) {
-		return message.channel.send(`${message.author}, that command can only be executed by Osmium Court and higher.`);
+		message.channel.send(`${message.author}, that command can only be executed by Osmium Court Members.`)
+			.then(message => {
+				if (message.channel.name !== 'landing') {
+					message.delete({ timeout: 10000 });
+				}
+			});
+		return;
 	}
 	if (command.category === 'owner' && message.author.id !== '229060782065844224') {
-		return message.channel.send('Sorry, that command is exclusively for Tek.');
+		message.channel.send('Sorry, that command is exclusively for Teknirekt.')
+			.then(message => {
+				if (message.channel.name !== 'landing') {
+					message.delete({ timeout: 10000 });
+				}
+			});
+		return;
 	}
 	if (command.guildOnly && message.channel.type !== 'text') {
 		return message.reply('This command cannot be ran inside of a DM.');
@@ -57,7 +69,13 @@ module.exports = (client, message) => {
 		const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
 		if (now < expirationTime) {
 			const timeLeft = (expirationTime - now) / 1000;
-			return message.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
+			message.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`)
+				.then(message => {
+					if (message.channel.name !== 'landing') {
+						message.delete({ timeout: 10000 });
+					}
+				});
+			return;
 		}
 	}
 	timestamps.set(message.author.id, now);
@@ -66,6 +84,6 @@ module.exports = (client, message) => {
 		command.execute(message, args);
 	} catch (error) {
 		console.error(error);
-		message.reply('Oops, an error occured. No-one\'s perfect eh?');
+		message.reply('Oops, an error occured. A DM has been sent to Teknirekt regarding this issue.');
 	}
 };

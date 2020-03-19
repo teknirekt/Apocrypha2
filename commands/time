@@ -1,0 +1,15 @@
+const Discord = require('discord.js');
+
+module.exports = {
+	name: 'time',
+	guildOnly: true,
+	args: true,
+	aliases: ['tz', 'clock'],
+	category: 'general',
+	description: 'Converts time across multiple timezones.',
+	async execute(message, args) {
+
+		//build with either spacetime or timezone-bot
+
+	}
+};

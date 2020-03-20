@@ -17,7 +17,7 @@ module.exports = {
 			.setDescription('*' + taggedUser.user.tag + '*')
 			.setThumbnail(taggedUser.user.displayAvatarURL())
 			.setFooter(`USER ID: ${taggedUser.user.id}`)
-			.setColor('#ffff00')
+			.setColor('#ff0000')
 			.addFields([
 				{ name: '__**Moderator:**__', value: message.member.displayName },
 				{ name: '__**Reason for WARN:**__', value: reason }

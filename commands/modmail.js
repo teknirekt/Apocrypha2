@@ -10,18 +10,21 @@ module.exports = {
 	guildOnly: false,
 	async execute(message, args) {
 
-		const { text } = args;
+		const text = args.join(' ');
+
 		const leadership = message.member.guild.channels.cache.find(ch => ch.name === 'leadership');
 		if (message.channel.type === 'dm') {
 			const modmail = new Discord.MessageEmbed()
 				.setTitle(`Modmail from: ${message.member.displayName}`)
 				.setColor('#CA170F')
-				.setThumbnail(`${message.author.avatarURL}`)
-				.addFields({ name: '__**Message:**__', value: text })
-				.setFooter('This message was sent through modmail.', this.client.user.displayAvatarURL)
+				.setThumbnail(message.author.avatarURL())
+				.addFields([
+					{ name: '__**Message:**__', value: text }
+				])
+				.setFooter('This message was sent through modmail.')
 				.setTimestamp();
 			leadership.send(modmail);
-			return message.reply('Message forwarded to leadership.');
+			return message.reply('your message has been forwarded to leadership.');
 		}
 	}
 };

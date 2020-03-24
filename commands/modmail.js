@@ -12,7 +12,7 @@ module.exports = {
 
 		const text = args.join(' ');
 
-		const leadership = message.member.guild.channels.cache.find(ch => ch.name === 'leadership');
+		const leadership = message.client.guild.channels.cache.get('230069344778977290');
 		if (message.channel.type === 'dm') {
 			const modmail = new Discord.MessageEmbed()
 				.setTitle(`Modmail from: ${message.member.displayName}`)

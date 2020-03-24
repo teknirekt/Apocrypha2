@@ -22,8 +22,14 @@ fs.readdir('./events/', (err, files) => {
 	});
 });
 //ERROR REPORTING
-client.on('error', error => console.log(error));
+client.on('error', error => {
+	const errorlog = client.channels.cache.find(ch => ch.name === 'errorlog');
+	if (!errorlog) {
+		console.log(error);
+	}
+	errorlog.send(error).then(console.error);
+});
 //ZERO ERROR PREVENTION
-process.on('unhandledRejection', error => console.error('Uncaught Promise Rejection:', error));
+process.on('unhandledRejection', error => console.error('Uncaught Promise Rejection:\n\n', error));
 //BOT LOGIN
 client.login(process.env.BOT_TOKEN);

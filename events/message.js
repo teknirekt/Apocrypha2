@@ -83,7 +83,8 @@ module.exports = (client, message) => {
 	try {
 		command.execute(message, args);
 	} catch (error) {
-		console.error(error);
+		const errorlog = message.client.channels.cache.find(ch => ch.name === 'errorlog');
+		errorlog.send(error).then(console.error(error));
 		message.reply('Oops, an error occured. A DM has been sent to Teknirekt regarding this issue.');
 	}
 };

@@ -11,7 +11,7 @@ module.exports = {
 	category: 'owner',
 	async execute(message, args) {
 
-		message.channel.send('This command is still a WIP. I\'m unable to search for' + args[0] + 'currently. Sorry!')
+		message.channel.send('This command is still a WIP. I\'m unable to search for ' + args[0] + ' currently. Sorry!')
 			.then(message => { 
 				if (message.channel.name !== 'landing') {
 					message.delete({ timeout: 30000 });

@@ -20,21 +20,21 @@ module.exports = {
 
 		//MESSAGES
 		const join = await bLanding.messages.fetch('610725013300969491');
-		const update = await weekly.fetchMessage('633746699806048257');
-		const rule1 = await rules.fetchMessage('690618458886373376');
-		const rule2 = await rules.fetchMessage('690618509193117737');
-		const rule3 = await rules.fetchMessage('690618579091193906');
-		const rule4 = await rules.fetchMessage('690618631167672410');
-		const rule5 = await rules.fetchMessage('690618685991157911');
-		const rule6 = await rules.fetchMessage('690618753745944688');
-		const rule7 = await rules.fetchMessage('690618821530091520');
-		const rule8 = await rules.fetchMessage('690618870385606737');
-		const rule9 = await rules.fetchMessage('690618924009783376');
-		const rule10 = await rules.fetchMessage('690618966422585374');
-		const rule11 = await rules.fetchMessage('690619086949842964');
-		const rule12 = await rules.fetchMessage('690619131585626203');
-		const rule13 = await rules.fetchMessage('690619181657358397');
-		const rule14 = await rules.fetchMessage('690619240205647913');
+		const update = await weekly.messages.fetch('633746699806048257');
+		const rule1 = await rules.messages.fetch('690618458886373376');
+		const rule2 = await rules.messages.fetch('690618509193117737');
+		const rule3 = await rules.messages.fetch('690618579091193906');
+		const rule4 = await rules.messages.fetch('690618631167672410');
+		const rule5 = await rules.messages.fetch('690618685991157911');
+		const rule6 = await rules.messages.fetch('690618753745944688');
+		const rule7 = await rules.messages.fetch('690618821530091520');
+		const rule8 = await rules.messages.fetch('690618870385606737');
+		const rule9 = await rules.messages.fetch('690618924009783376');
+		const rule10 = await rules.messages.fetch('690618966422585374');
+		const rule11 = await rules.messages.fetch('690619086949842964');
+		const rule12 = await rules.messages.fetch('690619131585626203');
+		const rule13 = await rules.messages.fetch('690619181657358397');
+		const rule14 = await rules.messages.fetch('690619240205647913');
 
 		//MESSAGE FETCHING
 		if (args[0] === 'join') {

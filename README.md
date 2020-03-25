@@ -1,5 +1,5 @@
 # [Λpocrypha] Discord Bot
-![Status](https://img.shields.io/badge/Status-live-green)![Issue Tracker](https://img.shields.io/github/issues/teknirekt/Apocrypha2)![David](https://img.shields.io/david/Teknirekt/Apocrypha2)[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N610NB9)
+![Status](https://img.shields.io/badge/Status-live-green) ![Issue Tracker](https://img.shields.io/github/issues/teknirekt/Apocrypha2) ![David](https://img.shields.io/david/Teknirekt/Apocrypha2) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N610NB9)
 ## For **private use only** on ᵀᴴᴱ [RΞDΛCTΞD] Discord Server
 > It's hard-coded for that server. *MAY* be adapted later for general use
 

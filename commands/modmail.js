@@ -34,7 +34,7 @@ module.exports = {
 			message.channel.send('Report submitted to leadership, next time.. DM me please for privacy.')
 				.then(message => { 
 					if (message.channel.name !== 'landing') {
-						message.delete({ timeout: 30000 });
+						message.delete({ timeout: 10000 });
 					}
 				}).catch(console.error);
 			return;

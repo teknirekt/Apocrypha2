@@ -7,6 +7,7 @@ module.exports = (client) => {
 	setInterval(async () => {
 		const statuslist = [
 			'our clan. | Clanbot',
+			'-modmail',
 			'YOU. | Clanbot',
 			'the whispers on Io.',
 			'music w/ Rasputin.',

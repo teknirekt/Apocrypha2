@@ -15,9 +15,9 @@ module.exports = {
 		const leadership = live.channels.cache.get('230069344778977290');
 
 		const modmail = new Discord.MessageEmbed()
-			.setTitle(`Modmail from: ${message.member.displayName}`)
+			.setTitle(`Modmail from: ${message.author}`)
 			.setColor('#CA170F')
-			.setThumbnail(message.author.avatarURL())
+			.setThumbnail(message.author.displayAvatarURL())
 			.addFields([
 				{ name: '__**Message:**__', value: text }
 			])

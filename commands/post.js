@@ -92,7 +92,7 @@ module.exports = {
 			return;
 		}
 		if (args[0] === 'ruleset') {
-			message.channel.send(ruleset1.content, ruleset2.content);
+			message.channel.send(ruleset1.content).then(message.channel.send(ruleset2.content));
 			return;
 		}
 		// if (args[0] === 'rule12') {

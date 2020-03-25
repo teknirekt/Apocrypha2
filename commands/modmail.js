@@ -13,9 +13,10 @@ module.exports = {
 		const text = args.join(' ');
 		const live = message.client.guilds.cache.get('229275151437529088');
 		const leadership = live.channels.cache.get('230069344778977290');
+		const gm = live.members.cache.get(message.author.id);
 
 		const modmail = new Discord.MessageEmbed()
-			.setTitle(`Modmail from: ${message.author}`)
+			.setTitle(`Modmail from: ${gm.displayName}`)
 			.setColor('#CA170F')
 			.setThumbnail(message.author.displayAvatarURL())
 			.addFields([
@@ -25,6 +26,9 @@ module.exports = {
 			.setTimestamp();
 			
 
+		if (!gm) {
+			return message.reply('Sorry! This system is only for [RΞDΛCTΞD] Community Members!\nJoin Today: [CLICK HERE](https://discord.gg/2AuhYX2)');
+		}
 		if (message.channel.type === 'dm') {
 			leadership.send(modmail);
 			return message.reply('your message has been forwarded to leadership.');

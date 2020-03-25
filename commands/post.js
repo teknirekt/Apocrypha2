@@ -32,9 +32,11 @@ module.exports = {
 		const rule9 = await rules.messages.fetch('690618924009783376');
 		const rule10 = await rules.messages.fetch('690618966422585374');
 		const rule11 = await rules.messages.fetch('690619086949842964');
-		const rule12 = await rules.messages.fetch('690619131585626203');
-		const rule13 = await rules.messages.fetch('690619181657358397');
-		const rule14 = await rules.messages.fetch('690619240205647913');
+		// const rule12 = await rules.messages.fetch('690619131585626203');
+		// const rule13 = await rules.messages.fetch('690619181657358397');
+		// const rule14 = await rules.messages.fetch('690619240205647913');
+		const ruleset1 = await rules.messages.fetch('635885183471714336');
+		const ruleset2 = await rules.messages.fetch('635885244280733746');
 
 		//MESSAGE FETCHING
 		if (args[0] === 'join') {
@@ -89,18 +91,22 @@ module.exports = {
 			message.channel.send(rule11.content);
 			return;
 		}
-		if (args[0] === 'rule12') {
-			message.channel.send(rule12.content);
+		if (args[0] === 'ruleset') {
+			message.channel.send(ruleset1.content, ruleset2.content);
 			return;
 		}
-		if (args[0] === 'rule13') {
-			message.channel.send(rule13.content);
-			return;
-		}
-		if (args[0] === 'rule14') {
-			message.channel.send(rule14.content);
-			return;
-		}
+		// if (args[0] === 'rule12') {
+		// 	message.channel.send(rule12.content);
+		// 	return;
+		// }
+		// if (args[0] === 'rule13') {
+		// 	message.channel.send(rule13.content);
+		// 	return;
+		// }
+		// if (args[0] === 'rule14') {
+		// 	message.channel.send(rule14.content);
+		// 	return;
+		// }
 		if (args[0] === 'edit') {
 
 			const fetched = await message.channel.messages.fetch(args[1]);

@@ -20,6 +20,7 @@ module.exports = {
 			.setColor('#ff7373')
 			.addFields([
 				{ name: '__**Available Menu Options**__', value: '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n*Note: region/platform required, others optional.*' },
+				{ name: '__**Spam Role (CAUTION)**__', value: '<:spam:615585267033702424> Spam, for **Club Afterdark**, **Reddit Memes** & More...\n(you\'ll want to mute channels here.)\nIf you want this role, grab it **first**.'},
 				{ name: '__**Additional Information**__', value: '*If you need to change your primary platform after it has been set, use the command modifier `-getroles reset` to change to the correct one.*' }
 			]);
 
@@ -33,7 +34,6 @@ module.exports = {
 			.addFields([
 				{ name: '__**North American Region**__', value: '<:PC_NA:688503043561619491> Steam PC\n<:XB1_NA:688514143778635881> XBOX ONE' },
 				{ name: '__**European Union Region**__', value: '<:PC_EU:688503037894852697> Steam PC\n<:XB1_EU:688514142071816248> XBOX ONE' },
-				{ name: '__**Spam Role (CAUTION)**__', value: '<:spam:615585267033702424> Spam, for **Club Afterdark**, **Reddit Memes** & More...\n(you\'ll want to mute channels here.)\nIf you want this role, grab it **first**.'},
 				{ name: '__**Additional Information**__', value: '*Note: If you select the incorrect region/platform, please remove the incorrect emoji first, then select the correct one afterwards while this menu is active.*'}
 			])
 			.setThumbnail('https://i.ibb.co/80htxGF/globe.png', true)
@@ -107,7 +107,8 @@ module.exports = {
 			message.react('🌐')
 				.then(() => message.react('🕹'))
 				.then(() => message.react(':destiny:688465591715102745'))
-				.then(() => message.react('🎲'));
+				.then(() => message.react('🎲'))
+				.then(() => message.react(':spam:615585267033702424'));
 
 			message.awaitReactions(filter, {
 				max: 1,
@@ -124,7 +125,6 @@ module.exports = {
 						.then(() => message.react(':XB1_NA:688514143778635881'))
 						.then(() => message.react(':PC_EU:688503037894852697'))
 						.then(() => message.react(':XB1_EU:688514142071816248'))
-						.then(() => message.react(':spam:615585267033702424'))
 						.then(() => { 
 							if (message.channel.name !== 'landing') {
 								message.delete({ timeout: 30000 });

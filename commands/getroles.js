@@ -33,7 +33,7 @@ module.exports = {
 			.addFields([
 				{ name: '__**North American Region**__', value: '<:PC_NA:688503043561619491> Steam PC\n<:XB1_NA:688514143778635881> XBOX ONE' },
 				{ name: '__**European Union Region**__', value: '<:PC_EU:688503037894852697> Steam PC\n<:XB1_EU:688514142071816248> XBOX ONE' },
-				{ name: '__**Spam Role (CAUTION)**__', value: '<:spam:615585267033702424> Spam, for **Club Afterdark**, **Reddit Memes** & More...\n(you\'ll want to mute channels here.)'},
+				{ name: '__**Spam Role (CAUTION)**__', value: '<:spam:615585267033702424> Spam, for **Club Afterdark**, **Reddit Memes** & More...\n(you\'ll want to mute channels here.\nIf you want this role, grab it **first**.)'},
 				{ name: '__**Additional Information**__', value: '*Note: If you select the incorrect region/platform, please remove the incorrect emoji first, then select the correct one afterwards while this menu is active.*'}
 			])
 			.setThumbnail('https://i.ibb.co/80htxGF/globe.png', true)

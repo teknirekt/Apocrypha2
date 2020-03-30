@@ -19,7 +19,7 @@ module.exports = {
 			.setColor('#3399ff')
 			.addFields([
 				{ name: '__**Moderator:**__', value: message.member.displayName },
-				{ name: '__**Reason for REMINDER:**__', value: 'Needs to register and set roles.' }
+				{ name: '__**Reason for REMINDER:**__', value: '#1: Needs to register and set roles.' }
 			])
 			.setTimestamp();
             
@@ -31,7 +31,7 @@ module.exports = {
 			.setColor('#3399ff')
 			.addFields([
 				{ name: '__**Moderator:**__', value: message.member.displayName },
-				{ name: '__**Reason for REMINDER:**__', value: 'Needs set Platform and Region roles.' }
+				{ name: '__**Reason for REMINDER:**__', value: '#2: Needs set Platform and Region roles.' }
 			])
 			.setTimestamp();
 
@@ -40,10 +40,10 @@ module.exports = {
 			.setThumbnail(message.guild.iconURL())
 			.setDescription(`This is a \`REMINDER\` for ${message.guild.name}`)
 			.setColor('#3399ff')
-			.setFooter('Note: Removal will occur on the following reset if not addressed.')
+			.setFooter('Note: Removal will occur at reset if not addressed.')
 			.addFields([
 				{ name: '__**Moderator Responsible:**__', value: message.member.displayName },
-				{ name: '__**Reminder Reason:**__', value: 'You need to register with Charlemange in #landing and set your region/platform at your earliest convenience **prior** to the next reset on Tuesday.' }
+				{ name: '__**Reminder Reason:**__', value: 'You need to register and set your region/platform at your earliest convenience **prior** to reset on Tuesday. See instructions #1 through #3 in #landing for more information.' }
 			])
 			.setTimestamp();
             
@@ -52,10 +52,10 @@ module.exports = {
 			.setThumbnail(message.guild.iconURL())
 			.setDescription(`This is a \`REMINDER\` for ${message.guild.name}`)
 			.setColor('#399ff')
-			.setFooter('Note: Removal will occur on the following reset if not addressed.')
+			.setFooter('Note: Removal will occur at reset if not addressed.')
 			.addFields([
 				{ name: '__**Moderator Responsible:**__', value: message.member.displayName },
-				{ name: '__**Reminder Reason:**__', value: 'You need to set your region/platform at your earliest convenience **prior** to the next reset on Tuesday. See: instruction #3 in #landing for more information.' }
+				{ name: '__**Reminder Reason:**__', value: 'You need to set your region/platform at your earliest convenience **prior** to reset on Tuesday. See instruction #3 in #landing for more information.' }
 			])
 			.setTimestamp();
 

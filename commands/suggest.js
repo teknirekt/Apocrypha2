@@ -19,7 +19,7 @@ module.exports = {
 
 		const suggest = new Discord.MessageEmbed()
 			.setTitle(`Suggested by:\n${message.member.displayName}`)
-			.setThumbnail(message.author.avatarURL())
+			.setThumbnail(message.author.displayAvatarURL())
 			.addField('__**Suggestion:**__', text)
 			.setFooter('Select a reaction emoji below to vote.')
 			.setColor('#CA170F')
@@ -30,7 +30,7 @@ module.exports = {
 			const attachment = message.attachments.array();
 			const suggest2 = new Discord.MessageEmbed()
 				.setTitle(`Suggested by:\n${message.member.displayName}`)
-				.setThumbnail(message.author.avatarURL())
+				.setThumbnail(message.author.displayAvatarURL())
 				.addField('__**Suggestion:**__', text)
 				.setFooter('Select a reaction emoji below to vote.')
 				.setColor('#CA170F')

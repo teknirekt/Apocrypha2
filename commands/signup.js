@@ -43,7 +43,7 @@ module.exports = {
 				{ name: '<:sherpa:693232256587792564> __**Willing Sherpas**__', value: 'Awaiting members.', inline: true }
 
 			])
-			.setImage('https://i.ibb.co/zRfg1Jp/thorn.png')
+			.setImage('https://i.ibb.co/k40VfQZ/malthorn.png')
 			.setFooter('Note: In this case, heroic is for Thorn.');
 
 		const wishNew = new Discord.MessageEmbed()

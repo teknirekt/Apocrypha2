@@ -14,6 +14,7 @@ module.exports = {
 		const access = message.guild.roles.cache.find(r => r.name === 'IronWolves');
 		const taggedUser = message.mentions.members.first();
 		const reason = args.slice(1).join(' ');
+		const errorChannel = message.member.guild.channels.cache.find(ch => ch.name === 'errorlog');
 
 		const dmEmbed = new Discord.MessageEmbed()
 			.setTitle('__**Moderation Notification**__')
@@ -52,9 +53,9 @@ module.exports = {
 			return;
 		} else {
 			taggedUser.roles.add(muterole).then(taggedUser.roles.remove(access))
-				.catch(error => message.channel.send(`Sorry, I couldn't mute them because of : ${error}`));
+				.catch(error => errorChannel.send(`Sorry, I couldn't mute ${taggedUser.displayName} because of: ${error}`));
 			await taggedUser.send(dmEmbed)
-				.catch(error => message.channel.send(`I was unable to notify the user of their fate because: ${error}`));
+				.catch(error => errorChannel.send(`I was unable to notify ${taggedUser.displayName} of \`MUTE\` due to: ${error}`));
 			message.react(':check:609822544438231043');
 		}
     

@@ -55,4 +55,23 @@ module.exports = (client) => {
 			console.error(error);
 		}
 	}, 30000);
+
+	//SIGNUP FETCHING LIVE
+	const live = client.guilds.cache.get('229275151437529088');
+	const pc = live.channels.cache.get('695319422088380447');
+	const xb = live.channels.cache.get('695319770697826304');
+	const errorChannel = live.channels.cache.get('658725873700175933');
+
+	//SIGNUP FETCHING BETA
+	// const beta = client.guilds.cache.get('569908733090594827');
+	// const pc = beta.channels.cache.get('693960008139931669');
+	// const xb = beta.channels.cache.get('693960342044409866');
+
+	pc.messages.fetch({ limit: 15 })
+		.then(messages => console.log(`${messages.size} messages fetched for PC Signups.`))
+		.catch(error => errorChannel.send(`I was unable to fetch the signup lists for \`PC\`. Error: ${error}.`));
+
+	xb.messages.fetch({ limit: 15 })
+		.then(messages => console.log(`${messages.size} messages fetched for XB1 Signups.`))
+		.catch(error => errorChannel.send(`I was unable to fetch the signup lists for \`XB1\`. Error: ${error}.`));
 };

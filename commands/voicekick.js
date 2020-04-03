@@ -12,6 +12,7 @@ module.exports = {
 
 		const taggedUser = message.mentions.members.first();
 		const reason = args.slice(1).join(' ');
+		const errorChannel = message.member.guild.channels.cache.find(ch => ch.name === 'errorlog');
 
 		const dmEmbed = new Discord.MessageEmbed()
 			.setTitle('__**Moderation Notification**__')
@@ -36,7 +37,7 @@ module.exports = {
 		}
 
 		await taggedUser.send(dmEmbed)
-			.catch(error => message.channel.send(`I was unable to notify ${taggedUser.displayName} of their fate because of this error: ${error}`));
+			.catch(error => errorChannel.send(`I was unable to notify ${taggedUser.displayName} of \`VOICEKICK\` due to: ${error}`));
 		await taggedUser.voice.setChannel(null)
 			.then(message.react(':check:609822544438231043'));
 

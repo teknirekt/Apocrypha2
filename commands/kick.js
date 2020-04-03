@@ -37,6 +37,7 @@ module.exports = {
 			.setTimestamp();
 
 		const reportChannel = message.member.guild.channels.cache.find(ch => ch.name === 'modlog');
+		const errorChannel = message.member.guild.channels.cache.find(ch => ch.name === 'errorlog');
 
 		if (!taggedUser.kickable || taggedUser.roles.cache.some(r => r.name ==='Osmium Court')) {
 			message.channel.send(`I am unable to \`KICK\` ${taggedUser.displayName} from ${message.guild.name}!\n`)
@@ -59,7 +60,7 @@ module.exports = {
 			return;
 		}
 		await taggedUser.send(dmEmbed)
-			.then(taggedUser.kick([reason])).catch(console.error);
+			.then(taggedUser.kick([reason])).catch(error => errorChannel.send(`I was unable to notify ${taggedUser.displayName} of the \`KICK\` due to: ${error}.`));
 		if (!reportChannel) {
 			return;
 		} else

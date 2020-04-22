@@ -152,7 +152,7 @@ module.exports = {
 				.setThumbnail('https://i.ibb.co/ccy8WBZ/worthyicon.jpg')
 				.addFields(
 					{ name: '__**Season 10 Misc**__', value: '[**Warmind Khanjali** (artifact)](https://youtu.be/Ogp_SAesYKE \'Esoterickk\')\n[**Season In-depth**](https://youtu.be/R14hd9gPgL8 \'Datto\')'},
-					{ name: '__**Season 10 Exotics**__', value: 'Tommy\'s Matchbook (pass)\n[**4th Horseman**](https://youtu.be/1-Morhzrsyg \'Esoterickk\')\nHier Apparent (unreleased)'},
+					{ name: '__**Season 10 Exotics**__', value: 'Tommy\'s Matchbook (pass)\n[**4th Horseman**](https://youtu.be/1-Morhzrsyg \'Esoterickk\')\nHier Apparent (Guardian Games)'},
 					{ name: '__**Web & In-game Lore**__', value: '[**What Gives Me Pause**](http://bit.ly/32OybAX)\n[**Legacy**](http://bit.ly/3cN6InF)\n[**Legacy Pt.2**](http://bit.ly/2xwBOQn)\n[**Rememberance**](http://bit.ly/2TEjygj)\n[**Maint. Operations Log 30037**](http://bit.ly/39Sd2Iw)' }
 				)
 				.setImage('https://i.ibb.co/vc6LfhG/worthy.png')

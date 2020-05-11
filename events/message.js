@@ -4,6 +4,11 @@ const Discord = require('discord.js');
 
 module.exports = (client, message) => {
 	const prefix = process.env.prefix;
+	const live = client.guilds.cache.get('229275151437529088');
+	// const beta = client.guilds.cache.get('569908733090594827');
+	const visitorlog = live.channels.cache.get('709214607352528916');
+	// const visitorlog = beta.channels.cache.get('709184854557851658');
+
 	if (message.channel.name === 'rate_my_gear') {
 		if (!message.attachments.size <= 0) {
 			message.react(':exotic:609797640711962624')
@@ -15,6 +20,9 @@ module.exports = (client, message) => {
 		message.delete({
 			timeout: 60000
 		}).catch(error => console.log(error));
+		if (!message.author.bot) {
+			visitorlog.send(`${message.author.toString()} sent: \n${message.content} \n User ID:${message.author.id}`);
+		}
 	}
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	if (message.channel.name !== 'landing' && message.channel.type === 'text') {

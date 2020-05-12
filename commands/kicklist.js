@@ -10,8 +10,8 @@ module.exports = {
 		await message.guild.members.fetch().then(fetchedMembers => {
 			const visitor = fetchedMembers.filter(member => member.roles.cache.some(r => r.name === 'Visitor'));
 			const inactive = fetchedMembers.filter(member => member.roles.cache.some(r => r.name === 'INACTIVE'));
-			const visitorList = visitor.map(member => member.displayName.toString()).join(', ');
-			const inactiveList = inactive.map(member => member.displayName.toString()).join(', ');
+			const visitorList = visitor.map(member => member.user.toString()).join(', ');
+			const inactiveList = inactive.map(member => member.user.toString()).join(', ');
 
 			const kicklist = new Discord.MessageEmbed()
 				.setTitle('The list of members in danger of removal.')

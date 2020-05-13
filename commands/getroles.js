@@ -57,7 +57,7 @@ module.exports = {
 		const others = new Discord.MessageEmbed(receivedEmbed)
 			.setTitle('__Currently Available Game Roles__')
 			.addFields([
-				{ name: '__**Individual Games**__', value: '<:W_F:611695174615040074> ► Warframe\n<:HALO:651458650711392266> ► Halo\n<:BL_3:611821316005167113> ► Borderlands\n<:M_C:611695109318115374> ► Minecraft\n<:MTGA:688618832780197901> ► MTG: Arena' },
+				{ name: '__**Individual Games**__', value: '<:W_F:611695174615040074> ► Warframe\n<:HALO:651458650711392266> ► Halo\n<:BL_3:611821316005167113> ► Borderlands\n<:ACNH:710218343876919417> ► Animal Crossing\n<:MINE:710220082768511036> ► Minecraft / Deep Rock\n<:CARD:710222056305852496> ► Cards Against / MTGA' },
 				{ name: '__**Game Categories**__', value: '<:TFPS:688804913911824433> ► Team-based FPS (OW/CS/R6S)\n<:V_R:611691183650898102> ► Virtual Reality\n<:B_R:651463106634973205> ► Battle Royale Games\n<:MMO:623548135360430090> ► MMORPGs' }
 			])
 			.setThumbnail('https://i.ibb.co/GvBd0md/download.jpg')
@@ -158,8 +158,9 @@ module.exports = {
 						.then(() => message.react(':W_F:611695174615040074'))
 						.then(() => message.react(':HALO:651458650711392266'))
 						.then(() => message.react(':BL_3:611821316005167113'))
-						.then(() => message.react(':M_C:611695109318115374'))
-						.then(() => message.react(':MTGA:688618832780197901'))
+						.then(() => message.react(':ACNH:710218343876919417'))
+						.then(() => message.react(':MINE:710220082768511036'))
+						.then(() => message.react(':CARD:710222056305852496'))
 						.then(() => message.react(':TFPS:688804913911824433'))
 						.then(() => message.react(':V_R:611691183650898102'))
 						.then(() => message.react(':B_R:651463106634973205'))

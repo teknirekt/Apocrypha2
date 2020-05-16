@@ -10,14 +10,17 @@ module.exports = {
 		await message.guild.members.fetch().then(fetchedMembers => {
 			const visitor = fetchedMembers.filter(member => member.roles.cache.some(r => r.name === 'Visitor'));
 			const inactive = fetchedMembers.filter(member => member.roles.cache.some(r => r.name === 'INACTIVE'));
+			const missed = fetchedMembers.filter(member => member.roles.cache.some(r => r.name === 'RΞDΛCTΞD') && !member.roles.cache.some(r => r.name === 'IronWolves'));
 			const visitorList = visitor.map(member => member.user.toString()).join(', ');
 			const inactiveList = inactive.map(member => member.user.toString()).join(', ');
+			const missedList = missed.map(member => member.user.toString()).join(', ');
 
 			const kicklist = new Discord.MessageEmbed()
-				.setTitle('The list of members in danger of removal.')
+				.setTitle('The list of members in each category.')
 				.addFields([
 					{ name: `__**Visitors**__ (${visitor.size})`, value: visitorList ? visitorList : 'All Clear!' },
-					{ name: `__**Inactive Members**__ (${inactive.size})`, value: inactiveList ? inactiveList : 'All Clear!' }
+					{ name: `__**Inactive Members**__ (${inactive.size})`, value: inactiveList ? inactiveList : 'All Clear!' },
+					{ name: `__**Members Need Adjustment**__ (${missed.size})`, value: missedList ? missedList : 'All Clear!' }
 				])
 				.setColor('631B99');
 

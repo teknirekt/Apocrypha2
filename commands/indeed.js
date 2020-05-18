@@ -7,7 +7,7 @@ module.exports = {
 	cooldown: 10,
 	execute(message) {
 
-		const number = 7;
+		const number = 8;
 		const imageNumber = Math.floor (Math.random() * (number - 1 + 1)) +1;
 		message.channel.send({
 			files: [{ attachment: './commands/images/zavala/' + imageNumber + '.jpg' }]

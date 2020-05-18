@@ -104,21 +104,21 @@ module.exports = {
 					return;
 				} else {
 					
-					const extras = new Discord.MessageEmbed()
+					const fix = new Discord.MessageEmbed()
 						.setColor('#545454')
-						.setTitle('Extra Resources Available')
-						.setURL('https://www.reddit.com/r/DestinyTheGame/comments/dd7fh3/in_the_spirit_of_new_light_heres_a_sizeable_list/')
-						.setThumbnail('https://i.ibb.co/wYvZtB4/DStiq-SBWs-AAIM7-C.jpg')
+						.setTitle('Shadowkeep (Year 3)')
+						.setDescription('Season of the Worthy (S.10)\nMAR 10 - JUN 09')
+						.setURL('https://www.bungie.net/7/en/Destiny/Shadowkeep')
+						.setThumbnail('https://i.ibb.co/ccy8WBZ/worthyicon.jpg')
 						.addFields(
-							{ name: '__**Reddit Sources**__', value: '[**r/DestinyTheGame**](https://www.reddit.com/r/DestinyTheGame/) -General Info\n[**r/RaidSecrets**](https://www.reddit.com/r/raidsecrets/) -Spoiler Heavy\n[**r/CruciblePlaybook**](https://new.reddit.com/r/CruciblePlaybook/) -Everything PVP\n[**r/GambitPlaybook**](https://www.reddit.com/r/GambitPlaybook/) -Everything Gambit\n[**r/DestinyLore**](https://www.reddit.com/r/DestinyLore/) -Everything Lore' },
-							{ name: '__**Websites**__', value: '[**DestinyItemManager(DIM)**](https://app.destinyitemmanager.com/)\n[**Destiny Sets**](https://destinysets.com/)\n[**Interactive Director**](https://lowlidev.com.au/destiny/maps/)\n[**Light.gg**](https://light.gg/)\n[**Braytech.org**](https://braytech.org/)\n[**Where\'s Xur?**](https://ftw.in/game/destiny-2/find-xur)\n[**D2 Gunsmith**](https://d2gunsmith.com/)\n[**Today In Destiny**](https://www.todayindestiny.com/)', inline: true },
-							{ name: '__**Mobile Apps & Misc**__', value: '[**Redrix**](https://redrix.io/) 📱\n[**God Roll Spreadsheet**](https://bit.ly/3bmIsHz)\n[**Weapon Perks**](https://bit.ly/2Jh8akP)', inline: true },
-							{ name: '__**Soundboards**__', value: '[**Shaxx Soundboard**](https://evilarceus.github.io/Destiny2-Soundboard/#)\n[**Drifter Soundboard**](https://d2.asun.co/drifter/)' }
+							{ name: '__**Season 10 Misc**__', value: '[**Warmind Khanjali**](https://youtu.be/Ogp_SAesYKE \'Esoterickk\') (S.10 Artifact)\n[**Season In-depth**](https://youtu.be/R14hd9gPgL8 \'Datto\')\n[**Warmind Mods**](https://youtu.be/rpaaDVl485s \'Datto\')\n[**Felwinter\'s Lie**](https://youtu.be/4Mhco2Bpaog \'Esoterickk\') (spoilers)'},
+							{ name: '__**Season 10 Exotics**__', value: 'Tommy\'s Matchbook (Season Pass)\n[**4th Horseman**](https://youtu.be/1-Morhzrsyg \'Esoterickk\')\nHier Apparent (GG Triumph) [**review**](https://youtu.be/_6XxmZc7EcU \'Aztecross\')'},
+							{ name: '__**Web & In-game Lore**__', value: '[**What Gives Me Pause**](http://bit.ly/32OybAX)\n[**Legacy**](http://bit.ly/3cN6InF)\n[**Legacy Pt.2**](http://bit.ly/2xwBOQn)\n[**Rememberance**](http://bit.ly/2TEjygj)\n[**Maint. Operations Log 30037**](http://bit.ly/39Sd2Iw)\n**Trials and Tribulations** -Trials\n**The Liar** -*unknown*' }
 						)
-						.setImage('https://i.ibb.co/k2X3xkV/extra2.png')
-						.setFooter('Command: -g extras');
+						.setImage('https://i.ibb.co/vc6LfhG/worthy.png')
+						.setFooter('Command: -g worthy');
 
-					fetched.edit(extras);
+					fetched.edit(fix);
 				}
 			} else
 				fetched.edit(content).catch(console.error);

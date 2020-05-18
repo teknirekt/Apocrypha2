@@ -113,7 +113,7 @@ module.exports = {
 						.addFields(
 							{ name: '__**Season 10 Misc**__', value: '[**Warmind Khanjali**](https://youtu.be/Ogp_SAesYKE \'Esoterickk\') (S.10 Artifact)\n[**Season In-depth**](https://youtu.be/R14hd9gPgL8 \'Datto\')\n[**Warmind Mods**](https://youtu.be/rpaaDVl485s \'Datto\')\n[**Felwinter\'s Lie**](https://youtu.be/4Mhco2Bpaog \'Esoterickk\') (spoilers)'},
 							{ name: '__**Season 10 Exotics**__', value: 'Tommy\'s Matchbook (Season Pass)\n[**4th Horseman**](https://youtu.be/1-Morhzrsyg \'Esoterickk\')\nHier Apparent (GG Triumph) [**review**](https://youtu.be/_6XxmZc7EcU \'Aztecross\')'},
-							{ name: '__**Web & In-game Lore**__', value: '[**What Gives Me Pause**](http://bit.ly/32OybAX)\n[**Legacy**](http://bit.ly/3cN6InF)\n[**Legacy Pt.2**](http://bit.ly/2xwBOQn)\n[**Rememberance**](http://bit.ly/2TEjygj)\n[**Maint. Operations Log 30037**](http://bit.ly/39Sd2Iw)\n**Trials and Tribulations** -Trials\n**The Liar** -*unknown*' }
+							{ name: '__**Web & In-game Lore**__', value: '[**What Gives Me Pause**](http://bit.ly/32OybAX)\n[**Legacy**](http://bit.ly/3cN6InF)\n[**Legacy Pt.2**](http://bit.ly/2xwBOQn)\n[**Rememberance**](http://bit.ly/2TEjygj)\n[**Maint. Operations Log 30037**](http://bit.ly/39Sd2Iw)\n**Trials and Tribulations** -Trials\n**The Liar** - Felwinter\'s Lie kills' }
 						)
 						.setImage('https://i.ibb.co/vc6LfhG/worthy.png')
 						.setFooter('Command: -g worthy');

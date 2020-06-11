@@ -116,7 +116,7 @@ module.exports = {
 					{ name: '__**Garden of Salvation**__', value: '[**The Consecrated Mind**](https://youtu.be/gBNVvlycPVY \'Datto\') [🗺](https://i.ibb.co/1nMngYr/encounter-3.jpg \'2nd & 3rd\') [🗺](https://i.ibb.co/PmHr3qG/encounter-2-3.png \'Eyes\')\n[**The Sanctified Mind**](https://youtu.be/3uQbsLr5vn0 \'Datto\') [🗺](https://i.ibb.co/TBNpXm6/final.png \'Final Encounter\')\n[**Loot Table**(image)](https://i.ibb.co/25Fm3X5/gosloot.png)', inline: true },
 					{ name: '__**Pit of Heresy**__', value: '[**How-to**](https://youtu.be/_mqPAOSg-64 \'Datto\') [🗺](https://i.ibb.co/fxQkTcY/HERESY-2.jpg \'Ogre Area\') [🗺](https://i.ibb.co/bmqtL1t/WMDLx83.png \'The Harrow\')\n[**PoH Solo/Flawless**](https://youtu.be/9SHm-kbUFkc \'NinjaPups\')', inline: true },
 					{ name: '__**Lectern Charms**__', value: '[**Ethereal Charm**](https://youtu.be/ZEdxdr-ykoQ \'Esoterickk\')\n[**Horned Wreath**](https://youtu.be/mu_XJlC6yEE0 \'Esoterickk\')\n[**Captive Cord**](https://youtu.be/gNedr6dG4-g \'Esoterickk\')\n[**Bound Manacles**](https://youtu.be/yAHtHQgBH9g \'Esoterickk\')\n[**Necromantic Strand**](https://youtu.be/m4JEdQRu19w \'Esoterickk\')\n[**Withered Plumes**](https://youtu.be/nCPQJeNgpec \'Esoterickk\')\n[**Ralniks\'s Hatchet**](https://youtu.be/MN-tndUEgVY \'Esoterickk\')\n[**Fangs of Shun\'Gath**](https://youtu.be/-iKUXdZWEfE \'Esoterickk\')\n[**Ehrath\'Ur\'s Wreath**](https://youtu.be/55L2uMcAVsc \'Esoterickk\')' },
-					{ name: '__**Shadowkeep Exotics**__', value: '[**Divinity**](https://youtu.be/2IQ6M43gEus \'Datto\')\n[**Leviathan\'s Breath**](https://youtu.be/jDN56HyXDOM \'Datto\')\n[**Xenophage**](https://youtu.be/1EGPjPkuE3k \'Datto\')\n[**Deathbringer**](https://youtu.be/t2ARvAJY8Ko \'Datto\')\n**__Season Exclusive__**\n**Eriana\'s Vow**', inline: true },
+					{ name: '__**Shadowkeep Exotics**__', value: '[**Divinity**](https://youtu.be/2IQ6M43gEus \'Datto\')\n[**Leviathan\'s Breath**](https://youtu.be/jDN56HyXDOM \'Datto\' -Rahool)\n[**Xenophage**](https://youtu.be/1EGPjPkuE3k \'Datto\')\n[**Deathbringer**](https://youtu.be/t2ARvAJY8Ko \'Datto\')\n**__Season Exclusive__**\n**Eriana\'s Vow** -Rahool', inline: true },
 					{ name: '__**Shadowkeep Extras**__', value: '[**2.0 Spreadsheet**](http://bit.ly/30OutV7)\n[**Armor 2.0 Mods**](http://bit.ly/2Mig2DE)\n[**NASA Emblem**](https://youtu.be/0ApvCVp36rY \'Esoterickk\')\n[**Hunt Time-trials**](https://www.niris.tv/blog/nightmare-hunts \'Niris.tv\')', inline: true }
 				)
 				.setImage('https://i.ibb.co/g4QHn9z/ikora.png')
@@ -135,7 +135,7 @@ module.exports = {
 				.addFields(
 					{ name: '__**Web & In-game Lore**__', value: '[**The Accolade**](https://t.co/mBxGF75LXV)\n[**Vanguard Commander**](http://bit.ly/2Lvw6lL)\n[**The Sundial**](http://bit.ly/2RthEP0)\n[**Actions of Mutual Friends**](http://bit.ly/36dKzuw)\n[**Sisters**](http://bit.ly/34YoLmu)\n[**Desperate Times**](http://bit.ly/2qAe4rk)\n**The Pigeon and the Phoenix:**\nBastion Quest (S.10+)' },
 					{ name: '__**Season 9 EXCLUSIVE**(gone)__', value: '[**Lantern of Osiris**](https://youtu.be/QBRPLZfe15w \'Esoterickk\')\n[**Obelisks Breakdown**](https://youtu.be/CEtMyTxw-BU \'NinjaPups\')\n[**New Perks & Weapons**](https://youtu.be/nL6mqgReRJo \'NinjaPups\')\n[**Maximize Fractaline**](https://youtu.be/UhIlDiHoQqc \'Datto\')\n[**Corridors of Time**](https://youtu.be/55ecIgP9svc \'Esoterickk\')\n[**Vex Parts**](https://youtu.be/hPF72kbSbis \'Esoterickk\')\n[**Nessus Vex Transponders**](https://youtu.be/wzoOEHO-GFI \'Esoterickk\')\n[**Saint-14\'s Ghost**](https://youtu.be/6VuSosupArU \'Esoterickk\')\n**Constellations Lore Book:**\nComplete Sundial runs', inline: true },
-					{ name: '__**Season 9 Exotics**__', value: '[**Bastion**](https://youtu.be/f8Mz-0CMGdI \'Esoterickk\')\n**__Season Exclusive__**\n[**Devil\'s Ruin**](https://youtu.be/TUiPTr65S7c \'Esoterickk\')\n**Symmetry**', inline: true }
+					{ name: '__**Season 9 Exotics**__', value: '[**Bastion**](https://youtu.be/f8Mz-0CMGdI \'Esoterickk\') -Rahool\n**__Season Exclusive__**\n[**Devil\'s Ruin**](https://youtu.be/TUiPTr65S7c \'Esoterickk\') -Rahool\n**Symmetry** -Rahool', inline: true }
 				)
 				.setImage('https://i.ibb.co/Cz0349B/dawn.png')
 				.setFooter('Command: -g dawn');
@@ -194,6 +194,25 @@ module.exports = {
 				.setImage('https://i.ibb.co/k2X3xkV/extra2.png')
 				.setFooter('Command: -g extras');
 			message.channel.send(extras);
+			return;
+		}
+		if (args[0] === 'arrivals'){
+
+			const arrivals = new Discord.MessageEmbed()
+				.setColor('#545454')
+				.setTitle('Shadowkeep (Year 3)')
+				.setDescription('Season of Arrivals (S.11)\nJUN 09 - SEP 22')
+				.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfArrivals')
+				.setThumbnail('https://i.ibb.co/b7zjZzp/arrival-icon.png')
+				.addFields(
+					{ name: '__**Release Info**__', value: '[**Season Trailer**](https://youtu.be/5tJwLjVfFPc)\n[**BEYOND LIGHT Cinematic Trailer**](https://youtu.be/h-5S82ETKvI)\n[**BEYOND LIGHT Gameplay Trailer**](https://youtu.be/Ms90okhAbTw)\n[**Prophecy Dungeon Trailer**](https://youtu.be/ManQHg9_MiU)\n[**Past is Prologue**](https://youtu.be/HUfUiJ-qqV8)'},
+					{ name: '__**Seasonal Offerings Information**__', value: '[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Datto\'s Levelling Guide**](https://youtu.be/ENgt76PnI44 \'Datto\')\n[**Prophecy Dungeon Urns**](https://bit.ly/3fnOEBd \'reddit\')'},
+					{ name: '__**Season 11 Exotics**__', value: 'Witherhoard(GL) -Season Pass\nRuinous Effigy(Trace) -Unknown Quest\nTraveler\'s Chosen(Sidearm) -Unknown Quest'},
+					{ name: '__**Web & In-Game Lore**__', value: '[**FALSE IDOLS**](http://www.bungie.net/en/News/Article/49185)\n**The Singular Exegete** -Weekly Quest Completion\n**Duress and Egress** -unknown'}
+				)
+				.setImage('https://i.ibb.co/0jf7sNZ/arrivals.png')
+				.setFooter('Command: -g arrivals');
+			message.channel.send(arrivals);
 			return;
 		}
 	},

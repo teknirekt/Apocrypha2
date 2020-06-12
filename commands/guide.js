@@ -206,7 +206,7 @@ module.exports = {
 				.setThumbnail('https://i.ibb.co/b7zjZzp/arrival-icon.png')
 				.addFields(
 					{ name: '__**Release Info**__', value: '[**Season Trailer**](https://youtu.be/5tJwLjVfFPc)\n[**BEYOND LIGHT Cinematic Trailer**](https://youtu.be/h-5S82ETKvI)\n[**BEYOND LIGHT Gameplay Trailer**](https://youtu.be/Ms90okhAbTw)\n[**Prophecy Dungeon Trailer**](https://youtu.be/ManQHg9_MiU)\n[**Past is Prologue**](https://youtu.be/HUfUiJ-qqV8)'},
-					{ name: '__**Seasonal Offerings Information**__', value: '[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Datto\'s Levelling Guide**](https://youtu.be/ENgt76PnI44 \'Datto\')\n[**Prophecy Dungeon Urns**](https://bit.ly/3fnOEBd \'reddit\')'},
+					{ name: '__**Seasonal Offerings Information**__', value: '[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Datto\'s Levelling Guide**](https://youtu.be/ENgt76PnI44 \'Datto\')\n[**Prophecy Dungeon Urns**](https://youtu.be/HO7SfPHmCSA \'Esoterickk\')'},
 					{ name: '__**Season 11 Exotics**__', value: 'Witherhoard(GL) -Season Pass\nRuinous Effigy(Trace) -Unknown Quest\nTraveler\'s Chosen(Sidearm) -Unknown Quest'},
 					{ name: '__**Web & In-Game Lore**__', value: '[**FALSE IDOLS**](http://www.bungie.net/en/News/Article/49185)\n**The Singular Exegete** -Weekly Quest Completion\n**Duress and Egress** -unknown'}
 				)

@@ -23,14 +23,16 @@ module.exports = {
 				.addField('Account Created:', member.user.createdAt)
 				.addField('Joined Server:', `${member.joinedAt}`, true)
 				.addField('Online Status:', member.user.presence.status, true);
-			return message.channel.send(embed);
+			message.channel.send(embed);
+			return;
 		}
 		if (args[0] === role) {
 			const roleEmbed = new Discord.MessageEmbed()
 				.setTitle(`Information on ${role}`)
 				.setColor(role.color)
 				.addField('Current Members', role.map(member => member.displayName.toString()).join(' **|** ') ? member : 'none');
-			return message.channel.send(roleEmbed);
+			message.channel.send(roleEmbed);
+			return;
 		}
 	}
 };

@@ -38,7 +38,7 @@ module.exports = async (client, reaction, user) => {
 							.then(member.roles.remove(visitor));
 					}
 					if (role.name === 'XB1_EU' || role.name === 'PC_EU') {
-						member.setNickName(`[EU] ${member.displayName}`)
+						member.setNickname(`[EU] ${member.displayName}`)
 							.then(member.roles.remove(visitor));
 					}
 					if (reaction.message.embeds[0].title.includes('__Available Destiny 2 LFG Roles__')) {

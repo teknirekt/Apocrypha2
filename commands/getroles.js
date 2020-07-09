@@ -15,12 +15,13 @@ module.exports = {
 
 		const rolemenu = new Discord.MessageEmbed()
 			.setTitle(`Get new roles for ${message.guild.name}!`)
-			.setFooter('Select the corresponding reaction to continue.')
+			.setDescription('Select the corresponding emoji at the bottom to continue.')
+			.setFooter('↓↓↓Select emoji here.↓↓↓')
 			.setThumbnail('https://i.ibb.co/7kwjpRq/redactedpng.png')
 			.setColor('#ff7373')
 			.addFields([
-				{ name: '__**Available Menu Options**__', value: '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n*Note: region/platform required, others optional.*' },
-				{ name: '__**Spam Role (CAUTION)**__', value: '<:spam:615585267033702424> Spam, for **Club Afterdark**, **Reddit Memes** & More...\n(you\'ll want to mute channels here.)\nIf you want this role, grab it **first**.'},
+				{ name: '__**Main Menu Options**__', value: '🌐 Region & Platform(primary)\n🕹 Cross-Save\n<:destiny:688465591715102745> Destiny 2 LFG\n🎲 Other Games\n*Note: region/platform required, others optional.*' },
+				{ name: '__**Optional Roles(CAUTION)**__', value: '<:spam:615585267033702424> Spam, for **Club Afterdark**, **Reddit Memes** & More...\n(you\'ll want to mute channels here.)\n<:spoilers:730866951387217973> Spoilers, provides access to the spoiler channel.'},
 				{ name: '__**Additional Information**__', value: '*If you need to change your primary platform after it has been set, use the command modifier `-getroles reset` to change to the correct one.*' }
 			]);
 
@@ -30,10 +31,10 @@ module.exports = {
 
 		const region = new Discord.MessageEmbed(receivedEmbed)
 			.setTitle('__Supported Regions/Platforms__')
-			.setDescription('*Oceanic Region, PS4, or Stadia not supported.*')
+			.setDescription('*Oceanic Region, PS4, and Stadia are not supported.*')
 			.addFields([
-				{ name: '__**North American Region**__', value: '<:PC_NA:688503043561619491> Steam PC\n<:XB1_NA:688514143778635881> XBOX ONE' },
-				{ name: '__**European Union Region**__', value: '<:PC_EU:688503037894852697> Steam PC\n<:XB1_EU:688514142071816248> XBOX ONE' },
+				{ name: '__**US/CA Region**__', value: '<:PC_NA:688503043561619491> Steam PC\n<:XB1_NA:688514143778635881> XBOX ONE' },
+				{ name: '__**EU/UK Region**__', value: '<:PC_EU:688503037894852697> Steam PC\n<:XB1_EU:688514142071816248> XBOX ONE' },
 				{ name: '__**Additional Information**__', value: '*Note: If you select the incorrect region/platform, please remove the incorrect emoji first, then select the correct one afterwards while this menu is active.*'}
 			])
 			.setThumbnail('https://i.ibb.co/80htxGF/globe.png', true)
@@ -67,10 +68,10 @@ module.exports = {
 		const filter = (reaction, user) => ['🌐', '🕹', 'destiny', '🎲'].includes(reaction.emoji.name) && user.id === message.author.id;
 		
 		if (!message.member.roles.cache.some(r => ('RΞDΛCTΞD').includes(r.name))) {
-			message.channel.send('You must be a verified [RΞDΛCTΞD] member in order to use this command. If this is in error, please try again after a short time playing to update the API.')
+			message.channel.send('Charlemagne must first verify your clan affiliation before proceeding.\n*Please play for a short time to update the API.*\n\nIn the event this does not solve the issue, contact Teknirekt.')
 				.then(message => {
 					if (message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 20000 });
 					}
 				});
 			return;
@@ -108,11 +109,12 @@ module.exports = {
 				.then(() => message.react('🕹'))
 				.then(() => message.react(':destiny:688465591715102745'))
 				.then(() => message.react('🎲'))
-				.then(() => message.react(':spam:615585267033702424'));
+				.then(() => message.react(':spam:615585267033702424'))
+				.then(() => message.react(':spoilers:730866951387217973'));
 
 			message.awaitReactions(filter, {
 				max: 1,
-				time: 30000,
+				time: 40000,
 				error: ['time'],
 			}).then(collected => {
 

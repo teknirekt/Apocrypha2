@@ -206,9 +206,10 @@ module.exports = {
 				.setThumbnail('https://i.ibb.co/b7zjZzp/arrival-icon.png')
 				.addFields(
 					{ name: '__**Release Info**__', value: '[**Season Trailer**](https://youtu.be/5tJwLjVfFPc)\n[**BEYOND LIGHT Cinematic Trailer**](https://youtu.be/h-5S82ETKvI)\n[**BEYOND LIGHT Gameplay Trailer**](https://youtu.be/Ms90okhAbTw)\n[**Prophecy Dungeon Trailer**](https://youtu.be/ManQHg9_MiU)\n[**Past is Prologue**](https://youtu.be/HUfUiJ-qqV8)'},
-					{ name: '__**Seasonal Offerings Information**__', value: '[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Datto\'s Levelling Guide**](https://youtu.be/ENgt76PnI44 \'Datto\')\n[**Prophecy Dungeon Urns**](https://youtu.be/HO7SfPHmCSA \'Esoterickk\')'},
-					{ name: '__**Season 11 Exotics**__', value: 'Witherhoard(GL) -Season Pass\nRuinous Effigy(Trace) -Unknown Quest\nTraveler\'s Chosen(Sidearm) -Unknown Quest'},
-					{ name: '__**Web & In-Game Lore**__', value: '[**FALSE IDOLS**](http://www.bungie.net/en/News/Article/49185)\n**The Singular Exegete** -Weekly Quest Completion\n**Duress and Egress** -unknown'}
+					{ name: '__**Season Information**__', value: '[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Datto\'s Levelling Guide**](https://youtu.be/ENgt76PnI44 \'Datto\')', inline: true},
+					{ name: '__**Prophecy Dungeon**__', value: '[**"Urn It" Triumph**](https://youtu.be/HO7SfPHmCSA \'Esoterickk\')\n[**Dungeon Mechanics**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true},
+					{ name: '__**Season 11 Exotics**__', value: 'Witherhoard -Season Pass\n[**Ruinous Effigy**](https://youtu.be/kQ9zAkOLjxo \'Datto\')\n> [Calcified Light](https://youtu.be/PjKIlA0S0Ao \'Esoterickk\') - [Marionettes](https://youtu.be/dvJzOJobbq8 \'Esoterickk\') - [Catalyst](https://youtu.be/xe4oTjp7gHI \'Esoterickk\') - [Eyes](https://youtu.be/6F-h9gAsdwY \'Esoterickk\')\nTraveler\'s Chosen -Unknown Quest'},
+					{ name: '__**Web & In-Game Lore**__', value: '[**FALSE IDOLS**](http://www.bungie.net/en/News/Article/49185)\n**The Singular Exegete** -Weekly Interference Mission\n**Duress and Egress** -Exodus Quest'}
 				)
 				.setImage('https://i.ibb.co/0jf7sNZ/arrivals.png')
 				.setFooter('Command: -g arrivals');

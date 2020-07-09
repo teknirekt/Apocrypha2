@@ -28,7 +28,7 @@ module.exports = async (client, reaction, user) => {
 			return;
 		}
 		if (role.name === 'XB1_EU' || role.name === 'PC_EU') {
-			member.setNickName(`${member.user.username}`).then(member.roles.add(visitor))
+			member.setNickname(`${member.user.username}`).then(member.roles.add(visitor))
 				.then(member.roles.remove(role.id))
 				.then(() => reaction.message.channel.send(`**${member.displayName}**, you have been removed from the **${role.name}** role!`))
 				.then(message => {

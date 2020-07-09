@@ -104,21 +104,23 @@ module.exports = {
 					return;
 				} else {
 					
-					const fix = new Discord.MessageEmbed()
-						.setColor('#545454')
-						.setTitle('Shadowkeep (Year 3)')
-						.setDescription('Season of the Worthy (S.10)\nMAR 10 - JUN 09')
-						.setURL('https://www.bungie.net/7/en/Destiny/Shadowkeep')
-						.setThumbnail('https://i.ibb.co/ccy8WBZ/worthyicon.jpg')
-						.addFields(
-							{ name: '__**Season 10 Misc**__', value: '[**Warmind Khanjali**](https://youtu.be/Ogp_SAesYKE \'Esoterickk\') (S.10 Artifact)\n[**Season In-depth**](https://youtu.be/R14hd9gPgL8 \'Datto\')\n[**Warmind Mods**](https://youtu.be/rpaaDVl485s \'Datto\')\n[**Felwinter\'s Lie**](https://youtu.be/4Mhco2Bpaog \'Esoterickk\') (spoilers)'},
-							{ name: '__**Season 10 Exotics**__', value: 'Tommy\'s Matchbook (Season Pass)\n[**4th Horseman**](https://youtu.be/1-Morhzrsyg \'Esoterickk\')\nHier Apparent (GG Triumph) [**review**](https://youtu.be/_6XxmZc7EcU \'Aztecross\')'},
-							{ name: '__**Web & In-game Lore**__', value: '[**What Gives Me Pause**](http://bit.ly/32OybAX)\n[**Legacy**](http://bit.ly/3cN6InF)\n[**Legacy Pt.2**](http://bit.ly/2xwBOQn)\n[**Rememberance**](http://bit.ly/2TEjygj)\n[**Maint. Operations Log 30037**](http://bit.ly/39Sd2Iw)\n**Trials and Tribulations** -Trials\n**The Liar** - Felwinter\'s Lie kills' }
-						)
-						.setImage('https://i.ibb.co/vc6LfhG/worthy.png')
-						.setFooter('Command: -g worthy');
+				const fix = new Discord.MessageEmbed()
+				.setColor('#545454')
+				.setTitle('Shadowkeep (Year 3)')
+				.setDescription('Season of Arrivals (S.11)\nJUN 09 - SEP 22')
+				.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfArrivals')
+				.setThumbnail('https://i.ibb.co/b7zjZzp/arrival-icon.png')
+				.addFields(
+					{ name: '__**Release Info**__', value: '[**Season Trailer**](https://youtu.be/5tJwLjVfFPc)\n[**BEYOND LIGHT Cinematic Trailer**](https://youtu.be/h-5S82ETKvI)\n[**BEYOND LIGHT Gameplay Trailer**](https://youtu.be/Ms90okhAbTw)\n[**Prophecy Dungeon Trailer**](https://youtu.be/ManQHg9_MiU)\n[**Past is Prologue**](https://youtu.be/HUfUiJ-qqV8)'},
+					{ name: '__**Season Information**__', value: '[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Datto\'s Levelling Guide**](https://youtu.be/ENgt76PnI44 \'Datto\')', inline: true},
+					{ name: '__**Prophecy Dungeon**__', value: '[**"Urn It" Triumph**](https://youtu.be/HO7SfPHmCSA \'Esoterickk\')\n[**Dungeon Mechanics**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true},
+					{ name: '__**Season 11 Exotics**__', value: 'Witherhoard -Season Pass\n[**Ruinous Effigy**](https://youtu.be/kQ9zAkOLjxo \'Datto\')\n> [Calcified Light](https://youtu.be/PjKIlA0S0Ao \'Esoterickk\') - [Marionettes](https://youtu.be/dvJzOJobbq8 \'Esoterickk\') - [Catalyst](https://youtu.be/xe4oTjp7gHI \'Esoterickk\') - [Eyes](https://youtu.be/6F-h9gAsdwY \'Esoterickk\')\nTraveler\'s Chosen -Unknown Quest'},
+					{ name: '__**Web & In-Game Lore**__', value: '[**FALSE IDOLS**](http://www.bungie.net/en/News/Article/49185)\n**The Singular Exegete** -Weekly Interference Mission\n**Duress and Egress** -Exodus Quest'}
+				)
+				.setImage('https://i.ibb.co/0jf7sNZ/arrivals.png')
+				.setFooter('Command: -g arrivals');
 
-					fetched.edit(fix);
+					fetched.edit(fix).catch(console.error);
 				}
 			} else
 				fetched.edit(content).catch(console.error);

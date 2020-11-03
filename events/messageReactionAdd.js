@@ -7,6 +7,7 @@ module.exports = async (client, reaction, user) => {
 	const role = reaction.message.guild.roles.cache.find(role=> role.name.toLowerCase() === roleName.toLowerCase());
 	const member = reaction.message.guild.members.cache.find(member => member.id === user.id);
 	const visitor = member.guild.roles.cache.find(r => r.name === 'Visitor');
+	const write = member.guild.roles.cache.find(ch => ch.name === 'IronWolves');
 	const roleAssign = client.channels.cache.find(ch => ch.name === 'role_assign');
 
 	if (user.bot){
@@ -46,9 +47,13 @@ module.exports = async (client, reaction, user) => {
 					if (reaction.message.channel.name !== 'landing') {
 						message.delete({ timeout: 10000 });
 					}});
+			if (!member.roles.cache.has(write)) {
+				member.roles.add(write)
+			}
 			return;
 		}
 	}
+
 	if (!role || reaction.message.channel !== roleAssign) {
 		return;
 	}

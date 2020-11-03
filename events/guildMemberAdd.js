@@ -7,6 +7,7 @@ module.exports = async (client, member) => {
 	const intro = member.guild.roles.cache.find(r => r.name === 'Beginner');
 	const platform = member.guild.roles.cache.find(r => r.name === '=====|[ Clan Rank/Platform ]|=====');
 	const flairdiv = member.guild.roles.cache.find(r => r.name === '=====|[ Destiny2 Accolades ]|=====');
+	const accessdiv = member.guild.roles.cache.find(r => r.name === '=====|[ Server Access Level ]|=====');
 	
 	//CHANNELS
 	const landing = member.guild.channels.cache.find(ch => ch.name === 'landing');
@@ -85,7 +86,7 @@ module.exports = async (client, member) => {
 		.setTimestamp();
 	channel.send(welcome);
 	//ROLE ASSIGN
-	await member.roles.add([ platform, flairdiv, visitor, intro ])
+	await member.roles.add([ platform, flairdiv, visitor, intro, accessdiv ])
 		.catch(() => reportchannel.send(`I had an issue assigning roles to ${member.displayName}.`));
 	//WELCOME DM
 	await member.send(instructions).catch(() => reportchannel.send(`I was unable to send ${member.user.tag} the welcome DM.`));

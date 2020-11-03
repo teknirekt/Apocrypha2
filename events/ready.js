@@ -6,11 +6,7 @@ module.exports = (client) => {
 	console.log(`Logged in as ${client.user.username}!`);
 	setInterval(async () => {
 		const statuslist = [
-			'our clan. | Clanbot',
 			'-modmail',
-			'YOU. | Clanbot',
-			'the whispers on Io.',
-			'music w/ Rasputin.',
 			'rumors about SIVA.',
 			'tower comms.',
 			'Drifter\'s scams.',
@@ -27,19 +23,22 @@ module.exports = (client) => {
 			'Colonel peckin\'.',
 			'Shaxx shout a lot.',
 			'Benedict99-40.',
-			'Calus\'s entitlement.',
 			'Osiris\'s prophecies.',
 			'Riven\'s bargains.',
-			'Asher complain.',
-			'Ada-1\'s history.',
-			'Osiris\'s #1 fan...',
 			'Eris\'s vengeance.',
 			'Failsafe & Failsafe.',
 			'Spider\'s deals.',
 			'Saladin\'s praise.',
-			'██████',
 			'-donate',
-			'ṯ̵̟̰͙͈͉̞̇̌͋̐̋͘h̶̛̩̱͈̠̦̦͎̮̯̜͗̌́́ę̴̛̗̞̄͛͂̇͛̈́͐̽ ̸̧̡̙͇̙͈̱͋̂̈̇̊͂̈̚͠ͅH̴̖̿̓̏̾̐̒͋̎͘e̶͚͖͇̘̤̯̰̔̄ľ̶̨̨̮̺̰͇̉͒̕i̷̡̛͖͖̗̲̤̮̼̒̈̀̿͝ͅo̴͍̠͔͒̚͜p̴̡̝͇͚̗͓̠̆̆̄̂̐̚͝ͅa̵̰̝̿͌u̴̡̼̘̬͕͊̇͗ͅs̸̨̟͔͔̹̜̹̯͉̱̾̾̄̈́̚ȩ̶̝̠̝̠̱̘͖͈̀́̋͋̎́̊͜'
+			'ṯ̵̟̰͙͈͉̞̇̌͋̐̋͘h̶̛̩̱͈̠̦̦͎̮̯̜͗̌́́ę̴̛̗̞̄͛͂̇͛̈́͐̽ ̸̧̡̙͇̙͈̱͋̂̈̇̊͂̈̚͠ͅH̴̖̿̓̏̾̐̒͋̎͘e̶͚͖͇̘̤̯̰̔̄ľ̶̨̨̮̺̰͇̉͒̕i̷̡̛͖͖̗̲̤̮̼̒̈̀̿͝ͅo̴͍̠͔͒̚͜p̴̡̝͇͚̗͓̠̆̆̄̂̐̚͝ͅa̵̰̝̿͌u̴̡̼̘̬͕͊̇͗ͅs̸̨̟͔͔̹̜̹̯͉̱̾̾̄̈́̚ȩ̶̝̠̝̠̱̘͖͈̀́̋͋̎́̊͜',
+			'the Darkness.',
+			'the Collective.',
+			'the Winnower.',
+			'the Gardener.',
+			'-guide',
+			'the Crow.',
+			'to Shaw Han.',
+			'to Clovis secrets.'
 		];
 		const random = Math.floor(Math.random() * statuslist.length);
 		try {
@@ -56,22 +55,39 @@ module.exports = (client) => {
 		}
 	}, 30000);
 
-	//SIGNUP FETCHING LIVE
-// 	const live = client.guilds.cache.get('229275151437529088');
-// 	const pc = live.channels.cache.get('695319422088380447');
-// 	const xb = live.channels.cache.get('695319770697826304');
-// 	const errorChannel = live.channels.cache.get('658725873700175933');
+	// //SIGNUP FETCHING
+	const serverList = client.guilds.cache.map(g => g.id).join('\n');
+	const roles = client.channels.cache.find(ch => ch.name === 'role_assign');
+	const errorLog = client.channels.cache.find(ch => ch.name === 'errorlog');
+	
+	roles.messages.fetch({ limit: 5 })
+		.then(messages => console.log(`${messages.size} messages fetched for role asignment.`))
+		.catch(error => errorLog.send(`I was unable to fetch the role assignment messages. \nError: ${error}`));
 
-// 	//SIGNUP FETCHING BETA
-// 	// const beta = client.guilds.cache.get('569908733090594827');
-// 	// const pc = beta.channels.cache.get('693960008139931669');
-// 	// const xb = beta.channels.cache.get('693960342044409866');
-
-// 	pc.messages.fetch({ limit: 15 })
-// 		.then(messages => console.log(`${messages.size} messages fetched for PC Signups.`))
-// 		.catch(error => errorChannel.send(`I was unable to fetch the signup lists for \`PC\`. Error: ${error}.`));
-
-// 	xb.messages.fetch({ limit: 15 })
-// 		.then(messages => console.log(`${messages.size} messages fetched for XB1 Signups.`))
-// 		.catch(error => errorChannel.send(`I was unable to fetch the signup lists for \`XB1\`. Error: ${error}.`));
+	console.log(`Server List:\n${serverList}\n`);
 };
+
+	// 'YOU. | Clanbot',
+	// 'the whispers on Io.',
+	// 'music w/ Rasputin.',
+	// 'Asher complain.',
+	// 'Ada-1\'s history.',
+	// 'Osiris\'s #1 fan...',
+	// 'Calus\'s entitlement.',
+	// 'our clan. | Clanbot',
+	// '██████',
+
+	// if (!errorLog) {
+	// 	serverList.channels.create('errorlog', {
+	// 		type: 'text',
+	// 		topic: 'Apocrypha error logging.',
+	// 		reason: 'No errorlog present for Apocrypha.',
+	// 	})
+	// };
+	// if (!roles) {
+	// 	serverList.channels.create('role_assign', {
+	// 		type: 'text',
+	// 		topic: 'Get your server access here!.',
+	// 		reason: 'No role assignment channel present for Apocrypha.',
+	// 	})
+	// };

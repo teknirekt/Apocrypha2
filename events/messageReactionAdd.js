@@ -7,13 +7,12 @@ module.exports = async (client, reaction, user) => {
 	const role = reaction.message.guild.roles.cache.find(role=> role.name.toLowerCase() === roleName.toLowerCase());
 	const member = reaction.message.guild.members.cache.find(member => member.id === user.id);
 	const visitor = member.guild.roles.cache.find(r => r.name === 'Visitor');
-	const gamesdiv = member.guild.roles.cache.find(r => r.name === '=====|[ Misc. Games Played ]|=====');
-	const d2div = member.guild.roles.cache.find(r => r.name === '=====|[ Destiny 2 LFG Roles ]|=====');
+	const roleAssign = client.channels.cache.find(ch => ch.name === 'role_assign');
 
 	if (user.bot){
 		return;
 	}
-	if (role) {
+	if (reaction.message.channel === roleAssign && role) {
 		if (member.roles.cache.has(role.id)){
 			reaction.message.channel.send('I cannot add you to a role that you already have. However, selecting it again will remove the role.')
 				.then(message => {
@@ -22,8 +21,8 @@ module.exports = async (client, reaction, user) => {
 					}});
 			return;
 		}
-		if (member.displayName.startsWith('[') && reaction.message.embeds[0].title.includes('__Supported Regions/Platforms__')){
-			reaction.message.channel.send('You may only select one **primary** platform, *if you need to change it, re-select the incorrect one THEN select the correct emoji.*')
+		if (member.displayName.startsWith('[') && reaction.message.embeds[0].title.includes('Set your primary region/platform')){
+			reaction.message.channel.send('You may only select one **primary** platform, *if you need to change it, de-select __both emoji__, **THEN** select the correct emoji.*')
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
 						message.delete({ timeout: 10000 });
@@ -33,19 +32,13 @@ module.exports = async (client, reaction, user) => {
 		else {
 			member.roles.add(role.id)
 				.then(() => {
-					if (role.name === 'XB1_NA' || role.name === 'PC_NA') {
+					if (role.name === 'XB_NA' || role.name === 'PC_NA') {
 						member.setNickname(`[NA] ${member.displayName}`)
 							.then(member.roles.remove(visitor));
 					}
-					if (role.name === 'XB1_EU' || role.name === 'PC_EU') {
+					if (role.name === 'XB_EU' || role.name === 'PC_EU') {
 						member.setNickname(`[EU] ${member.displayName}`)
 							.then(member.roles.remove(visitor));
-					}
-					if (reaction.message.embeds[0].title.includes('__Available Destiny 2 LFG Roles__')) {
-						member.roles.add(d2div);
-					}
-					if (reaction.message.embeds[0].title.includes('__Currently Available Game Roles__')) {
-						member.roles.add(gamesdiv);
 					}
 				})
 				.then(() => reaction.message.channel.send(`**${member.displayName}** was added to the **${role.name}** role!`))
@@ -56,32 +49,8 @@ module.exports = async (client, reaction, user) => {
 			return;
 		}
 	}
-	if (!role) {
+	if (!role || reaction.message.channel !== roleAssign) {
 		return;
 	}
 
-	//SIGNUP SHEETS
-	// const normal = this.client.guilds.get('608709068776931328').emojis.get('623938733384663051');
-	// const heroic = this.client.guilds.get('608709068776931328').emojis.get('623938737021386762');
-	// const sherpa = this.client.guilds.get('608709068776931328').emojis.get('623938733431062528');
-	// const heroiclist = heroic.reaction.message.members.map(m => m.displayName).join('  **|**  ');
-	// const normallist = normal.reaction.message.members.map(m => m.displayName).join('  **|**  ');
-	// const sherpalist = sherpa.reaction.message.members.map(m => m.displayName).join('  **|**  ');
-
-	// const whisper = new RichEmbed()
-	// .setTitle('Signup Sheet:')
-	// .setDescription('Whisper of the Worm')
-	// .setImage('https://i.ibb.co/52DTqWf/whisper.png')
-	// .addField('<:normal:623938733384663051> Normal Mode', normallist ? normallist : 'none', true)
-	// .addField('<:heroic:623938737021386762> Heroic Mode', heroiclist ? heroiclist : 'none', true)
-	// .addField('<:sherpa:623938733431062528> Willing Sherpas', sherpalist ? sherpalist : 'none', false)
-	// .addFooter('Respond with the correct emoji to sign-up.');
-
-	// if (reaction.message.embeds[0].title.includes('Signup Sheet')) {
-	//     reaction.message.edit();
-	//     return;
-	// }
 };
-
-
-// UNFINISHED, NEEDS WORK. USE MESSAGE.EDIT TO BUILD SIGNUPS

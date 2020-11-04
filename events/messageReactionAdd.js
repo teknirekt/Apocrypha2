@@ -18,7 +18,7 @@ module.exports = async (client, reaction, user) => {
 			reaction.message.channel.send('I cannot add you to a role that you already have. However, selecting it again will remove the role.')
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 20000 });
 					}});
 			return;
 		}
@@ -26,7 +26,7 @@ module.exports = async (client, reaction, user) => {
 			reaction.message.channel.send('You may only select one **primary** platform, *if you need to change it, de-select __both emoji__, **THEN** select the correct emoji.*')
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 20000 });
 					}});
 			return;
 		}
@@ -45,7 +45,7 @@ module.exports = async (client, reaction, user) => {
 				.then(() => reaction.message.channel.send(`**${member.displayName}** was added to the **${role.name}** role!`))
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 30000 });
 					}});
 			if (!member.roles.cache.has(write)) {
 				member.roles.add(write)

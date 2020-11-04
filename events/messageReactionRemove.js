@@ -23,7 +23,7 @@ module.exports = async (client, reaction, user) => {
 				.then(() => reaction.message.channel.send(`**${member.displayName}**, you have been removed from the **${role.name}** role!`))
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 30000 });
 					}});
 			return;
 		}
@@ -33,7 +33,7 @@ module.exports = async (client, reaction, user) => {
 				.then(() => reaction.message.channel.send(`**${member.displayName}**, you have been removed from the **${role.name}** role!`))
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 30000 });
 					}});
 			return;
 		} else
@@ -41,7 +41,7 @@ module.exports = async (client, reaction, user) => {
 				.then(() => reaction.message.channel.send(`**${member.displayName}**, you have been removed from the **${role.name}** role!`))
 				.then(message => {
 					if (reaction.message.channel.name !== 'landing') {
-						message.delete({ timeout: 10000 });
+						message.delete({ timeout: 30000 });
 					}});
 		return;
 	}

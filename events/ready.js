@@ -37,8 +37,9 @@ module.exports = (client) => {
 			'the Gardener.',
 			'-guide',
 			'the Crow.',
-			'to Shaw Han.',
-			'to Clovis secrets.'
+			'Shaw Han.',
+			'Clovis secrets.',
+			'Distress Calls.'
 		];
 		const random = Math.floor(Math.random() * statuslist.length);
 		try {

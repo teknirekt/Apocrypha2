@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 
 module.exports = {
-	name: 'guide2',
+	name: 'guide',
 	args: true,
-	aliases: ['guides2', 'g2'],
+	aliases: ['guides', 'g'],
 	description: 'On-the-fly guide posting by expansion/season.',
 	usage: ['legacy | forsaken | shadowkeep | beyond etc..'],
 	category: 'general',

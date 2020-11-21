@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 
 module.exports = {
-	name: 'guide',
+	name: 'guideold',
 	args: true,
-	aliases: ['guides', 'g'],
-	description: 'On-the-fly guide posting by expansion/season.',
+	aliases: ['guidesold', 'gold'],
+	description: '[OUTDATED] On-the-fly guide posting by expansion/season.',
 	usage: ['newlight | forsaken | forge | drifter etc..'],
 	category: 'general',
 	async execute(message, args) {

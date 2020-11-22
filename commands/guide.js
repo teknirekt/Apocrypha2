@@ -80,9 +80,9 @@ module.exports = {
 			.addFields(
 				{ name: '__**General Info**__', value: '[**Leveling Guide**](https://youtu.be/KMHaq2sujZ0 \'Datto\')\n[**Exotic Kiosk**](https://youtu.be/MmHsfq3Z2zQ \'Datto\')\n[**New Exotic Armor**](https://youtu.be/6EnOZOc3C68 \'xHoundishx\')\n[**Upgrade Stasis**](https://youtu.be/1nqs0bBWCYg \'xHoundishx\')', inline: false },
 				{ name: '__**Europa Gear Chests**__', value: '[**Boots**](https://youtu.be/wNW5TLtp5zg \'Esoterickk\') **|** [**Gloves**](https://youtu.be/0zN_uO7rN7Y \'Esoterickk\')\n[**Chest**](https://youtu.be/r0aOI4UfeYE \'Esoterickk\') **|** [**Class**](https://youtu.be/a4II8tluE8Y \'Esoterickk\')\n[**Helmet**](https://youtu.be/KpKAWxtpfrk \'Esoterickk\')', inline: false },
-				{ name: '__**Exotic Quests**__', value: '[**Salvation\'s Grip**](https://youtu.be/kXzUyS8FZXs \'Datto\')\n**Lament** -Exo Frames\n**Cloudstrike** -unknown', inline: true },
-				{ name: '__**Beyond Light Extras**__', value: '[**Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n**Penguins** - [1](https://youtu.be/wsogtpKMsxQ) [2](https://youtu.be/UDvDF7KrSnA)\n[**Exo Frames**](https://youtu.be/K2Gd3LvH9og \'xHoundishx\')', inline: true },
-				{ name: '__**Deep Stone Crypt**__', value: '*pending guides*', inline: false},
+				{ name: '__**Exotic Quests**__', value: '[**Salvation\'s Grip**](https://youtu.be/kXzUyS8FZXs \'Datto\')\n[**Lament &**\n**Cloudstrike**](https://youtu.be/18efqWWLq8A \'Datto\')', inline: true },
+				{ name: '__**Beyond Light Extras**__', value: '[**Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n**Penguins** - [1](https://youtu.be/wsogtpKMsxQ \'Esoterickk\') [2](https://youtu.be/UDvDF7KrSnA \'Esoterickk\')\n[**Exo Frames**](https://youtu.be/K2Gd3LvH9og \'xHoundishx\')', inline: true },
+				{ name: '__**Deep Stone Crypt**__', value: '*pending guides, will update*\n[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**r/raidsecrets Guide**](https://www.reddit.com/r/raidsecrets/comments/jyf9af/deep_stone_crypt_raid_guide/ \'reddit\')', inline: false},
 				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n', inline: true },
 				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - ???*\nTBD', inline: true }
 			)

@@ -145,5 +145,18 @@ module.exports = {
 			.then(message.channel.send(beyond));
 			return;
 		}
-	},
+
+		if (args[0] === 'edit') {
+
+			const fetched = await message.channel.messages.fetch(args[1]);
+
+			if (message.channel.name === 'destiny_guides' && message.author.id !== '229060782065844224') {
+					message.channel.send('Nope, Sorry. Only Tek can do that.')
+						.then(message.delete({ timeout: 10000 }));
+					return;
+				} else {
+					fetched.edit(beyond).catch(console.error);
+			}
+		}		
+	}
 };

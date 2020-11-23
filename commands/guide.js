@@ -100,7 +100,7 @@ module.exports = {
 				{ name: '__**Exotic Quests**__', value: '[**Salvation\'s Grip**](https://youtu.be/kXzUyS8FZXs \'Datto\')\n[**Lament &**\n**Cloudstrike**](https://youtu.be/18efqWWLq8A \'Datto\')', inline: true },
 				{ name: '__**Beyond Light Extras**__', value: '[**Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n**Penguins** - [1](https://youtu.be/wsogtpKMsxQ \'Esoterickk\') [2](https://youtu.be/UDvDF7KrSnA \'Esoterickk\')\n[**Exo Frames**](https://youtu.be/uu-W653ZZBE \'Esoterickk\')\n[**Augmented Obsession**](https://youtu.be/L752JHcCGgc \'Esoterickk\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Deep Stone Crypt**__', value: '*videos pending*\n[**r/raidsecrets Guide**](https://www.reddit.com/r/raidsecrets/comments/jyf9af/deep_stone_crypt_raid_guide/ \'reddit\')', inline: true },
+				{ name: '__**Deep Stone Crypt**__', value: '*videos pending*\n[**Entrance/Security**](https://youtu.be/d7YtP9tRaFE \'Datto\')\n======\n[**r/raidsecrets Guide**](https://www.reddit.com/r/raidsecrets/comments/jyf9af/deep_stone_crypt_raid_guide/ \'reddit\')', inline: true },
 				{ name: '__**DSC Raid Extras**__', value: '[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'NinjaPups\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')', inline: true }
 			)
 			.setFooter('Command: -g beyond');

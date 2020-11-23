@@ -10,6 +10,11 @@ module.exports = {
 	async execute(message, args){
 
 		const taggedUser = message.mentions.members.first();
+		const landing = message.member.guild.channels.cache.find(ch => ch.name === 'landing');
+		const roleassign = message.member.guild.channels.cache.find(ch => ch.name === 'role_assign');
+		const rules = message.member.guild.channels.cache.find(ch => ch.name === 'faq_rules');
+		const warnchannel = message.guild.channels.cache.find(ch => ch.name === 'warnings');
+		const errorChannel = message.guild.channels.cache.find(ch => ch.name === 'errorlog');
 
 		const regEmbed = new Discord.MessageEmbed()
 			.setTitle(`Member Reminded: ${taggedUser.displayName}`)
@@ -40,10 +45,10 @@ module.exports = {
 			.setThumbnail(message.guild.iconURL())
 			.setDescription(`This is a \`REMINDER\` for ${message.guild.name}`)
 			.setColor('#3399ff')
-			.setFooter('Note: Removal will occur at reset if not addressed.')
+			.setFooter('Note: Removal will occur at reset if this is not addressed.')
 			.addFields([
 				{ name: '__**Moderator Responsible:**__', value: message.member.displayName },
-				{ name: '__**Reminder Reason:**__', value: 'You need to register and set your region/platform at your earliest convenience **prior** to reset on Tuesday. See instructions #1 through #3 in #landing for more information.' }
+				{ name: '__**Reminder Reason:**__', value: `You need to register with Charlemagne and set your **primary** region/platform at your earliest convenience, prior to weekly reset on Tuesday.\n\nSee ${landing} and ${roleassign} for instructions, ${rules} for requirements.\n\nThank you.` }
 			])
 			.setTimestamp();
             
@@ -52,10 +57,10 @@ module.exports = {
 			.setThumbnail(message.guild.iconURL())
 			.setDescription(`This is a \`REMINDER\` for ${message.guild.name}`)
 			.setColor('#399ff')
-			.setFooter('Note: Removal will occur at reset if not addressed.')
+			.setFooter('Note: Removal will occur at reset if this is not addressed.')
 			.addFields([
 				{ name: '__**Moderator Responsible:**__', value: message.member.displayName },
-				{ name: '__**Reminder Reason:**__', value: 'You need to set your region/platform at your earliest convenience **prior** to reset on Tuesday. See instruction #3 in #landing for more information.' }
+				{ name: '__**Reminder Reason:**__', value: `You need to set your **primary** region/platform at your earliest convenience, prior to weekly reset on Tuesday.\n\nSee ${landing} and ${roleassign} for instructions, ${rules} for requirements.\n\nThank you.` }
 			])
 			.setTimestamp();
 
@@ -64,10 +69,10 @@ module.exports = {
 			.setThumbnail(message.guild.iconURL())
 			.setDescription(`This is a \`REMINDER\` for ${message.guild.name}`)
 			.setColor('#399ff')
-			.setFooter('Note: Removal will occur at reset if not addressed.')
+			.setFooter('Note: Removal will occur at reset if this is not addressed.')
 			.addFields([
 				{ name: '__**Moderator Responsible:**__', value: message.member.displayName },
-				{ name: '__**Reminder Reason:**__', value: 'You have been sent this reminder due to inactivity beyond our allowed limit (14 or more days). Please correct this course of action before reset, or risk removal.' }
+				{ name: '__**Reminder Reason:**__', value: 'You have been sent this notice due to being inactive, __without prior notice__, for longer than our community allows. Please login and correct this issue at your next availability, prior to weekly reset.\n\nThank you.' }
 			])
 			.setTimestamp();
 
@@ -79,32 +84,32 @@ module.exports = {
 			.setColor('#3399ff')
 			.addFields([
 				{ name: '__**Moderator:**__', value: message.member.displayName },
-				{ name: '__**Reason for REMINDER:**__', value: 'Inactive beyond 14 days, warned of removal.' }
+				{ name: '__**Reason for REMINDER:**__', value: 'Inactive beyond 14 days without notice, warned of removal.' }
 			])
 			.setTimestamp();
 
-		const channel = message.guild.channels.cache.find(ch => ch.name === 'warnings');
+		//======END EMBEDS
 		
-		if (!channel) {
+		if (!warnchannel) {
 			return;
 		}
 		if (args[1] === 'register') {
 			await taggedUser.send(dmRegEmbed)
-				.catch(error => message.channel.send(`I was unable to notify the user because: ${error}`));
-			message.react(':check:609822544438231043');
-			channel.send(regEmbed).catch(console.error);
+				.catch(error => errorChannel.send(`I was unable to notify ${taggedUser.displayName} of the \`REMINDER\` due to: ${error}.`));
+			message.react(':check:780571017139453982');
+			warnchannel.send(regEmbed).catch(console.error);
 		}
 		if (args[1] === 'roles') {
 			await taggedUser.send(dmRoleEmbed)
-				.catch(error => message.channel.send(`I was unable to notify the user because: ${error}`));
-			message.react(':check:609822544438231043');
-			channel.send(roleEmbed).catch(console.error);
+				.catch(error => errorChannel.send(`I was unable to notify ${taggedUser.displayName} of the \`REMINDER\` due to: ${error}.`));
+			message.react(':check:780571017139453982');
+			warnchannel.send(roleEmbed).catch(console.error);
 		}
 		if (args[1] === 'inactive') {
 			await taggedUser.send(dmInEmbed)
-				.catch(error => message.channel.send(`I was unable to notify the user because: ${error}`));
-			message.react(':check:609822544438231043');
-			channel.send(inactiveEmbed).catch(console.error);
+				.catch(error => errorChannel.send(`I was unable to notify ${taggedUser.displayName} of the \`REMINDER\` due to: ${error}.`));
+			message.react(':check:780571017139453982');
+			warnchannel.send(inactiveEmbed).catch(console.error);
 		}
 	}
 };

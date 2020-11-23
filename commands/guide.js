@@ -43,6 +43,22 @@ module.exports = {
 			)
 			.setFooter('Command: -g legacy');
 
+		const expired = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('Expired Seasonal Content (Year 3)')
+			.setDescription('*Most of this content is no longer available.*')
+			.setURL('https://www.bungie.net/7/en/Seasons')
+			.setThumbnail('https://i.ibb.co/xHKzQcM/shadowkeep.jpg')
+			.addFields(
+				{ name: '__**Season of the Undying**__', value: '*Oct. 01 - Dec. 10*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheUndying)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Shadowkeep_Weblore)', inline: true },
+				{ name: '__**Season of Dawn**__', value: '*Dec. 10 - March 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfDawn)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_Dawn_Weblore)\n======\n[**New Perks & Weapons**](https://youtu.be/nL6mqgReRJo \'NinjaPups\')\n[**Corridors of Time**](https://youtu.be/55ecIgP9svc \'Esoterickk\')', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__**Season of Worthy**__', value: '*March 10 - June 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheWorthy)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Worthy_Weblore)\n======\n[**Season In-depth**](https://youtu.be/R14hd9gPgL8 \'Datto\')\n[**Warmind Mods**](https://youtu.be/rpaaDVl485s \'Datto\')', inline: true },
+				{ name: '__**Season of Arrivals**__', value: '*June 09 - Nov. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfArrivals)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_Arrivals_Weblore)\n======\n[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Prophecy Mechanics**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
+			)
+			.setImage('https://i.ibb.co/Cz2X8pH/retired.png')
+			.setFooter('Command -g expired');
+
 		const forsaken = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('Forsaken (Year 2)')
@@ -74,36 +90,37 @@ module.exports = {
 		const beyond = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('Beyond Light (Year 4)')
-			.setDescription('*This includes seasonal content.*')
+			.setDescription('*This just expansion content.*')
 			.setURL('https://www.bungie.net/7/en/Destiny/BeyondLight')
 			.setThumbnail('https://i.ibb.co/BtnGMCG/beyond.jpg')
 			.addFields(
-				{ name: '__**General Info**__', value: '[**Leveling Guide**](https://youtu.be/KMHaq2sujZ0 \'Datto\')\n[**Exotic Kiosk**](https://youtu.be/MmHsfq3Z2zQ \'Datto\')\n[**New Exotic Armor**](https://youtu.be/6EnOZOc3C68 \'xHoundishx\')\n[**Upgrade Stasis**](https://youtu.be/1nqs0bBWCYg \'xHoundishx\')\n[**2nd Aspect**](https://youtu.be/-Ci-QFjCxLo \'Esoterickk\')', inline: false },
-				{ name: '__**Europa Gear Chests**__', value: '[**Boots**](https://youtu.be/wNW5TLtp5zg \'Esoterickk\') **|** [**Gloves**](https://youtu.be/0zN_uO7rN7Y \'Esoterickk\')\n[**Chest**](https://youtu.be/r0aOI4UfeYE \'Esoterickk\') **|** [**Class**](https://youtu.be/a4II8tluE8Y \'Esoterickk\')\n[**Helmet**](https://youtu.be/KpKAWxtpfrk \'Esoterickk\')', inline: false },
+				{ name: '__**General Info**__', value: '[**Leveling Guide**](https://youtu.be/KMHaq2sujZ0 \'Datto\')\n[**Exotic Kiosk**](https://youtu.be/MmHsfq3Z2zQ \'Datto\')\n[**New Exotic Armor**](https://youtu.be/6EnOZOc3C68 \'xHoundishx\')\n[**Upgrade Stasis**](https://youtu.be/1nqs0bBWCYg \'xHoundishx\')\n[**2nd Aspect**](https://youtu.be/-Ci-QFjCxLo \'Esoterickk\')', inline: true },
+				{ name: '__**Europa Gear Chests**__', value: '[**Boots**](https://youtu.be/wNW5TLtp5zg \'Esoterickk\') **|** [**Gloves**](https://youtu.be/0zN_uO7rN7Y \'Esoterickk\')\n[**Chest**](https://youtu.be/r0aOI4UfeYE \'Esoterickk\') **|** [**Class**](https://youtu.be/a4II8tluE8Y \'Esoterickk\')\n[**Helmet**](https://youtu.be/KpKAWxtpfrk \'Esoterickk\')', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Exotic Quests**__', value: '[**Salvation\'s Grip**](https://youtu.be/kXzUyS8FZXs \'Datto\')\n[**Lament &**\n**Cloudstrike**](https://youtu.be/18efqWWLq8A \'Datto\')', inline: true },
-				{ name: '__**Beyond Light Extras**__', value: '[**Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n**Penguins** - [1](https://youtu.be/wsogtpKMsxQ \'Esoterickk\') [2](https://youtu.be/UDvDF7KrSnA \'Esoterickk\')\n[**Exo Frames**](https://youtu.be/uu-W653ZZBE \'Esoterickk\')', inline: true },
-				{ name: '__**Deep Stone Crypt**__', value: '*pending guides, will update*\n[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'Esoterickk\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')\n[**r/raidsecrets Guide**](https://www.reddit.com/r/raidsecrets/comments/jyf9af/deep_stone_crypt_raid_guide/ \'reddit\')', inline: false},
-				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - ???*\nTBD', inline: true }
+				{ name: '__**Beyond Light Extras**__', value: '[**Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n**Penguins** - [1](https://youtu.be/wsogtpKMsxQ \'Esoterickk\') [2](https://youtu.be/UDvDF7KrSnA \'Esoterickk\')\n[**Exo Frames**](https://youtu.be/uu-W653ZZBE \'Esoterickk\')\n[**Augmented Obsession**](https://youtu.be/L752JHcCGgc \'Esoterickk\')', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__**Deep Stone Crypt**__', value: '*videos pending*\n[**r/raidsecrets Guide**](https://www.reddit.com/r/raidsecrets/comments/jyf9af/deep_stone_crypt_raid_guide/ \'reddit\')', inline: true },
+				{ name: '__**DSC Raid Extras**__', value: '[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'NinjaPups\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')', inline: true }
 			)
 			.setFooter('Command: -g beyond');
-
-		const expired = new Discord.MessageEmbed()
-			.setColor('#545454')
-			.setTitle('Expired Seasonal Content (Year 3)')
-			.setDescription('*Most of this content is no longer available.*')
-			.setURL('https://www.bungie.net/7/en/Seasons')
-			.setThumbnail('https://i.ibb.co/xHKzQcM/shadowkeep.jpg')
-			.addFields(
-				{ name: '__**Season of the Undying**__', value: '*Oct. 01 - Dec. 10*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheUndying)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Shadowkeep_Weblore)', inline: true },
-				{ name: '__**Season of Dawn**__', value: '*Dec. 10 - March 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfDawn)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_Dawn_Weblore)\n======\n[**New Perks & Weapons**](https://youtu.be/nL6mqgReRJo \'NinjaPups\')\n[**Corridors of Time**](https://youtu.be/55ecIgP9svc \'Esoterickk\')', inline: true },
-				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Season of Worthy**__', value: '*March 10 - June 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheWorthy)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Worthy_Weblore)\n======\n[**Season In-depth**](https://youtu.be/R14hd9gPgL8 \'Datto\')\n[**Warmind Mods**](https://youtu.be/rpaaDVl485s \'Datto\')', inline: true },
-				{ name: '__**Season of Arrivals**__', value: '*June 09 - Nov. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfArrivals)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_Arrivals_Weblore)\n======\n[**Umbral Engram System**](https://youtu.be/pL8J6L-PP4Y \'xHoundishx\')\n[**Heroic "Contact" PE**](https://youtu.be/ibC58GezyoU \'Esoterickk\')\n[**Prophecy Mechanics**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
-			)
-			.setImage('https://i.ibb.co/Cz2X8pH/retired.png')
-			.setFooter('Command -g expired');
 		
+		const seasons4 = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('Year 4 Seasonal Content')
+			.setDescription('*This content is playable during Year4.*')
+			.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt')
+			.setThumbnail('https://i.ibb.co/RY3jjKM/hunticon.jpg')
+			.addFields(
+				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\nHawkmoon -TBD', inline: true },
+				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - ???*', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__**Season of [REDACTED]**__', value: '*??? - ???*', inline: true },
+				{ name: '__**Season of [REDACTED]**__', value: '*??? - ???*', inline: true }
+
+			)
+			.setFooter('Command -g seasons');
+
 		//========END EMBEDS
 
 		if (args[0] === 'extras'){
@@ -136,13 +153,19 @@ module.exports = {
 			return;
 		}
 
+		if (args[0] === 'season' || args[0] === 'seasons'){
+			message.channel.send(seasons4);
+			return;
+		}
+
 		if (args[0] === 'all' || args[0] === 'complete'){
 			message.channel.send(extras)
 			.then(message.channel.send(legacy))
 			.then(message.channel.send(expired))
 			.then(message.channel.send(forsaken))
 			.then(message.channel.send(shadowkeep))
-			.then(message.channel.send(beyond));
+			.then(message.channel.send(beyond))
+			.then(message.channel.send(seasons4));
 			return;
 		}
 
@@ -157,6 +180,19 @@ module.exports = {
 				} else {
 					fetched.edit(beyond).catch(console.error);
 			}
-		}		
+		}
+		
+		if (args[0] === 'edit2') {
+
+			const fetched = await message.channel.messages.fetch(args[1]);
+
+			if (message.channel.name === 'destiny_guides' && message.author.id !== '229060782065844224') {
+					message.channel.send('Nope, Sorry. Only Tek can do that.')
+						.then(message.delete({ timeout: 10000 }));
+					return;
+				} else {
+					fetched.edit(seasons4).catch(console.error);
+			}
+		}
 	}
 };

@@ -30,6 +30,14 @@ module.exports = async (client, reaction, user) => {
 					}});
 			return;
 		}
+		if (!member.displayName.startsWith('[') && reaction.message.embeds[0].title.includes('Optional roles')){
+			reaction.message.channel.send('This is menu #2. Please select your **primary platform** with menu #1 (top) before attempting to gain any of these roles.')
+				.then(message => {
+					if (reaction.message.channel.name !== 'landing') {
+						message.delete({ timeout: 20000 });
+					}});
+			return;
+		}
 		else {
 			member.roles.add(role.id)
 				.then(() => {

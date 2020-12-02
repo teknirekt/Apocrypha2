@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports = {
-	name: 'post',
+	name: 'postold',
 	category: 'mod',
 	description: 'Posts requested topic / information.',
 	examples: ['update | rule4'],

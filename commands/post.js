@@ -44,6 +44,7 @@ module.exports = {
 		if (args[0] === 'fix') {
 			const fetched = await weekly.messages.fetch(args[1]);
 				fetched.edit(update.content);
+			return;
 		}
 		if (args[0] === 'rule1') {
 			message.channel.send(rule1.content);

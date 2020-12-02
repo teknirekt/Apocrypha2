@@ -14,6 +14,7 @@ module.exports = {
 		//CHANNELS
 		const rules = live.channels.cache.get('635885093885575178');
 		const weekly = live.channels.cache.get('633746025022095362');
+		const announce = live.channels.cache.get('560827748424089610');
 
 		//MESSAGES
 		const join = await rules.messages.fetch('783497306812055563');
@@ -38,11 +39,11 @@ module.exports = {
 			return;
 		}
 		if (args[0] === 'update') {
-			weekly.send(update.content);
+			announce.send(update.content);
 			return;
 		}
 		if (args[0] === 'fix') {
-			const fetched = await weekly.messages.fetch(args[1]);
+			const fetched = await announce.messages.fetch(args[1]);
 				fetched.edit(update.content);
 			return;
 		}

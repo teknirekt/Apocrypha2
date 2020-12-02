@@ -16,7 +16,7 @@ module.exports = {
 		const weekly = live.channels.cache.get('633746025022095362');
 
 		//MESSAGES
-		const join = await bLanding.messages.fetch('610725013300969491');
+		const join = await rules.messages.fetch('783497306812055563');
 		const update = await weekly.messages.fetch('633746699806048257');
 		const rule1 = await rules.messages.fetch('690618458886373376');
 		const rule2 = await rules.messages.fetch('690618509193117737');

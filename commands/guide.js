@@ -96,7 +96,7 @@ module.exports = {
 			.addFields(
 				{ name: '__**General Info**__', value: '[**Leveling Guide**](https://youtu.be/KMHaq2sujZ0 \'Datto\')\n[**Exotic Kiosk**](https://youtu.be/MmHsfq3Z2zQ \'Datto\')\n[**Upgrade Stasis**](https://youtu.be/1nqs0bBWCYg \'xHoundishx\')\n[**2nd Aspect**](https://youtu.be/-Ci-QFjCxLo \'Esoterickk\')\n[**New Exotic Armor**](https://youtu.be/6EnOZOc3C68 \'xHoundishx\')', inline: true },
 				{ name: '__**Europa Gear Chests**__', value: '[**Boots**](https://youtu.be/wNW5TLtp5zg \'Esoterickk\') **|** [**Gloves**](https://youtu.be/0zN_uO7rN7Y \'Esoterickk\')\n[**Chest**](https://youtu.be/r0aOI4UfeYE \'Esoterickk\') **|** [**Class**](https://youtu.be/a4II8tluE8Y \'Esoterickk\')\n[**Helmet**](https://youtu.be/KpKAWxtpfrk \'Esoterickk\')', inline: true },
-				{ name: '__**Exotic Quests**__', value: '[**Salvation\'s Grip**](https://youtu.be/kXzUyS8FZXs \'Datto\')\n[**Lament &**\n**Cloudstrike**](https://youtu.be/18efqWWLq8A \'Datto\')\n**Hawkmoon:**\n[Feathers](https://youtu.be/3QjBFlPe8tA \'Esoterickk\')\n[Reddit Guide](https://www.reddit.com/r/raidsecrets/comments/k99gei/hawkmoon_quest_likely_live/ \'raidsecrets\')', inline: true },
+				{ name: '__**Exotic Quests**__', value: '[**Salvation\'s Grip**](https://youtu.be/kXzUyS8FZXs \'Datto\')\n[**Lament &**\n**Cloudstrike**](https://youtu.be/18efqWWLq8A \'Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Augmented Obsession**__', value: '[**Riis-Reborn**](https://youtu.be/L752JHcCGgc \'Esoterickk\')\n[**Nexus**](https://youtu.be/KiLRVHdFWD0 \'Esoterickk\')\n[**Bray Exoscience**](https://youtu.be/QjsQVdlaYf4 \'Esoterickk\')\n[**Technocrat\'s Iron**](https://youtu.be/1vSogg4K_Wo \'Esoterickk\')\nEternity\nCreation\nKell\'s Rising\nWell of Infinitude', inline: true },
 				{ name: '__**Beyond Light Extras**__', value: '[**All Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n**Penguins** - [1](https://youtu.be/wsogtpKMsxQ \'Esoterickk\') [2](https://youtu.be/UDvDF7KrSnA \'Esoterickk\') [3](https://youtu.be/Iuwx4HTQrv4 \'Esoterickk\') [4](https://youtu.be/xnQjYlN_hf4 \'Esoterickk\') [5](https://youtu.be/BNGMoCwsRoY \'Esoterickk\')\n[**All Exo Frames**](https://youtu.be/uu-W653ZZBE \'Esoterickk\')', inline: true },
@@ -113,7 +113,7 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt')
 			.setThumbnail('https://i.ibb.co/RY3jjKM/hunticon.jpg')
 			.addFields(
-				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\nHawkmoon -TBD', inline: true },
+				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n**Hawkmoon:**\n[Feathers](https://youtu.be/3QjBFlPe8tA \'Esoterickk\')\n[Reddit Guide](https://www.reddit.com/r/raidsecrets/comments/k99gei/hawkmoon_quest_likely_live/ \'raidsecrets\')', inline: true },
 				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - ???*', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Season of [REDACTED]**__', value: '*??? - ???*', inline: true },

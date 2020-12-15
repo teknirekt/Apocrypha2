@@ -113,7 +113,7 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt')
 			.setThumbnail('https://i.ibb.co/RY3jjKM/hunticon.jpg')
 			.addFields(
-				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')', inline: true },
+				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n[**The Dawning**](https://www.reddit.com/r/raidsecrets/comments/kdi8ig/dawning_2020_recipes_flavours_from_dtg_sub/ \'reddit\')', inline: true },
 				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - ???*', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Season of [REDACTED]**__', value: '*??? - ???*', inline: true },

@@ -113,11 +113,11 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt')
 			.setThumbnail('https://i.ibb.co/RY3jjKM/hunticon.jpg')
 			.addFields(
-				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n======\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n**The Dawning**\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - ???*', inline: true },
+				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n**The Dawning**\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n[**Harbinger Mission**](https://youtu.be/aLWrOI6G42Q \'xHoundishx\')\n[**Harbinger Feathers**](https://youtu.be/NmdTwmw28KU \'Esoterickk\')', inline: true },
+				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - May ???*\n*estimated*', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Season of [REDACTED]**__', value: '*??? - ???*', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '*??? - ???*', inline: true }
+				{ name: '__**Season of [REDACTED]**__', value: '*May ??? - Aug ???*\n*estimated*', inline: true },
+				{ name: '__**Season of [REDACTED]**__', value: '*Aug ??? - Nov ???*\n*estimated*', inline: true }
 
 			)
 			.setFooter('Command -g seasons');

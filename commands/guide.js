@@ -111,10 +111,10 @@ module.exports = {
 			.setTitle('Year 4 Seasonal Content')
 			.setDescription('*This content is playable during Year4.*')
 			.setURL('https://www.bungie.net/7/en/Seasons')
-			.setThumbnail('https://i.ibb.co/zZ9WQPR/season13.png')
+			.setThumbnail('https://i.ibb.co/Jkv6BKW/season13.png')
 			.addFields(
 				{ name: '__**Season of the Hunt**__', value: '[*Nov. 10 - Feb. 09*](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt \'Info Page\')\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore \'destinypedia\')\n**The Dawning**(expired)\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n[**Harbinger Mission**](https://youtu.be/aLWrOI6G42Q \'xHoundishx\')\n[**Harbinger Feathers**](https://youtu.be/NmdTwmw28KU \'Esoterickk\')', inline: true },
-				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'Info Page\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Chosen_Weblore \'destinypedia\')\nStasis Aspect\nBattlegrounds\nGuardian Games\n**Exotics**\nTex Mechanica Exotic', inline: true },
+				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'Info Page\')\n[**pre-Season Prep**](https://youtu.be/dDqvhmvPb38 \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Chosen_Weblore \'destinypedia\')\n**Guardian Games**\nStasis Aspect\n**Battlegrounds**\nBehemoth **|** Hailstone\nCleansing **|** Oracle\n**Exotics**\nTex Mechanica Exotic', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Season of [REDACTED]**__', value: '*May 11 - Aug 10?*\n*estimated*', inline: true },
 				{ name: '__**Season of [REDACTED]**__', value: '*Aug 10? - Nov 09?*\n*estimated*', inline: true }

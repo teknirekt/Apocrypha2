@@ -102,7 +102,7 @@ module.exports = {
 				{ name: '__**Beyond Light Extras**__', value: '[**All Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n[**All Penguins**](https://youtu.be/c8gMlEe6UVk \'Esoterickk\')\n[**All Exo Frames**](https://youtu.be/uu-W653ZZBE \'Esoterickk\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Deep Stone Crypt**__', value: '[**Entrance/Security**](https://youtu.be/d7YtP9tRaFE \'Datto\')\n[**Atraks-1**](https://youtu.be/pN7Qj0j28qk \'Datto\')\n[**The Abomination pt.1&2**](https://youtu.be/ZX28ltKT1V8 \'Datto\')\n[**All Raid Challenges**](https://youtu.be/-jqEEyd6kdU \'Datto\')', inline: true },
-				{ name: '__**DSC Raid Extras**__', value: '[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'NinjaPups\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')\n[**Encounter Maps**](https://imgur.com/gallery/jj8eYvC)', inline: true }
+				{ name: '__**DSC Raid Extras**__', value: '[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'NinjaPups\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')\n[**Encounter Maps**](https://imgur.com/gallery/jj8eYvC \'imgbb\')\n[**Loot Table**](https://i.ibb.co/m83bv05/cryptloot.png \'imgbb\')', inline: true }
 			)
 			.setFooter('Command: -g beyond');
 		
@@ -110,14 +110,14 @@ module.exports = {
 			.setColor('#545454')
 			.setTitle('Year 4 Seasonal Content')
 			.setDescription('*This content is playable during Year4.*')
-			.setURL('https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt')
-			.setThumbnail('https://i.ibb.co/RY3jjKM/hunticon.jpg')
+			.setURL('https://www.bungie.net/7/en/Seasons')
+			.setThumbnail('https://i.ibb.co/zZ9WQPR/season13.png')
 			.addFields(
-				{ name: '__**Season of the Hunt**__', value: '*Nov. 10 - Feb. 09*\n[**Info Page**](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt)\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore)\n**The Dawning**\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n[**Harbinger Mission**](https://youtu.be/aLWrOI6G42Q \'xHoundishx\')\n[**Harbinger Feathers**](https://youtu.be/NmdTwmw28KU \'Esoterickk\')', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '*Feb. 09 - May ???*\n*estimated*', inline: true },
+				{ name: '__**Season of the Hunt**__', value: '[*Nov. 10 - Feb. 09*](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt \'Info Page\')\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore \'destinypedia\')\n**The Dawning**(expired)\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n[**Harbinger Mission**](https://youtu.be/aLWrOI6G42Q \'xHoundishx\')\n[**Harbinger Feathers**](https://youtu.be/NmdTwmw28KU \'Esoterickk\')', inline: true },
+				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'Info Page\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Chosen_Weblore \'destinypedia\')\nStasis Aspect\nBattlegrounds\nGuardian Games\n**Exotics**\nTex Mechanica Exotic', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Season of [REDACTED]**__', value: '*May ??? - Aug ???*\n*estimated*', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '*Aug ??? - Nov ???*\n*estimated*', inline: true }
+				{ name: '__**Season of [REDACTED]**__', value: '*May 11 - Aug 10?*\n*estimated*', inline: true },
+				{ name: '__**Season of [REDACTED]**__', value: '*Aug 10? - Nov 09?*\n*estimated*', inline: true }
 
 			)
 			.setFooter('Command -g seasons');

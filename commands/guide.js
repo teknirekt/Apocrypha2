@@ -114,10 +114,10 @@ module.exports = {
 			.setThumbnail('https://i.ibb.co/Jkv6BKW/season13.png')
 			.addFields(
 				{ name: '__**Season of the Hunt**__', value: '[*Nov. 10 - Feb. 09*](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt \'bungie.net\')\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore \'destinypedia\')\n**The Dawning**(expired)\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n**Harbinger Feathers**\n**[wk1](https://youtu.be/NmdTwmw28KU \'Esoterickk\') | [wk2](https://youtu.be/S-qFxiG96Ng \'Esoterickk\') | [wk3](https://youtu.be/6_BtZRLnfiU \'Esoterickk\')**', inline: true },
-				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'bungie.net\')\n[**First Impressions**](https://youtu.be/c3nRl3PYLfI \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Chosen_Weblore \'destinypedia\')\n**Guardian Games**\n[**Aspect of Influence**](https://youtu.be/dwGfZYA2k54 \'Esoterickk\')\n**Exotics**\n[**Dead Man\'s Tale**](https://youtu.be/WqTbe87ZuYc \'Datto\')\n**Presage Secrets**\n[**Figments of an Answer**](https://youtu.be/32CKFh--rDY \'Esoterickk\')', inline: true },
+				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'bungie.net\')\n[**First Impressions**](https://youtu.be/c3nRl3PYLfI \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Chosen_Weblore \'destinypedia\')\n[**Aspect of Influence**](https://youtu.be/dwGfZYA2k54 \'Esoterickk\')\n**Exotics**\n[**Dead Man\'s Tale**](https://youtu.be/WqTbe87ZuYc \'Datto\')\n*Heroic for catalyst*\n**Presage Secrets**\n[**Triumphs & Caches**](https://youtube.com/playlist?list=PLCe_gQqZx8OFAM0YHFts4f2VGZBd_6AvF \'Esoterickk\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Season of [REDACTED]**__', value: '*May 11 - Aug 10?*\n*estimated*', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '*Aug 10? - Nov 09?*\n*estimated*', inline: true }
+				{ name: '__**Season of [REDACTED]**__', value: '[*May 11 - Aug 24?*](https://data.destinysets.com/i/Season:2809059429)\n*estimated*', inline: true },
+				{ name: '__**Season of [REDACTED]**__', value: '[*Aug 24? - 2022?*](https://data.destinysets.com/i/Season:2809059428)\n*estimated*', inline: true }
 
 			)
 			.setFooter('Command -g seasons');

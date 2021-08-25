@@ -21,7 +21,7 @@ module.exports = {
 			.setThumbnail('https://i.ibb.co/wYvZtB4/DStiq-SBWs-AAIM7-C.jpg')
 			.addFields(
 				{ name: '__**Reddit Sources**__', value: '[**r/DestinyTheGame**](https://www.reddit.com/r/DestinyTheGame/) -General Info\n[**r/RaidSecrets**](https://www.reddit.com/r/raidsecrets/) -Spoiler Heavy\n[**r/CruciblePlaybook**](https://new.reddit.com/r/CruciblePlaybook/) -Everything PVP\n[**r/GambitPlaybook**](https://www.reddit.com/r/GambitPlaybook/) -Everything Gambit\n[**r/DestinyLore**](https://www.reddit.com/r/DestinyLore/) -Everything Lore' },
-				{ name: '__**Websites**__', value: '[**DestinyItemManager(DIM)**](https://app.destinyitemmanager.com/)\n[**Destiny Sets**](https://destinysets.com/)\n[**Light.gg**](https://light.gg/)\n[**Braytech.org**](https://braytech.org/)\n[**Where\'s Xur?**](https://ftw.in/game/destiny-2/find-xur)\n[**D2 Gunsmith**](https://d2gunsmith.com/)', inline: true },
+				{ name: '__**Websites**__', value: '[**DestinyItemManager(DIM)**](https://app.destinyitemmanager.com/)\n[**Destiny Sets**](https://destinysets.com/)\n[**Light.gg**](https://light.gg/)\n[**Braytech.org**](https://braytech.org/)\n[**Where\'s Xur?**](https://wherethefuckisxur.com)\n[**D2 Gunsmith**](https://d2gunsmith.com/)', inline: true },
 				{ name: '__**Mobile Apps & Misc**__', value: '[**Redrix**](https://redrix.io/) 📱\n[**God Roll Spreadsheet**](https://bit.ly/3bmIsHz)\n[**Sunset Cleaner**](https://destinyrecipes.com/vault)\n[**Roll Appraisal**](https://www.light.gg/god-roll/roll-appraiser/)', inline: true },
 				{ name: '__**Soundboards**__', value: '[**Shaxx Soundboard**](https://evilarceus.github.io/Destiny2-Soundboard/#)\n[**Drifter Soundboard**](https://d2.asun.co/drifter/)' }
 			)
@@ -111,18 +111,30 @@ module.exports = {
 			.setTitle('Year 4 Seasonal Content')
 			.setDescription('*This content is playable during Year4.*')
 			.setURL('https://www.bungie.net/7/en/Seasons')
-			.setThumbnail('https://i.ibb.co/LzTjK5j/season14.png')
+			.setThumbnail('https://i.ibb.co/mHbPVmw/season15.png')
 			.addFields(
 				{ name: '__**Season of the Hunt**__', value: '[*Nov. 10 - Feb. 09*](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt \'bungie.net\')\n[**First Impressions**](https://youtu.be/0iuk2sK3Zws \'Datto\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore \'destinypedia\')\n**The Dawning**(expired)\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n**Harbinger Feathers**\n**[wk1](https://youtu.be/NmdTwmw28KU \'Esoterickk\') | [wk2](https://youtu.be/S-qFxiG96Ng \'Esoterickk\') | [wk3](https://youtu.be/6_BtZRLnfiU \'Esoterickk\')**', inline: true },
 				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'bungie.net\')\n[**First Impressions**](https://youtu.be/c3nRl3PYLfI \'Datto\')\n[**Aspect of Influence**](https://youtu.be/dwGfZYA2k54 \'Esoterickk\')\n**Exotics**\n[**Dead Man\'s Tale**](https://youtu.be/WqTbe87ZuYc \'Datto\')\n*Heroic for catalyst*\n**Presage Secrets**\n[**Triumphs & Caches**](https://youtube.com/playlist?list=PLCe_gQqZx8OFAM0YHFts4f2VGZBd_6AvF \'Esoterickk\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Vault of Glass**__', value: '*free to all players*\n[**Templar Encounters**](https://youtu.be/BM688RORcOQ \'Datto\')\n[**Gatekeeper/Atheon**](https://youtu.be/vBYPSZotwkU \'Datto\')\n**Encounter Maps**\n[**Oracles**](https://i.ibb.co/K7mNqSG/oracles.png \'imgbb\')\n[**Gorgon\'s Maze**](https://i.ibb.co/hFhQt5B/gorgonmaze.png \'imgbb\')\n[**Atheon Oracles**](https://i.ibb.co/qrM2GVX/atheon.webp \'imgbb\')', inline: true  },
-				{ name: '__**Vault of Glass - Extras**__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')', inline: true },
+				{ name: '__**Vault of Glass - Extras**__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Season of the Splicer**__', value: '[*May 11 - Aug 24*](https://www.bungie.net/7/en/Seasons/SeasonOfTheSplicer \'bungie.net\')\n[**First Impressions**](https://youtu.be/t9EWF22iI5U \'Datto\')\n[**Aspect of Interference**](https://youtu.be/tR5hs6dwf6g \'Esoterickk\')\n**Exotics**\n*Coming Soon*\n**Secrets**\n[**Eliksni Quarter**](https://youtu.be/pjSLde3hzOY \'Esoterickk\')', inline: true },
-				{ name: '__**Season of [REDACTED]**__', value: '[*Aug 24 - 2022?*](https://data.destinysets.com/i/Season:2809059428)\n*estimated*', inline: true }
+				{ name: '__**Season of the Splicer**__', value: '[*May 11 - Aug 24*](https://www.bungie.net/7/en/Seasons/SeasonOfTheSplicer \'bungie.net\')\n[**First Impressions**](https://youtu.be/t9EWF22iI5U \'Datto\')\n[**Aspect of Interference**](https://youtu.be/tR5hs6dwf6g \'Esoterickk\')\n**Secrets**\n[**Eliksni Quarter**](https://youtu.be/pjSLde3hzOY \'Esoterickk\')\n[**Seasonal Story**](https://youtube.com/playlist?list=PLCe_gQqZx8OEMW7H1n0PsGIVsINmTBpz7 \'Esoterickk\')', inline: true },
+				{ name: '__**Season of the Lost**__', value: '[*Aug 24 - Feb 22*](https://data.destinysets.com/i/Season:2809059428)\n**Tracing the Stars [1](https://youtu.be/uExW-nLI4-M \'Esoterickk\')**\n[**Wayfinder\'s Compass**](https://youtu.be/jvTrAMx4mv4 \'xHoundishx\')', inline: true }
 			)
 			.setFooter('Command -g seasons');
+
+			const witchqueen = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('The Witch Queen (Year 5)')
+			.setDescription('*This is just expansion conent.*')
+			.setURL('https://www.bungie.net/7/en/Destiny/WitchQueen')
+			.setThumbnail('https://i.ibb.co/DzKYZ9B/witchqueen.png')
+			.addFields(
+				{ name: '__**What we know.**__', value: '[**Reveal Trailer**](https://youtu.be/P0IlFZ61734 \'Bungie\')\n[**Gameplay Trailer**](https://youtu.be/1bkKwhMgI6s \'Bungie\')\n[**Bungie Showcase**](https://youtu.be/ktTfzug0Qbc?t=4283 \'Bungie\')', inline: true },
+				{ name: 'Truth, is a funny thing.', value: 'Does it live in the world,\n..or in the mind?\nIs it constant,\n..or can it be bent?\nWho decides what is true\nin this universe of Light and Dark?\nThere is no greater power.\nTell me, Little Light..\n**What is your Truth now?**', inline: true }
+			)
+			.setFooter('Command: -g witch');
 
 		//========END EMBEDS
 
@@ -158,6 +170,11 @@ module.exports = {
 
 		if (args[0] === 'season' || args[0] === 'seasons'){
 			message.channel.send(seasons4);
+			return;
+		}
+
+		if (args[0] === 'witch' || args[0] === 'year5'){
+			message.channel.send(witchqueen);
 			return;
 		}
 

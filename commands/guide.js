@@ -127,7 +127,7 @@ module.exports = {
 			const witchqueen = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('The Witch Queen (Year 5)')
-			.setDescription('*This is just expansion conent.*')
+			.setDescription('*This is just expansion content.*')
 			.setURL('https://www.bungie.net/7/en/Destiny/WitchQueen')
 			.setThumbnail('https://i.ibb.co/DzKYZ9B/witchqueen.png')
 			.addFields(

@@ -55,8 +55,8 @@ module.exports = (client) => {
 			'the Witch Queen.',
 			'the Truth.',
 			'Savathûn\'s lies.',
-			'Petra\'s caution.',
-			''
+			'Petra\'s caution.'
+			
 			
 		];
 		const random = Math.floor(Math.random() * statuslist.length);

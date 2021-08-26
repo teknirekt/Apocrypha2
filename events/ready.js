@@ -85,5 +85,5 @@ module.exports = (client) => {
 
 	console.log(`Server List:\n${serverList}\n`);
 	errorLog.send(`${client.user.username} bot has restarted and is **ONLINE**.`)
-	.catch(error => console.log(error);
+	.catch(error => console.log(error));
 };

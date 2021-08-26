@@ -47,7 +47,17 @@ module.exports = (client) => {
 			'Clarity Control.',
 			'Savathûn\'s Song.',
 			'The Entity.',
-			'Music of the Spheres.'
+			'Lakshmi\'s Rhetoric.',
+			'Edo\'s tales.',
+			'Mithrax\'s splicers.',
+			'Savathûn\'s Song.',
+			'giant Exo heads.',
+			'the Witch Queen.',
+			'the Truth.',
+			'Savathûn\'s lies.',
+			'Petra\'s caution.',
+			''
+			
 		];
 		const random = Math.floor(Math.random() * statuslist.length);
 		try {
@@ -73,34 +83,7 @@ module.exports = (client) => {
 		.then(messages => console.log(`${messages.size} messages fetched for role asignment.`))
 		.catch(error => errorLog.send(`I was unable to fetch the role assignment messages. \nError: ${error}`));
 
-	console.log(`Server List:\n${serverList}\n`)
-	errorLog.send(`${client.user.username} bot has restarted and is **ONLINE**.`);
+	console.log(`Server List:\n${serverList}\n`);
+	errorLog.send(`${client.user.username} bot has restarted and is **ONLINE**.`)
+	.catch(error => console.log(error);
 };
-
-	// '-donate',
-	// 'Colonel peckin\'.',
-	// 'Benedict99-40.',
-	// 'YOU. | Clanbot',
-	// 'the whispers on Io.',
-	// 'music w/ Rasputin.',
-	// 'Asher complain.',
-	// 'Ada-1\'s history.',
-	// 'Osiris\'s #1 fan...',
-	// 'Calus\'s entitlement.',
-	// 'our clan. | Clanbot',
-	// '██████',
-
-	// if (!errorLog) {
-	// 	serverList.channels.create('errorlog', {
-	// 		type: 'text',
-	// 		topic: 'Apocrypha error logging.',
-	// 		reason: 'No errorlog present for Apocrypha.',
-	// 	})
-	// };
-	// if (!roles) {
-	// 	serverList.channels.create('role_assign', {
-	// 		type: 'text',
-	// 		topic: 'Get your server access here!.',
-	// 		reason: 'No role assignment channel present for Apocrypha.',
-	// 	})
-	// };

@@ -73,7 +73,8 @@ module.exports = (client) => {
 		.then(messages => console.log(`${messages.size} messages fetched for role asignment.`))
 		.catch(error => errorLog.send(`I was unable to fetch the role assignment messages. \nError: ${error}`));
 
-	console.log(`Server List:\n${serverList}\n`);
+	console.log(`Server List:\n${serverList}\n`)
+	errorLog.send(`${client.user.username} bot has restarted and is **ONLINE**.`);
 };
 
 	// '-donate',

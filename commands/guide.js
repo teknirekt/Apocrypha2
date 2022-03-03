@@ -122,7 +122,41 @@ module.exports = {
 				{ name: '__**Season of the Splicer**__', value: '[*May 11 - Aug 24*](https://www.bungie.net/7/en/Seasons/SeasonOfTheSplicer \'bungie.net\')\n[**Aspect of Interference**](https://youtu.be/tR5hs6dwf6g \'Esoterickk\')\n**Secrets**\n[**Eliksni Quarter**](https://youtu.be/pjSLde3hzOY \'Esoterickk\')\n[**Seasonal Story**](https://youtube.com/playlist?list=PLCe_gQqZx8OEMW7H1n0PsGIVsINmTBpz7 \'Esoterickk\')', inline: true },
 				{ name: '__**Season of the Lost**__', value: '[*Aug 24 - Feb 22*](https://www.bungie.net/7/en/Seasons/SeasonOfTheLost)\n**Exotics\n[Ager\'s Scepter](https://youtu.be/c0b0TpZbtfs \'Esoterickk\')\nSecrets\n[Shattered Realm Items](https://youtu.be/RK9gSf58bC8 \'Esoterickk\')\nPatrol Anchors\n[EDZ](https://youtu.be/-kqH1gLTyNQ \'Esoterickk\') | [Shore](https://youtu.be/oXCHWjKEXpU \'Esoterickk\') | [Moon](https://youtu.be/K4UD0FcHfL0 \'Esoterickk\')\n[Seasonal Story](https://youtube.com/playlist?list=PLCe_gQqZx8OEKoHiitlPi577zh6Sh0Csa \'YouTube Playlist\')**', inline: true }
 			)
-			.setFooter('Command -g seasons');
+			.setFooter('Command -g y4seasons');
+
+			const dungeons = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('Destiny 2 Dungeons')
+			.setDescription('*This is info on all available dungeons.*')
+			.setURL('https://www.bungie.net/7/en/Destiny/NewLight')
+			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/082c3d5e7a44343114b5d056c3006e4b.png')
+			.addFields(
+				{ name: '__Shattered Throne__', value: '[**Basic How-to**](https://youtu.be/xWDOnB6HLWI \'Datto\')\n[**Solo Walk-through**](https://youtu.be/e0C5WAx1Fwk \'Pyro\')', inline: true},
+				{ name: '__Pit of Heresy__', value: '[**Walk-through**](https://youtu.be/_mqPAOSg-64 \'Datto\') [🗺](https://i.ibb.co/fxQkTcY/HERESY-2.jpg \'Ogre Area\') [🗺](https://i.ibb.co/bmqtL1t/WMDLx83.png \'The Harrow\')\n[**PoH Solo/Flawless**](https://youtu.be/9SHm-kbUFkc \'NinjaPups\')', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__Prophecy__', value: '[**Walk-through**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
+				{ name: '__Grasp of Avarice__', value: '[**Walk-through**](https://youtu.be/2yAldSinpss \'FalloutPlays\')\n[**Wilheim-7\'s Messages**](https://youtu.be/ZPKoGLLJylU \'Esoterickk\')', inline: true }
+			)
+			.setFooter('comand: -g dungeons');
+
+			const raids = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('Destiny 2 Raids')
+			.setDescription('*Raids require yearly expansions to access.*')
+			.setURL('https://www.bungie.net')
+			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/8b1bfd1c1ce1cab51d23c78235a6e067.png')
+			.addFields(
+				{ name: '__Last Wish__', value: '*Forsaken Pack*\n[**Kalli, the Corrupted**](https://youtu.be/mj6qnB1g7nU \'Datto\')\n[**Shuro Chi, the Corrupted**](https://youtu.be/bBjwtzkE_Kw \'Datto\')\n[**Morgeth, the Spirekeeper**](https://youtu.be/4xTXWzvLEkA \'Datto\')\n[**The Vault**](https://youtu.be/hRpWfYKGPJ8 \'Datto\') [🗺](https://i.ibb.co/xqrDbG7/lwcallouts.jpg \'Callouts Image\')\n[**Riven, of 1k Voices**](https://youtu.be/LLmMrdACQC4 \'Datto\') [🗺](https://i.ibb.co/1MsK11j/Riven-Eyes.png \'OG Eyes\')\n[**Queen\'s Walk**](https://i.ibb.co/8rnzXVT/queenswalk.png \'imgbb\')\n[**Loot Table**](https://i.ibb.co/JKKPXpW/lastwishdrops.jpg \'imgbb\')', inline: true },
+				{ name: '__Garden of Salvation__', value: '*Shadowkeep*\n[**The Consecrated Mind**](https://youtu.be/gBNVvlycPVY \'Datto\') [🗺](https://i.ibb.co/1nMngYr/encounter-3.jpg \'2nd & 3rd\') [🗺](https://i.ibb.co/PmHr3qG/encounter-2-3.png \'Eyes\')\n[**The Sanctified Mind**](https://youtu.be/3uQbsLr5vn0 \'Datto\') [🗺](https://i.ibb.co/TBNpXm6/final.png \'Final Encounter\')\n[**Loot Table**](https://i.ibb.co/25Fm3X5/gosloot.png \'imgbb\')', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__Deepstone Crypt__', value: '*Beyond Light*\n[**Entrance/Security**](https://youtu.be/d7YtP9tRaFE \'Datto\')\n[**Atraks-1**](https://youtu.be/pN7Qj0j28qk \'Datto\')\n[**The Abomination pt.1&2**](https://youtu.be/ZX28ltKT1V8 \'Datto\')\n[**All Raid Challenges**](https://youtu.be/-jqEEyd6kdU \'Datto\')', inline: true },
+				{ name: '__DSC Extras__', value: '[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'NinjaPups\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')\n[**Encounter Maps**](https://imgur.com/gallery/jj8eYvC \'imgbb\')\n[**Loot Table**](https://i.ibb.co/m83bv05/cryptloot.png \'imgbb\')', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__Vault of Glass__', value: '*Free for all players*\n[**Templar Encounters**](https://youtu.be/BM688RORcOQ \'Datto\')\n[**Gatekeeper/Atheon**](https://youtu.be/vBYPSZotwkU \'Datto\')\n**Encounter Maps**\n[**Oracles**](https://i.ibb.co/K7mNqSG/oracles.png \'imgbb\')\n[**Gorgon\'s Maze**](https://i.ibb.co/hFhQt5B/gorgonmaze.png \'imgbb\')\n[**Atheon Oracles**](https://i.ibb.co/qrM2GVX/atheon.webp \'imgbb\')', inline: true },
+				{ name: '__VoG Extras__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
+				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\nMore info coming soon™.', inline: false }
+			)
+			.setFooter('command: -g raids');
 
 			const witchqueen = new Discord.MessageEmbed()
 			.setColor('#545454')
@@ -131,10 +165,28 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Destiny/WitchQueen')
 			.setThumbnail('https://i.ibb.co/DzKYZ9B/witchqueen.png')
 			.addFields(
-				{ name: '__**What we know.**__', value: '[**Reveal Trailer**](https://youtu.be/P0IlFZ61734 \'Bungie\')\n[**Gameplay Trailer**](https://youtu.be/1bkKwhMgI6s \'Bungie\')\n[**Bungie Showcase**](https://youtu.be/ktTfzug0Qbc?t=4283 \'Bungie\')', inline: true },
-				{ name: 'Truth, is a funny thing.', value: 'Does it live in the world,\n..or in the mind?\nIs it constant,\n..or can it be bent?\nWho decides what is true\nin this universe of Light and Dark?\nThere is no greater power.\nTell me, Little Light..\n**What is your Truth now?**', inline: true }
+				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
+				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Glaive(s) Prep](https://youtu.be/luLeDwENcnI \'xHOUNDISHx\')**', inline: true },
+				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
+				{ name: '__Vow of the Disciple__', value: '*Coming Soon™*', inline: true },
+				{ name: '__VotD Extras__', value: '*Coming Soon™*', inline: true }
 			)
 			.setFooter('Command: -g witch');
+
+			const seasons5 = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('Year 5 Seasonal Content')
+			.setDescription('*This content is playable during Year 5.*')
+			.setURL('https://www.bungie.net/7/en/Seasons')
+			.setThumbnail('https://i.ibb.co/0C8PB6Z/d2y5.png')
+			.addFields(
+				{ name: '__**Season of the Risen**__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Storyline](https://www.youtube.com/playlist?list=PLCe_gQqZx8OH3tc80GRFyFUv9U4IBEYJe \'yt(various)\')**', inline: true },
+				{ name: '__**Season of █████**__', value: '*May 24 - ???*', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__**Season of █████**__', value: '*??? - ???*', inline: true },
+				{ name: '__**Season of █████**__', value: '*??? - ???*', inline: true }
+			)
+			.setFooter('Command -g y5seasons');
 
 		//========END EMBEDS
 
@@ -159,8 +211,8 @@ module.exports = {
 		}
 
 		if (args[0] === 'beyond' || args[0] === 'year4'){
-				message.channel.send(beyond);
-				return;
+			message.channel.send(beyond);
+			return;
 		}
 
 		if (args[0] === 'expired' || args[0] === 'inactive'){
@@ -168,8 +220,23 @@ module.exports = {
 			return;
 		}
 
-		if (args[0] === 'season' || args[0] === 'seasons'){
+		if (args[0] === 'y4season' || args[0] === 'y4seasons'){
 			message.channel.send(seasons4);
+			return;
+		}
+
+		if (args[0] === 'y5season' || args[0] === 'y5seasons'){
+			message.channel.send(seasons5);
+			return;
+		}
+
+		if (args[0] === 'dungeons' || args[0] === 'dungeon'){
+			message.channel.send(dungeons);
+			return;
+		}
+
+		if (args[0] === 'raids' || args[0] === 'raid'){
+			message.channel.send(raids);
 			return;
 		}
 
@@ -183,7 +250,7 @@ module.exports = {
 			return;
 		}
 
-		if (args[0] === 'edit') {
+		if (args[0] === 'wcedit') {
 
 			const fetched = await message.channel.messages.fetch(args[1]);
 
@@ -192,11 +259,11 @@ module.exports = {
 						.then(message.delete({ timeout: 10000 }));
 					return;
 				} else {
-					fetched.edit(beyond).catch(console.error);
+					fetched.edit(witchqueen).catch(console.error);
 			}
 		}
 		
-		if (args[0] === 'edit2') {
+		if (args[0] === 'y5edit') {
 
 			const fetched = await message.channel.messages.fetch(args[1]);
 
@@ -205,7 +272,20 @@ module.exports = {
 						.then(message.delete({ timeout: 10000 }));
 					return;
 				} else {
-					fetched.edit(seasons4).catch(console.error);
+					fetched.edit(seasons5).catch(console.error);
+			}
+		}
+
+		if (args[0] === 'raidedit') {
+
+			const fetched = await message.channel.messages.fetch(args[1]);
+
+			if (message.channel.name === 'destiny_guides' && message.author.id !== '229060782065844224') {
+					message.channel.send('Nope, Sorry. Only Tek can do that.')
+						.then(message.delete({ timeout: 10000 }));
+					return;
+				} else {
+					fetched.edit(raids).catch(console.error);
 			}
 		}
 	}

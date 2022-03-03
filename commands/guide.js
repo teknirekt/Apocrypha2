@@ -62,11 +62,10 @@ module.exports = {
 		const forsaken = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('Forsaken (Year 2)')
-			.setDescription('*This is ACTIVE content only.*')
+			.setDescription('*Some of this content has been removed.*')
 			.setURL('https://www.bungie.net/7/en/Destiny/Forsaken')
 			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/6394ba870887c8361fca4bcb0b91264c.png')
 			.addFields(
-				{ name: '__**Last Wish Raid**__', value: '[**Kalli, the Corrupted**](https://youtu.be/mj6qnB1g7nU \'Datto\')\n[**Shuro Chi, the Corrupted**](https://youtu.be/bBjwtzkE_Kw \'Datto\')\n[**Morgeth, the Spirekeeper**](https://youtu.be/4xTXWzvLEkA \'Datto\')\n[**The Vault**](https://youtu.be/hRpWfYKGPJ8 \'Datto\') [🗺](https://i.ibb.co/xqrDbG7/lwcallouts.jpg \'Callouts Image\')\n[**Riven of A Thousand Voices**](https://youtu.be/LLmMrdACQC4 \'Datto\') [🗺](https://i.ibb.co/1MsK11j/Riven-Eyes.png \'OG Eyes\')\n[**Queen\'s Walk**(image)](https://i.ibb.co/8rnzXVT/queenswalk.png)\n[**Loot Table**(image)](https://i.ibb.co/JKKPXpW/lastwishdrops.jpg)' },
 				{ name: '__**Forsaken Exotics**__', value: '[**Wishender**](https://youtu.be/u7TsLMQ7sW4 \'Datto\')\n[**Malfeasance**](https://youtu.be/fLzyp8W7tN0 \'Datto\')\n[**Corrupted Eggs**](https://youtu.be/G8p9IcoTEYY \'NinjaPups\')', inline: true },
 				{ name: '__**Misc Extras**__', value: '[**Cat Statues**](https://youtu.be/iw46L-xnYns \'NinjaPups\')\n[**Solo Shattered Throne**](https://youtu.be/e0C5WAx1Fwk \'Pyro\')\n[**Wall of Wishes**](https://idleanimation.com/last-wish-plates \'IdleAnimation\')', inline: true }
 			)
@@ -79,8 +78,6 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Destiny/Shadowkeep')
 			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/e162742a72895355d1a2d7a2fbc73188.png')
 			.addFields(
-				{ name: '__**Garden of Salvation**__', value: '[**The Consecrated Mind**](https://youtu.be/gBNVvlycPVY \'Datto\') [🗺](https://i.ibb.co/1nMngYr/encounter-3.jpg \'2nd & 3rd\') [🗺](https://i.ibb.co/PmHr3qG/encounter-2-3.png \'Eyes\')\n[**The Sanctified Mind**](https://youtu.be/3uQbsLr5vn0 \'Datto\') [🗺](https://i.ibb.co/TBNpXm6/final.png \'Final Encounter\')\n[**Loot Table**(image)](https://i.ibb.co/25Fm3X5/gosloot.png)', inline: true },
-				{ name: '__**Pit of Heresy**__', value: '[**How-to**](https://youtu.be/_mqPAOSg-64 \'Datto\') [🗺](https://i.ibb.co/fxQkTcY/HERESY-2.jpg \'Ogre Area\') [🗺](https://i.ibb.co/bmqtL1t/WMDLx83.png \'The Harrow\')\n[**PoH Solo/Flawless**](https://youtu.be/9SHm-kbUFkc \'NinjaPups\')', inline: true },
 				{ name: '__**Lectern Charms**__', value: '[**Ethereal Charm**](https://youtu.be/ZEdxdr-ykoQ \'Esoterickk\')\n[**Horned Wreath**](https://youtu.be/mu_XJlC6yEE0 \'Esoterickk\')\n[**Captive Cord**](https://youtu.be/gNedr6dG4-g \'Esoterickk\')\n[**Bound Manacles**](https://youtu.be/yAHtHQgBH9g \'Esoterickk\')\n[**Necromantic Strand**](https://youtu.be/m4JEdQRu19w \'Esoterickk\')\n[**Withered Plumes**](https://youtu.be/nCPQJeNgpec \'Esoterickk\')\n[**Ralniks\'s Hatchet**](https://youtu.be/MN-tndUEgVY \'Esoterickk\')\n[**Fangs of Shun\'Gath**](https://youtu.be/-iKUXdZWEfE \'Esoterickk\')\n[**Ehrath\'Ur\'s Wreath**](https://youtu.be/55L2uMcAVsc \'Esoterickk\')' },
 				{ name: '__**Shadowkeep Exotics**__', value: '[**Divinity**](https://youtu.be/2IQ6M43gEus \'Datto\')\n[**Xenophage**](https://youtu.be/1EGPjPkuE3k \'Datto\')\n[**Deathbringer**](https://youtu.be/t2ARvAJY8Ko \'Datto\')', inline: true },
 				{ name: '__**Shadowkeep Extras**__', value: '[**NASA Emblem**](https://youtu.be/0ApvCVp36rY \'Esoterickk\')\n[**Hunt Time-trials**](https://www.niris.tv/blog/nightmare-hunts \'Niris.tv\')', inline: true }
@@ -100,24 +97,18 @@ module.exports = {
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Augmented Obsession**__', value: '[**Riis-Reborn** *(Riis)*](https://youtu.be/L752JHcCGgc \'Esoterickk\')\n[**Technocrat\'s Iron** *(Riis)*](https://youtu.be/1vSogg4K_Wo \'Esoterickk\')\n[**Kell\'s Rising** *(Riis)*](https://youtu.be/0QYBFZfrfg0 \'Esoterickk\')\n[**Nexus** *(Vex)*](https://youtu.be/KiLRVHdFWD0 \'Esoterickk\')\n[**Well of Infinitude** *(Vex)*](https://youtu.be/O74R7ide_Ok \'Esoterickk\')\n[**Creation** *(Bray)*](https://youtu.be/V4T-oRbf7Zc \'Esoterickk\')\n[**Bray Exoscience** *(Bray)*](https://youtu.be/QjsQVdlaYf4 \'Esoterickk\')\n[**Eternity** *(Bray)*](https://youtu.be/xCTC75LXQvQ \'Esoterickk\')', inline: true },
 				{ name: '__**Beyond Light Extras**__', value: '[**All Entropic Shards**](https://youtu.be/qR7_yCjMw6w \'Esoterickk\')\n[**All Penguins**](https://youtu.be/c8gMlEe6UVk \'Esoterickk\')\n[**All Exo Frames**](https://youtu.be/uu-W653ZZBE \'Esoterickk\')', inline: true },
-				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Deep Stone Crypt**__', value: '[**Entrance/Security**](https://youtu.be/d7YtP9tRaFE \'Datto\')\n[**Atraks-1**](https://youtu.be/pN7Qj0j28qk \'Datto\')\n[**The Abomination pt.1&2**](https://youtu.be/ZX28ltKT1V8 \'Datto\')\n[**All Raid Challenges**](https://youtu.be/-jqEEyd6kdU \'Datto\')', inline: true },
-				{ name: '__**DSC Raid Extras**__', value: '[**First Hidden Chest**](https://youtu.be/89X6QNZOfSs \'Esoterickk\')\n[**Exotic Raid Ghost**](https://youtu.be/N_qWFV2o-X8 \'NinjaPups\')\n[**Exotic Raid Sparrow**](https://youtu.be/aK9QJlRZrR4 \'NinjaPups\')\n[**Encounter Maps**](https://imgur.com/gallery/jj8eYvC \'imgbb\')\n[**Loot Table**](https://i.ibb.co/m83bv05/cryptloot.png \'imgbb\')', inline: true }
 			)
 			.setFooter('Command: -g beyond');
 		
 		const seasons4 = new Discord.MessageEmbed()
 			.setColor('#545454')
-			.setTitle('Year 4 Seasonal Content')
-			.setDescription('*This content is playable during Year4.*')
+			.setTitle('Year 4 EXPIRED Seasonal Content')
+			.setDescription('*This content is no longer playable.*')
 			.setURL('https://www.bungie.net/7/en/Seasons')
 			.setThumbnail('https://i.ibb.co/mHbPVmw/season15.png')
 			.addFields(
 				{ name: '__**Season of the Hunt**__', value: '[*Nov. 10 - Feb. 09*](https://www.bungie.net/7/en/Seasons/SeasonOfTheHunt \'bungie.net\')\n[**WEB LORE**](https://www.destinypedia.com/Weblore#Season_of_the_Hunt_Weblore \'destinypedia\')\n**The Dawning**(expired)\n[**Recipes**](https://i.ibb.co/tpHGt0n/Xfh7EVH.png \'imgbb\') **|** [**Ingredients**](https://i.ibb.co/kJzz0Lb/eptGJKA.png \'imgbb\')\n**Exotics**\n[**Hawkmoon**](https://youtu.be/98GoP7gBbNk \'Datto\')\n**Harbinger Feathers**\n**[wk1](https://youtu.be/NmdTwmw28KU \'Esoterickk\') | [wk2](https://youtu.be/S-qFxiG96Ng \'Esoterickk\') | [wk3](https://youtu.be/6_BtZRLnfiU \'Esoterickk\')**', inline: true },
 				{ name: '__**Season of the Chosen**__', value: '[*Feb. 09 - May 11*](https://www.bungie.net/7/en/Seasons/SeasonOfTheChosen \'bungie.net\')\n[**Aspect of Influence**](https://youtu.be/dwGfZYA2k54 \'Esoterickk\')\n**Exotics**\n[**Dead Man\'s Tale**](https://youtu.be/WqTbe87ZuYc \'Datto\')\n*Heroic for catalyst*\n**Presage Secrets**\n[**Triumphs & Caches**](https://youtube.com/playlist?list=PLCe_gQqZx8OFAM0YHFts4f2VGZBd_6AvF \'Esoterickk\')', inline: true },
-				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Vault of Glass**__', value: '*free to all players*\n[**Templar Encounters**](https://youtu.be/BM688RORcOQ \'Datto\')\n[**Gatekeeper/Atheon**](https://youtu.be/vBYPSZotwkU \'Datto\')\n**Encounter Maps**\n[**Oracles**](https://i.ibb.co/K7mNqSG/oracles.png \'imgbb\')\n[**Gorgon\'s Maze**](https://i.ibb.co/hFhQt5B/gorgonmaze.png \'imgbb\')\n[**Atheon Oracles**](https://i.ibb.co/qrM2GVX/atheon.webp \'imgbb\')', inline: true  },
-				{ name: '__**Vault of Glass - Extras**__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Season of the Splicer**__', value: '[*May 11 - Aug 24*](https://www.bungie.net/7/en/Seasons/SeasonOfTheSplicer \'bungie.net\')\n[**Aspect of Interference**](https://youtu.be/tR5hs6dwf6g \'Esoterickk\')\n**Secrets**\n[**Eliksni Quarter**](https://youtu.be/pjSLde3hzOY \'Esoterickk\')\n[**Seasonal Story**](https://youtube.com/playlist?list=PLCe_gQqZx8OEMW7H1n0PsGIVsINmTBpz7 \'Esoterickk\')', inline: true },
 				{ name: '__**Season of the Lost**__', value: '[*Aug 24 - Feb 22*](https://www.bungie.net/7/en/Seasons/SeasonOfTheLost)\n**Exotics\n[Ager\'s Scepter](https://youtu.be/c0b0TpZbtfs \'Esoterickk\')\nSecrets\n[Shattered Realm Items](https://youtu.be/RK9gSf58bC8 \'Esoterickk\')\nPatrol Anchors\n[EDZ](https://youtu.be/-kqH1gLTyNQ \'Esoterickk\') | [Shore](https://youtu.be/oXCHWjKEXpU \'Esoterickk\') | [Moon](https://youtu.be/K4UD0FcHfL0 \'Esoterickk\')\n[Seasonal Story](https://youtube.com/playlist?list=PLCe_gQqZx8OEKoHiitlPi577zh6Sh0Csa \'YouTube Playlist\')**', inline: true }
@@ -168,8 +159,6 @@ module.exports = {
 				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
 				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Glaive(s) Prep](https://youtu.be/luLeDwENcnI \'xHOUNDISHx\')**', inline: true },
 				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
-				{ name: '__Vow of the Disciple__', value: '*Coming Soon™*', inline: true },
-				{ name: '__VotD Extras__', value: '*Coming Soon™*', inline: true }
 			)
 			.setFooter('Command: -g witch');
 
@@ -286,6 +275,19 @@ module.exports = {
 					return;
 				} else {
 					fetched.edit(raids).catch(console.error);
+			}
+		}
+
+		if (args[0] === 'dungeondit') {
+
+			const fetched = await message.channel.messages.fetch(args[1]);
+
+			if (message.channel.name === 'destiny_guides' && message.author.id !== '229060782065844224') {
+					message.channel.send('Nope, Sorry. Only Tek can do that.')
+						.then(message.delete({ timeout: 10000 }));
+					return;
+				} else {
+					fetched.edit(dungeons).catch(console.error);
 			}
 		}
 	}

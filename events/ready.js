@@ -50,7 +50,6 @@ module.exports = (client) => {
 			'Lakshmi\'s Rhetoric.',
 			'Edo\'s tales.',
 			'Mithrax\'s splicers.',
-			'Savathûn\'s Song.',
 			'giant Exo heads.',
 			'the Witch Queen.',
 			'the Truth.',

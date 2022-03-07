@@ -126,7 +126,7 @@ module.exports = {
 				{ name: '__Pit of Heresy__', value: '[**Walk-through**](https://youtu.be/_mqPAOSg-64 \'Datto\') [🗺](https://i.ibb.co/fxQkTcY/HERESY-2.jpg \'Ogre Area\') [🗺](https://i.ibb.co/bmqtL1t/WMDLx83.png \'The Harrow\')\n[**PoH Solo/Flawless**](https://youtu.be/9SHm-kbUFkc \'NinjaPups\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__Prophecy__', value: '[**Walk-through**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
-				{ name: '__Grasp of Avarice__', value: '[**Walk-through**](https://youtu.be/2yAldSinpss \'FalloutPlays\')\n[**Wilheim-7\'s Messages**](https://youtu.be/ZPKoGLLJylU \'Esoterickk\')', inline: true }
+				{ name: '__Grasp of Avarice__', value: '**[Walk-through](https://youtu.be/2yAldSinpss \'FalloutPlays\')\n[Wilheim-7\'s Messages](https://youtu.be/ZPKoGLLJylU \'Esoterickk\')\n[Loot Table](https://i.ibb.co/0qTMvWF/avariceloot.png \'imgbb\')**', inline: true }
 			)
 			.setFooter('comand: -g dungeons');
 
@@ -145,7 +145,9 @@ module.exports = {
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__Vault of Glass__', value: '*Free for all players*\n[**Templar Encounters**](https://youtu.be/BM688RORcOQ \'Datto\')\n[**Gatekeeper/Atheon**](https://youtu.be/vBYPSZotwkU \'Datto\')\n**Encounter Maps**\n[**Oracles**](https://i.ibb.co/K7mNqSG/oracles.png \'imgbb\')\n[**Gorgon\'s Maze**](https://i.ibb.co/hFhQt5B/gorgonmaze.png \'imgbb\')\n[**Atheon Oracles**](https://i.ibb.co/qrM2GVX/atheon.webp \'imgbb\')', inline: true },
 				{ name: '__VoG Extras__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
-				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\nMore info coming soon™.', inline: false }
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')**', inline: true },
+				{ name: '__VotD Extras__', value: '**[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')\n[Imperitous Sun Ghost](https://youtu.be/itkt13-syuc \'Skarrow9\')\nEncounter Maps\n[Official Callouts](https://i.ibb.co/qB8w7Qq/votdcallouts.jpg \'imgbb\')\n[Acquisition Map](https://i.ibb.co/3Wx7Gx5/Acquisition.png \'imgbb\')**', inline: true }
 			)
 			.setFooter('command: -g raids');
 
@@ -157,7 +159,7 @@ module.exports = {
 			.setThumbnail('https://i.ibb.co/DzKYZ9B/witchqueen.png')
 			.addFields(
 				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
-				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Glaive(s) Prep](https://youtu.be/luLeDwENcnI \'xHOUNDISHx\')**', inline: true },
+				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Exotic Glaives](https://youtu.be/P4ZbuRmrZb0 \'xHOUNDISHx\')**', inline: true },
 				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
 			)
 			.setFooter('Command: -g witch');
@@ -278,7 +280,7 @@ module.exports = {
 			}
 		}
 
-		if (args[0] === 'dungeondit') {
+		if (args[0] === 'dungeonedit') {
 
 			const fetched = await message.channel.messages.fetch(args[1]);
 

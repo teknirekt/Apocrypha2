@@ -55,7 +55,11 @@ module.exports = (client) => {
 			'the Witch Queen.',
 			'the Truth.',
 			'Savathûn\'s lies.',
-			'Petra\'s caution.'
+			'Petra\'s caution.',
+			'the Witness.',
+			'Immaru\'s orders.',
+			'Flynch\'s banter.',
+			'Rhulk\'s history.'
 			
 			
 		];

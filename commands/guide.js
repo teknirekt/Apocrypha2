@@ -147,7 +147,7 @@ module.exports = {
 				{ name: '__VoG Extras__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')**', inline: true },
-				{ name: '__VotD Extras__', value: '**[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')\n[Imperitous Sun Ghost](https://youtu.be/itkt13-syuc \'Skarrow9\')\nEncounter Maps\n[Official Callouts](https://i.ibb.co/qB8w7Qq/votdcallouts.jpg \'imgbb\')\n[Acquisition Map](https://i.ibb.co/3Wx7Gx5/Acquisition.png \'imgbb\')**', inline: true }
+				{ name: '__VotD Extras__', value: '**[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')\nEncounter Maps\n[Official Callouts](https://i.ibb.co/qB8w7Qq/votdcallouts.jpg \'imgbb\')\n[Acquisition Map](https://i.ibb.co/FH1r7dV/votde1.png \'imgbb\')\n[Exhibition \"Map\"](https://i.ibb.co/5WNLyK5/exhibition.png)\n[WIP Loot Table](https://i.ibb.co/CsYtRy2/votdloot.png)**', inline: true }
 			)
 			.setFooter('command: -g raids');
 
@@ -159,8 +159,8 @@ module.exports = {
 			.setThumbnail('https://i.ibb.co/DzKYZ9B/witchqueen.png')
 			.addFields(
 				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
-				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Exotic Glaives](https://youtu.be/P4ZbuRmrZb0 \'xHOUNDISHx\')**', inline: true },
-				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
+				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Exotic Glaives](https://youtu.be/P4ZbuRmrZb0 \'xHOUNDISHx\')\n[Imperitous Sun Ghost](https://youtu.be/itkt13-syuc \'Skarrow9\')**', inline: true },
+				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\') [[wk3]](https://youtu.be/OQEwI5zIfvk \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
 			)
 			.setFooter('Command: -g witch');
 

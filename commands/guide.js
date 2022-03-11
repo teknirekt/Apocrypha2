@@ -146,17 +146,21 @@ module.exports = {
 				{ name: '__Vault of Glass__', value: '*Free for all players*\n[**Templar Encounters**](https://youtu.be/BM688RORcOQ \'Datto\')\n[**Gatekeeper/Atheon**](https://youtu.be/vBYPSZotwkU \'Datto\')\n**Encounter Maps**\n[**Oracles**](https://i.ibb.co/K7mNqSG/oracles.png \'imgbb\')\n[**Gorgon\'s Maze**](https://i.ibb.co/hFhQt5B/gorgonmaze.png \'imgbb\')\n[**Atheon Oracles**](https://i.ibb.co/qrM2GVX/atheon.webp \'imgbb\')', inline: true },
 				{ name: '__VoG Extras__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')**', inline: true },
-				{ name: '__VotD Extras__', value: '**[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')\nEncounter Maps\n[Official Callouts](https://i.ibb.co/qB8w7Qq/votdcallouts.jpg \'imgbb\')\n[Acquisition Map](https://i.ibb.co/FH1r7dV/votde1.png \'imgbb\')\n[Exhibition \"Map\"](https://i.ibb.co/5WNLyK5/exhibition.png)\n[WIP Loot Table](https://i.ibb.co/CsYtRy2/votdloot.png)**', inline: true }
+				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')\nExtras\n[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')**', inline: true },
+				{ name: '__VotD Maps/Callouts__', value: '**[Symbol Callouts](https://www.todayindestiny.com/activity/vow_of_the_disciple \'imgbb\')\n[Acquisition Encounter](https://i.ibb.co/xg9TnXz/Vot-D-Encounter-1-V6.png \'imgbb\')\n[Exhibition Encounter](https://i.ibb.co/JRW6bVk/Vot-D-Encounter-3-V6.jpg \'imgbb\')\n[Rhulk Encounter](https://i.ibb.co/4FnJbNv/Vot-D-Encounter-4-v2.png \'imgbb\')\n[WIP Loot Table](https://i.ibb.co/0JHV9tM/votdloot.png \'imgbb\')**', inline: true }
 			)
 			.setFooter('command: -g raids');
+
+// 			
+// 
+// 
 
 			const witchqueen = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('The Witch Queen (Year 5)')
 			.setDescription('*This is just expansion content.*')
 			.setURL('https://www.bungie.net/7/en/Destiny/WitchQueen')
-			.setThumbnail('https://i.ibb.co/DzKYZ9B/witchqueen.png')
+			.setThumbnail('https://i.ibb.co/dBy1bKL/y5.png')
 			.addFields(
 				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
 				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Exotic Glaives](https://youtu.be/P4ZbuRmrZb0 \'xHOUNDISHx\')\n[Imperitous Sun Ghost](https://youtu.be/itkt13-syuc \'Skarrow9\')**', inline: true },
@@ -169,9 +173,9 @@ module.exports = {
 			.setTitle('Year 5 Seasonal Content')
 			.setDescription('*This content is playable during Year 5.*')
 			.setURL('https://www.bungie.net/7/en/Seasons')
-			.setThumbnail('https://i.ibb.co/0C8PB6Z/d2y5.png')
+			.setThumbnail('https://i.ibb.co/hDxfxLP/y5s16.png')
 			.addFields(
-				{ name: '__**Season of the Risen**__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Storyline](https://www.youtube.com/playlist?list=PLCe_gQqZx8OH3tc80GRFyFUv9U4IBEYJe \'yt(various)\')**', inline: true },
+				{ name: '__**Season of the Risen**__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Damage Chart](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?usp=sharing \'googledocs\')\n[Seasonal Storyline](https://www.youtube.com/playlist?list=PLCe_gQqZx8OH3tc80GRFyFUv9U4IBEYJe \'yt(various)\')**', inline: true },
 				{ name: '__**Season of █████**__', value: '*May 24 - ???*', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__**Season of █████**__', value: '*??? - ???*', inline: true },
@@ -179,7 +183,7 @@ module.exports = {
 			)
 			.setFooter('Command -g y5seasons');
 
-		//========END EMBEDS
+		//========END EMBEDS 
 
 		if (args[0] === 'extras'){
 			message.channel.send(extras);
@@ -241,7 +245,7 @@ module.exports = {
 			return;
 		}
 
-		if (args[0] === 'wcedit') {
+		if (args[0] === 'wqedit') {
 
 			const fetched = await message.channel.messages.fetch(args[1]);
 

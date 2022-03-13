@@ -18,12 +18,12 @@ module.exports = {
 			.setTitle('Extra Resources Available')
 			.setDescription('*These are additional things to assist you.*')
 			.setURL('https://www.reddit.com/r/DestinyTheGame/comments/dd7fh3/in_the_spirit_of_new_light_heres_a_sizeable_list/')
-			.setThumbnail('https://i.ibb.co/wYvZtB4/DStiq-SBWs-AAIM7-C.jpg')
+			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/icon_m0da74290bef8b05f7cdf2e10aec14dd5.png')
 			.addFields(
 				{ name: '__**Reddit Sources**__', value: '[**r/DestinyTheGame**](https://www.reddit.com/r/DestinyTheGame/) -General Info\n[**r/RaidSecrets**](https://www.reddit.com/r/raidsecrets/) -Spoiler Heavy\n[**r/CrucibleGuidebook**](https://www.reddit.com/r/CrucibleGuidebook/) -Everything PVP\n[**r/GambitPlaybook**](https://www.reddit.com/r/GambitPlaybook/) -Everything Gambit\n[**r/DestinyLore**](https://www.reddit.com/r/DestinyLore/) -Everything Lore' },
 				{ name: '__**Websites**__', value: '[**DestinyItemManager(DIM)**](https://app.destinyitemmanager.com/)\n[**Destiny Sets**](https://destinysets.com/)\n[**Light.gg**](https://light.gg/)\n[**Braytech.org**](https://braytech.org/)\n[**Where\'s Xur?**](https://wherethefuckisxur.com)\n[**Blueberries.gg**](https://www.blueberries.gg)', inline: true },
 				{ name: '__**Mobile Apps & Misc**__', value: '[**Redrix**](https://redrix.io/) 📱\n[**Vault Cleaner**](https://destinyrecipes.com/vault)\n[**Roll Appraisal**](https://www.light.gg/god-roll/roll-appraiser/)\n[**D2 Armor Picker**](https://mijago.github.io/D2ArmorPicker/#/)\n[**D2 Gunsmith**](https://d2gunsmith.com/)', inline: true },
-				{ name: '__**Soundboards**__', value: '[**Shaxx Soundboard**](https://evilarceus.github.io/Destiny2-Soundboard/#)\n[**Drifter Soundboard**](https://d2.asun.co/drifter/)' }
+				{ name: '__**Soundboards**__', value: '**[MEGA Board](https://d2soundboard.mikey.app/#/ \'website\')\n[Alt. Drifter Board](https://d2.asun.co/drifter/ \'website\')**' }
 			)
 			.setFooter('Command: -g extras');
 
@@ -294,6 +294,19 @@ module.exports = {
 					return;
 				} else {
 					fetched.edit(dungeons).catch(console.error);
+			}
+		}
+
+		if (args[0] === 'extrasedit') {
+
+			const fetched = await message.channel.messages.fetch(args[1]);
+
+			if (message.channel.name === 'destiny_guides' && message.author.id !== '229060782065844224') {
+					message.channel.send('Nope, Sorry. Only Tek can do that.')
+						.then(message.delete({ timeout: 10000 }));
+					return;
+				} else {
+					fetched.edit(extras).catch(console.error);
 			}
 		}
 	}

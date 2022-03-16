@@ -151,10 +151,6 @@ module.exports = {
 			)
 			.setFooter('command: -g raids');
 
-// 			
-// 
-// 
-
 			const witchqueen = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('The Witch Queen (Year 5)')
@@ -164,7 +160,7 @@ module.exports = {
 			.addFields(
 				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
 				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Exotic Glaives](https://youtu.be/P4ZbuRmrZb0 \'xHOUNDISHx\')\n[Imperitous Sun Ghost](https://youtu.be/itkt13-syuc \'Skarrow9\')**', inline: true },
-				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\') [[wk3]](https://youtu.be/OQEwI5zIfvk \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
+				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\') [[wk3]](https://youtu.be/OQEwI5zIfvk \'Esoterickk\')\n[[wk4]](https://youtu.be/aREAntiv7bc \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
 			)
 			.setFooter('Command: -g witch');
 

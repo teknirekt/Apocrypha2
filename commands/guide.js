@@ -147,7 +147,7 @@ module.exports = {
 				{ name: '__VoG Extras__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')\nExtras\n[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')**', inline: true },
-				{ name: '__VotD Maps/Callouts__', value: '**[Symbol Callouts](https://www.todayindestiny.com/activity/vow_of_the_disciple \'imgbb\')\n[Acquisition Encounter](https://i.ibb.co/xg9TnXz/Vot-D-Encounter-1-V6.png \'imgbb\')\n[Exhibition Encounter](https://i.ibb.co/JRW6bVk/Vot-D-Encounter-3-V6.jpg \'imgbb\')\n[Rhulk Encounter](https://i.ibb.co/4FnJbNv/Vot-D-Encounter-4-v2.png \'imgbb\')\n[WIP Loot Table](https://i.ibb.co/0JHV9tM/votdloot.png \'imgbb\')**', inline: true }
+				{ name: '__VotD Maps/Callouts__', value: '**[Symbol Callouts](https://www.todayindestiny.com/activity/vow_of_the_disciple \'imgbb\')\n[Acquisition Encounter](https://i.ibb.co/xg9TnXz/Vot-D-Encounter-1-V6.png \'imgbb\')\n[Caretaker Encounter](https://i.ibb.co/jDr63p3/caretaker.jpg \'imgbb\')\n[Exhibition Encounter](https://i.ibb.co/JRW6bVk/Vot-D-Encounter-3-V6.jpg \'imgbb\')\n[Rhulk Encounter](https://i.ibb.co/4FnJbNv/Vot-D-Encounter-4-v2.png \'imgbb\')\n[Loot Table](https://www.blueberries.gg/wp-content/uploads/2022/03/Vow-of-the-Disciple-loot-table-infographic-v2-scaled.jpg \'blueberries.gg\')**', inline: true }
 			)
 			.setFooter('command: -g raids');
 
@@ -158,9 +158,9 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Destiny/WitchQueen')
 			.setThumbnail('https://i.ibb.co/dBy1bKL/y5.png')
 			.addFields(
-				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
+				{ name: '__General Info__', value: '**[First Impressions](https://youtu.be/H4e2i2Z--O0 \'Datto\')\n[Weapon Crafting](https://youtu.be/em41cWBx8Ts \'Datto\')\n[Updated Crafting Info](https://youtu.be/FkkuCUYXP_A \'Datto\')\n[Every New Weapon](https://youtu.be/0IgyQsNtC9M \'FalloutPlays\')\n[Leveling to 1560](https://youtu.be/pIRyVrFl01A \'Datto\')**', inline: true },
 				{ name: '__Exotics__', value: '**[Parasite](https://youtu.be/MZ4rn-k3kFk \'Datto\')\n[Dead Messenger](https://youtu.be/fX4i4j-wUYo \'xHOUNDISHx\')\n[Exotic Glaives](https://youtu.be/P4ZbuRmrZb0 \'xHOUNDISHx\')\n[Imperitous Sun Ghost](https://youtu.be/itkt13-syuc \'Skarrow9\')**', inline: true },
-				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\') [[wk3]](https://youtu.be/OQEwI5zIfvk \'Esoterickk\')\n[[wk4]](https://youtu.be/aREAntiv7bc \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
+				{ name: '__Extras__', value: '**Lucent Moths\n[[wk1]](https://youtu.be/2-cYU_XzBkI \'Esoterickk\') [[wk2]](https://youtu.be/_SMPyuPQ0LY \'Esoterickk\') [[wk3]](https://youtu.be/OQEwI5zIfvk \'Esoterickk\')\n[[wk4]](https://youtu.be/aREAntiv7bc \'Esoterickk\')[[wk5]](https://youtu.be/KA1nsMPIjFY \'Esoterickk\')\nDarkness Rifts\n[No Peeking Triumph](https://youtu.be/gaNtvsEa1QQ \'Esoterickk\')**', inline: false },
 			)
 			.setFooter('Command: -g witch');
 

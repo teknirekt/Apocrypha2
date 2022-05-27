@@ -129,7 +129,7 @@ module.exports = {
 				{ name: '__Prophecy__', value: '[**Walk-through**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
 				{ name: '__Grasp of Avarice__', value: '**[Walk-through](https://youtu.be/2yAldSinpss \'FalloutPlays\')\n[Wilheim-7\'s Messages](https://youtu.be/ZPKoGLLJylU \'Esoterickk\')\n[Loot Table](https://i.ibb.co/0qTMvWF/avariceloot.png \'imgbb\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Duality__', value: '*Coming Soon*', inline: true }
+				{ name: '__Duality__', value: '**[Gain Access to Dungeon](https://youtu.be/8OoeSqFDOsM \'Esoterickk\')\n[1st Bonus Chest](https://youtu.be/4NaCTaovMXs \'Esoterickk\')\n[2nd Bonus Chest](https://youtu.be/X9qRaniCRhE \'Esoterickk\')**', inline: true }
 			)
 			.setFooter('comand: -g dungeons');
 

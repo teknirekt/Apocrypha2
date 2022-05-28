@@ -20,11 +20,12 @@ module.exports = {
 			.setURL('https://www.reddit.com/r/DestinyTheGame/comments/dd7fh3/in_the_spirit_of_new_light_heres_a_sizeable_list/')
 			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/icon_m0da74290bef8b05f7cdf2e10aec14dd5.png')
 			.addFields(
-				{ name: '__**Reddit Sources**__', value: '[**r/DestinyTheGame**](https://www.reddit.com/r/DestinyTheGame/) -General Info\n[**r/RaidSecrets**](https://www.reddit.com/r/raidsecrets/) -Spoiler Heavy\n[**r/CrucibleGuidebook**](https://www.reddit.com/r/CrucibleGuidebook/) -Everything PVP\n[**r/GambitPlaybook**](https://www.reddit.com/r/GambitPlaybook/) -Everything Gambit\n[**r/DestinyLore**](https://www.reddit.com/r/DestinyLore/) -Everything Lore', inline: false },
-				{ name: '__**Websites**__', value: '[**DestinyItemManager(DIM)**](https://app.destinyitemmanager.com/)\n[**Destiny Sets**](https://destinysets.com/)\n[**Light.gg**](https://light.gg/)\n[**Braytech.org**](https://braytech.org/)\n[**Where\'s Xur?**](https://wherethefuckisxur.com)\n[**Blueberries.gg**](https://www.blueberries.gg)', inline: true },
-				{ name: '__**Mobile Apps & Misc**__', value: '[**Redrix**](https://redrix.io/) 📱\n[**Vault Cleaner**](https://destinyrecipes.com/vault)\n[**Roll Appraisal**](https://www.light.gg/god-roll/roll-appraiser/)\n[**D2 Armor Picker**](https://mijago.github.io/D2ArmorPicker/#/)\n[**D2 Gunsmith**](https://d2gunsmith.com/)', inline: true },
-				{ name: '__**Soundboards**__', value: '**[MEGA Board](https://d2soundboard.mikey.app/#/ \'website\')\n[Alt. Drifter Board](https://d2.asun.co/drifter/ \'website\')**', inline: false },
-				{ name: '__**Spreadsheets**__', value: '**[Enhanced Traits](https://docs.google.com/spreadsheets/d/1L5Tqbkmy5HmYRl-2ML6e0YJzyg59ueu73H2xXD9bPyg/htmlview \'googledocs\')**', inline: true }
+				{ name: '__Reddit Sources__', value: '[**r/DestinyTheGame**](https://www.reddit.com/r/DestinyTheGame/) -General Info\n[**r/RaidSecrets**](https://www.reddit.com/r/raidsecrets/) -Spoiler Heavy\n[**r/CrucibleGuidebook**](https://www.reddit.com/r/CrucibleGuidebook/) -Everything PVP\n[**r/GambitPlaybook**](https://www.reddit.com/r/GambitPlaybook/) -Everything Gambit\n[**r/DestinyLore**](https://www.reddit.com/r/DestinyLore/) -Everything Lore', inline: false },
+				{ name: '__Websites__', value: '[**DestinyItemManager(DIM)**](https://app.destinyitemmanager.com/)\n[**Destiny Sets**](https://destinysets.com/)\n[**Light.gg**](https://light.gg/)\n[**Braytech.org**](https://braytech.org/)\n[**Where\'s Xur?**](https://wherethefuckisxur.com)\n[**Blueberries.gg**](https://www.blueberries.gg)', inline: true },
+				{ name: '__Mobile Apps & Misc.__', value: '[**Redrix**](https://redrix.io/) 📱\n[**Vault Cleaner**](https://destinyrecipes.com/vault)\n[**Roll Appraisal**](https://www.light.gg/god-roll/roll-appraiser/)\n[**D2 Armor Picker**](https://mijago.github.io/D2ArmorPicker/#/)\n[**D2 Gunsmith**](https://d2gunsmith.com/)', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{ name: '__Soundboards__', value: '**[MEGA Board](https://d2soundboard.mikey.app/#/ \'website\')\n[Alt. Drifter Board](https://d2.asun.co/drifter/ \'website\')**', inline: true },
+				{ name: '__Spreadsheets__', value: '**[Enhanced Traits](https://docs.google.com/spreadsheets/d/1L5Tqbkmy5HmYRl-2ML6e0YJzyg59ueu73H2xXD9bPyg/htmlview \'googledocs\')**', inline: true }
 			)
 			.setFooter('Command: -g extras');
 
@@ -129,7 +130,7 @@ module.exports = {
 				{ name: '__Prophecy__', value: '[**Walk-through**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
 				{ name: '__Grasp of Avarice__', value: '**[Walk-through](https://youtu.be/2yAldSinpss \'FalloutPlays\')\n[Wilheim-7\'s Messages](https://youtu.be/ZPKoGLLJylU \'Esoterickk\')\n[Loot Table](https://i.ibb.co/0qTMvWF/avariceloot.png \'imgbb\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Duality__', value: '**[Gain Access to Dungeon](https://youtu.be/8OoeSqFDOsM \'Esoterickk\')\n[1st Bonus Chest](https://youtu.be/4NaCTaovMXs \'Esoterickk\')\n[2nd Bonus Chest](https://youtu.be/X9qRaniCRhE \'Esoterickk\')\n[Loot Table](https://www.blueberries.gg/weapons/duality-loot-table/ \'blueberries.gg\')**', inline: true }
+				{ name: '__Duality__', value: '**[Walk-through](https://youtu.be/LHTIiDvPC94 \'FalloutPlays\')\n[1st Bonus Chest](https://youtu.be/4NaCTaovMXs \'Esoterickk\')\n[2nd Bonus Chest](https://youtu.be/X9qRaniCRhE \'Esoterickk\')\n[Calus Memories](https://youtu.be/6QGD1nK5RT4 \'Esoterickk\')\n[Loot Table](https://www.blueberries.gg/weapons/duality-loot-table/ \'blueberries.gg\')**', inline: true }
 			)
 			.setFooter('comand: -g dungeons');
 
@@ -174,11 +175,11 @@ module.exports = {
 			.setURL('https://www.bungie.net/7/en/Seasons')
 			.setThumbnail('https://i.ibb.co/gRF9pMT/y5s17.png')
 			.addFields(
-				{ name: '__**Season of the Risen**__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Damage Chart](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?usp=sharing \'googledocs\')**', inline: true },
-				{ name: '__**Season of Haunted**__', value: '*[May 24 - Aug 23](https://www.bungie.net/7/en/Seasons/SeasonOfTheHaunted)*\n**[Activities](https://youtu.be/5VoXRNIcu48 \'Datto\')\n[Bonus Containment Chests](https://youtu.be/jWDVfhIY99E \'Esoterickk\')\n[New Deepsight Weapons](https://youtu.be/mUl3Q2bSqCQ \'xHOUNDISHx\')\n[Fever Dream Triumph](https://youtu.be/WiiQvkxuk_c \'Skarrow9\')\n[Shadow\'s Return Triumph](https://youtu.be/TySgvMCKI7o \'Skarrow9\')\nBobblehead Locations\n[[wk1]](https://youtu.be/bsxDL_jBtE4 \'Esoterickk\')**', inline: true },
+				{ name: '__Season of the Risen__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Damage Chart](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?usp=sharing \'googledocs\')**', inline: true },
+				{ name: '__Season of Haunted__', value: '*[May 24 - Aug 23](https://www.bungie.net/7/en/Seasons/SeasonOfTheHaunted)*\n**[Activities](https://youtu.be/5VoXRNIcu48 \'Datto\')\n[Bonus Containment Chests](https://youtu.be/jWDVfhIY99E \'Esoterickk\')\n[New Deepsight Weapons](https://youtu.be/mUl3Q2bSqCQ \'xHOUNDISHx\')\n[Fever Dream Triumph](https://youtu.be/WiiQvkxuk_c \'Skarrow9\')\n[Shadow\'s Return Triumph](https://youtu.be/TySgvMCKI7o \'Skarrow9\')\nBobblehead Locations\n[[wk1]](https://youtu.be/bsxDL_jBtE4 \'Esoterickk\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__**Season of █████**__', value: '*Aug 23 - ???*', inline: true },
-				{ name: '__**Season of █████**__', value: '*??? - ???*', inline: true }
+				{ name: '__Season of █████__', value: '*Aug 23 - ???*', inline: true },
+				{ name: '__Season of █████__', value: '*??? - ???*', inline: true }
 			)
 			.setFooter('Command -g y5seasons');
 

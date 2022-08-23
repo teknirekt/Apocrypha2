@@ -151,7 +151,9 @@ module.exports = {
 				{ name: '__VoG Extras__', value: '[**Hidden Chests**](https://youtu.be/lt5ZRFl0GNc \'Esoterickk\')\n[**Pearl of Glass**](https://youtu.be/WQuBlgzi-Wg \'Esoterickk\')\n[**Loot Pool**](https://i.ibb.co/vVs25Mc/vogloot.png \'imgbb\')\n[**Mythoclast Catalyst**](https://youtu.be/hdF3dBmVmUA \'FalloutPlays\')\n[**Encounter Challenges**](https://youtu.be/l1avMGMr_V0 \'Datto\')\n[**Master VoG**](https://youtu.be/U_TzK1tAZrM \'Elitist Datto\')', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
 				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')\nExtras\n[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')**', inline: true },
-				{ name: '__VotD Maps/Callouts__', value: '**[Symbol Callouts](https://www.todayindestiny.com/activity/vow_of_the_disciple \'imgbb\')\n[Acquisition Encounter](https://i.ibb.co/xg9TnXz/Vot-D-Encounter-1-V6.png \'imgbb\')\n[Caretaker Encounter](https://i.ibb.co/jDr63p3/caretaker.jpg \'imgbb\')\n[Exhibition Encounter](https://i.ibb.co/JRW6bVk/Vot-D-Encounter-3-V6.jpg \'imgbb\')\n[Rhulk Encounter](https://i.ibb.co/4FnJbNv/Vot-D-Encounter-4-v2.png \'imgbb\')\n[Loot Table](https://www.blueberries.gg/wp-content/uploads/2022/03/Vow-of-the-Disciple-loot-table-infographic-v2-scaled.jpg \'blueberries.gg\')**', inline: true }
+				{ name: '__VotD Maps/Callouts__', value: '**[Symbol Callouts](https://www.todayindestiny.com/activity/vow_of_the_disciple \'imgbb\')\n[Acquisition Encounter](https://i.ibb.co/xg9TnXz/Vot-D-Encounter-1-V6.png \'imgbb\')\n[Caretaker Encounter](https://i.ibb.co/jDr63p3/caretaker.jpg \'imgbb\')\n[Exhibition Encounter](https://i.ibb.co/JRW6bVk/Vot-D-Encounter-3-V6.jpg \'imgbb\')\n[Rhulk Encounter](https://i.ibb.co/4FnJbNv/Vot-D-Encounter-4-v2.png \'imgbb\')\n[Loot Table](https://www.blueberries.gg/wp-content/uploads/2022/03/Vow-of-the-Disciple-loot-table-infographic-v2-scaled.jpg \'blueberries.gg\')**', inline: true },
+				{ name: '\u200B', value: '\u200B', inline: false  },
+				{name: '__King\'s Fall', value: '*standby...*', inline: true }
 			)
 			.setFooter('command: -g raids');
 
@@ -176,9 +178,9 @@ module.exports = {
 			.setThumbnail('https://i.ibb.co/gRF9pMT/y5s17.png')
 			.addFields(
 				{ name: '__Season of the Risen__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Damage Chart](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?usp=sharing \'googledocs\')**', inline: true },
-				{ name: '__Season of Haunted__', value: '*[May 24 - Aug 23](https://www.bungie.net/7/en/Seasons/SeasonOfTheHaunted)*\n**[Activities](https://youtu.be/5VoXRNIcu48 \'Datto\')\n[Bonus Containment Chests](https://youtu.be/jWDVfhIY99E \'Esoterickk\')\n[New Deepsight Weapons](https://youtu.be/mUl3Q2bSqCQ \'xHOUNDISHx\')\n[Fever Dream Triumph](https://youtu.be/WiiQvkxuk_c \'Skarrow9\')\n[Shadow\'s Return Triumph](https://youtu.be/TySgvMCKI7o \'Skarrow9\')\nBobblehead Locations\n[[wk1]](https://youtu.be/bsxDL_jBtE4 \'Esoterickk\')**', inline: true },
+				{ name: '__Season of the Haunted__', value: '*[May 24 - Aug 23](https://www.bungie.net/7/en/Seasons/SeasonOfTheHaunted)*\n**[Activities](https://youtu.be/5VoXRNIcu48 \'Datto\')\n[Bonus Containment Chests](https://youtu.be/jWDVfhIY99E \'Esoterickk\')\n[New Deepsight Weapons](https://youtu.be/mUl3Q2bSqCQ \'xHOUNDISHx\')\n[Fever Dream Triumph](https://youtu.be/WiiQvkxuk_c \'Skarrow9\')\n[Shadow\'s Return Triumph](https://youtu.be/TySgvMCKI7o \'Skarrow9\')\nSever Mission Secrets\n[Bobbleheads](https://youtu.be/-bU31_BSBxs \'Esoterickk\')\n[Calus Automations](https://youtu.be/5Y5CgmewDTE \'Esoterickk\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Season of █████__', value: '*Aug 23 - ???*', inline: true },
+				{ name: '__Season of the Plunder__', value: '*Aug 23 - ???*', inline: true },
 				{ name: '__Season of █████__', value: '*??? - ???*', inline: true }
 			)
 			.setFooter('Command -g y5seasons');

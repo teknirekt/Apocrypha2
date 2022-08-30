@@ -137,7 +137,7 @@ module.exports = {
 			const raids = new Discord.MessageEmbed()
 			.setColor('#545454')
 			.setTitle('Destiny 2 Raids')
-			.setDescription('*Raids require yearly expansions to access.*')
+			.setDescription('*Raids usually require yearly expansions to access.*')
 			.setURL('https://www.bungie.net')
 			.setThumbnail('https://www.bungie.net/common/destiny2_content/icons/8b1bfd1c1ce1cab51d23c78235a6e067.png')
 			.addFields(
@@ -153,7 +153,8 @@ module.exports = {
 				{ name: '__Vow of the Disciple__', value: '*Witch Queen*\n**[Post WF Cutscene](https://youtu.be/CptovsCQnZc \'Esoterickk\')\n[Acquisition & Caretaker](https://youtu.be/jdpa4PlJ81A \'Datto\')\n[Upended Summit & Rhulk](https://youtu.be/K9VYsnrnHvQ \'Datto\')\nExtras\n[Secret Chest #1](https://youtu.be/Kf6DO2odGlo \'CheeseForever\')\n[Secret Chest #2](https://youtu.be/ftGOFxCMPAQ \'CheeseForever\')\n[Bonus Clear Chest](https://youtu.be/ayQWhcS8Zzw \'Skarrow9\')**', inline: true },
 				{ name: '__VotD Maps/Callouts__', value: '**[Symbol Callouts](https://www.todayindestiny.com/activity/vow_of_the_disciple \'imgbb\')\n[Acquisition Encounter](https://i.ibb.co/xg9TnXz/Vot-D-Encounter-1-V6.png \'imgbb\')\n[Caretaker Encounter](https://i.ibb.co/jDr63p3/caretaker.jpg \'imgbb\')\n[Exhibition Encounter](https://i.ibb.co/JRW6bVk/Vot-D-Encounter-3-V6.jpg \'imgbb\')\n[Rhulk Encounter](https://i.ibb.co/4FnJbNv/Vot-D-Encounter-4-v2.png \'imgbb\')\n[Loot Table](https://www.blueberries.gg/wp-content/uploads/2022/03/Vow-of-the-Disciple-loot-table-infographic-v2-scaled.jpg \'blueberries.gg\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{name: '__King\'s Fall__', value: '*standby...*', inline: true }
+				{ name: '__King\'s Fall__', value: '*Free for all players*\n**[Datto\'s Guide](https://youtu.be/eUUCO8-YQms \'Datto\')\n[Fallout\'s Guide](https://youtu.be/Nk0pSu4yr1E \'Fallout Plays\')\nChallenges\n[Totems Encounter](https://youtu.be/F4_apwMnyvo?t=143 \'gmeiners\')\n[War Priest](https://youtu.be/iSl7mz64kMI?t=187 \'gmeiners\')\n[Golgoroth](https://youtu.be/6yl0RTl3TUQ?t=142 \'gmeiners\')\n[Daughters](https://youtu.be/ZnVpoOoHZeU?t=125 \'gmeiners\')\n[Oryx](https://youtu.be/MXoELtALCSA?t=189 \'gmieners\')**', inline: true },
+				{ name: '__King\'s Fall Extras__', value: '**[Bonus Red Border](https://youtu.be/dP6HCVIoiNk?t=14 \'Skarrow9\')\n[ToM Catalyst](https://youtu.be/w-29apeXooE?t=14 \'Skarrow9\')\n[All Secret Chests](https://youtu.be/ei3WR1bsMDE \'SneakyBeaver\')\n[Loot Table](https://blueberries.gg/wp-content/uploads/2022/08/Destiny-2-Kings-Fall-Loot-table-infographic-v2.jpg \'blueberries.gg\')\nImage Maps\n[Red-border Symbols](https://i.ibb.co/b3gXB0t/cMbN3RF.png \'imgbb\')\n[Symbol Locations](https://i.ibb.co/c1sV9wY/20220830-085651.jpg \'imgbb\')\n[Cellar Map](https://i.ibb.co/cQNbTG4/Destiny-2-Kings-Fall-Golgoroths-Maze-Hidden-Chest-Plate-Order.jpg \'imgbb\')**', inline: true}
 			)
 			.setFooter('command: -g raids');
 
@@ -175,15 +176,28 @@ module.exports = {
 			.setTitle('Year 5 Seasonal Content')
 			.setDescription('*This content is playable during Year 5.*')
 			.setURL('https://www.bungie.net/7/en/Seasons')
-			.setThumbnail('https://i.ibb.co/gRF9pMT/y5s17.png')
+			.setThumbnail('https://i.ibb.co/1bJwn4r/plunder.png')
 			.addFields(
 				{ name: '__Season of the Risen__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Damage Chart](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?usp=sharing \'googledocs\')**', inline: true },
 				{ name: '__Season of the Haunted__', value: '*[May 24 - Aug 23](https://www.bungie.net/7/en/Seasons/SeasonOfTheHaunted)*\n**[Activities](https://youtu.be/5VoXRNIcu48 \'Datto\')\n[Bonus Containment Chests](https://youtu.be/jWDVfhIY99E \'Esoterickk\')\n[New Deepsight Weapons](https://youtu.be/mUl3Q2bSqCQ \'xHOUNDISHx\')\n[Fever Dream Triumph](https://youtu.be/WiiQvkxuk_c \'Skarrow9\')\n[Shadow\'s Return Triumph](https://youtu.be/TySgvMCKI7o \'Skarrow9\')\nSever Mission Secrets\n[Bobbleheads](https://youtu.be/-bU31_BSBxs \'Esoterickk\')\n[Calus Automations](https://youtu.be/5Y5CgmewDTE \'Esoterickk\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Season of the Plunder__', value: '*Aug 23 - ???*', inline: true },
-				{ name: '__Season of █████__', value: '*??? - ???*', inline: true }
+				{ name: '__Season of Plunder__', value: '*Aug 23 - Dec 06*\n**[Seasonal Loop](https://youtu.be/dkVeumwk-aQ \'Datto\')\nARC 3.0\n[Titan](https://youtu.be/kq5dYF4rXtQ \'CoolGuy\')\n[Warlock](https://youtu.be/VOoeBfUtFtA \'Aztecross\')\n[Hunter](https://youtu.be/7GqRwJwcDNo \'NickTew\')\n*Spoiler Warning Below*\n[Secret Weapon &\nWeapon Patterns](https://youtu.be/dkVeumwk-aQ \'xHOUNDISHx\')**', inline: true },
+				{ name: '__Season of █████__', value: '*Dec 06 - Feb 28*', inline: true }
 			)
 			.setFooter('Command -g y5seasons');
+
+			const lightfall = new Discord.MessageEmbed()
+			.setColor('#545454')
+			.setTitle('Lightfall (Year 6)')
+			.setDescription('*This is just expansion content.*')
+			.setURL('https://www.bungie.net/7/en/Destiny/Lightfall')
+			.setThumbnail('https://i.ibb.co/dBy1bKL/y5.png')
+			.addFields(
+				{ name: '__General Info__', value: '**[Reveal Trailer](https://youtu.be/lfoeZLp5A7k \'Destiny Official\')**', inline: true },
+				{ name: '__Exotics__', value: '*standby...*', inline: true },
+				{ name: '__Extras__', value: '*standby...*', inline: false },
+			)
+			.setFooter('Command: -g lightfall');
 
 		//========END EMBEDS 
 

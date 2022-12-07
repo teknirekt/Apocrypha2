@@ -130,7 +130,8 @@ module.exports = {
 				{ name: '__Prophecy__', value: '[**Walk-through**](https://youtu.be/Msjcufwbnag \'NinjaPups\')\n[**Loot Table**](https://www.niris.tv/blog/prophecy-dungeon-loot-table \'Niris.tv\')', inline: true },
 				{ name: '__Grasp of Avarice__', value: '**[Walk-through](https://youtu.be/2yAldSinpss \'FalloutPlays\')\n[Wilheim-7\'s Messages](https://youtu.be/ZPKoGLLJylU \'Esoterickk\')\n[Loot Table](https://i.ibb.co/0qTMvWF/avariceloot.png \'imgbb\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Duality__', value: '**[Walk-through](https://youtu.be/LHTIiDvPC94 \'FalloutPlays\')\n[1st Bonus Chest](https://youtu.be/4NaCTaovMXs \'Esoterickk\')\n[2nd Bonus Chest](https://youtu.be/X9qRaniCRhE \'Esoterickk\')\n[Calus Memories](https://youtu.be/6QGD1nK5RT4 \'Esoterickk\')\n[Loot Table](https://www.blueberries.gg/weapons/duality-loot-table/ \'blueberries.gg\')**', inline: true }
+				{ name: '__Duality__', value: '**[Walk-through](https://youtu.be/LHTIiDvPC94 \'FalloutPlays\')\n[1st Bonus Chest](https://youtu.be/4NaCTaovMXs \'Esoterickk\')\n[2nd Bonus Chest](https://youtu.be/X9qRaniCRhE \'Esoterickk\')\n[Calus Memories](https://youtu.be/6QGD1nK5RT4 \'Esoterickk\')\n[Loot Table](https://www.blueberries.gg/weapons/duality-loot-table/ \'blueberries.gg\')**', inline: true },
+				{ name: '__Spire of the Watcher__', value: '*Coming Soon*', inline: true }
 			)
 			.setFooter('comand: -g dungeons');
 
@@ -176,13 +177,13 @@ module.exports = {
 			.setTitle('Year 5 Seasonal Content')
 			.setDescription('*This content is playable during Year 5.*')
 			.setURL('https://www.bungie.net/7/en/Seasons')
-			.setThumbnail('https://i.ibb.co/1bJwn4r/plunder.png')
+			.setThumbnail('https://i.ibb.co/Ss0ksT7/seraph.png')
 			.addFields(
 				{ name: '__Season of the Risen__', value: '*[Feb. 22 - May 24](https://www.bungie.net/7/en/Seasons/SeasonOfTheRisen)*\n**[Mod: Volatile Flow](https://youtu.be/d74nBzgzmJk \'Datto\')\n[Seasonal Damage Chart](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?usp=sharing \'googledocs\')**', inline: true },
 				{ name: '__Season of the Haunted__', value: '*[May 24 - Aug 23](https://www.bungie.net/7/en/Seasons/SeasonOfTheHaunted)*\n**[Activities](https://youtu.be/5VoXRNIcu48 \'Datto\')\n[Bonus Containment Chests](https://youtu.be/jWDVfhIY99E \'Esoterickk\')\n[New Deepsight Weapons](https://youtu.be/mUl3Q2bSqCQ \'xHOUNDISHx\')\n[Fever Dream Triumph](https://youtu.be/WiiQvkxuk_c \'Skarrow9\')\n[Shadow\'s Return Triumph](https://youtu.be/TySgvMCKI7o \'Skarrow9\')\nSever Mission Secrets\n[Bobbleheads](https://youtu.be/-bU31_BSBxs \'Esoterickk\')\n[Calus Automations](https://youtu.be/5Y5CgmewDTE \'Esoterickk\')**', inline: true },
 				{ name: '\u200B', value: '\u200B', inline: false  },
-				{ name: '__Season of Plunder__', value: '*Aug 23 - Dec 06*\n**[Seasonal Loop](https://youtu.be/dkVeumwk-aQ \'Datto\')\nARC 3.0\n[Titan](https://youtu.be/kq5dYF4rXtQ \'CoolGuy\')\n[Warlock](https://youtu.be/VOoeBfUtFtA \'Aztecross\')\n[Hunter](https://youtu.be/7GqRwJwcDNo \'NickTew\')\n*Spoiler Warning Below*\n[Secret Weapon &\nWeapon Patterns](https://youtu.be/dkVeumwk-aQ \'xHOUNDISHx\')**', inline: true },
-				{ name: '__Season of █████__', value: '*Dec 06 - Feb 28*', inline: true }
+				{ name: '__Season of Plunder__', value: '*[Aug 23 - Dec 06](https://www.bungie.net/7/en/Seasons/SeasonOfPlunder)*\n**[Seasonal Loop](https://youtu.be/dkVeumwk-aQ \'Datto\')\nARC 3.0\n[Titan](https://youtu.be/kq5dYF4rXtQ \'CoolGuy\')\n[Warlock](https://youtu.be/VOoeBfUtFtA \'Aztecross\')\n[Hunter](https://youtu.be/7GqRwJwcDNo \'NickTew\')\n*Spoiler Warning Below*\n[Secret Weapon &\nWeapon Patterns](https://youtu.be/dkVeumwk-aQ \'xHOUNDISHx\')**', inline: true },
+				{ name: '__Season of the Seraph__', value: '*[Dec 06 - Feb 28](https://www.bungie.net/7/en/Seasons/SeasonOfTheSeraph)*\n**[Seasonal Loop](https://youtu.be/V19ZN2mxAck \'Datto\')\n[All 12 Resonance Amps](https://youtu.be/rrJlhV0yEuo \'Esoterickk\')\n[New Craftable Weapons](https://youtu.be/7T5t19I6ko0 \'xHOUNDISHx\')\nExotics\n[Manticore](https://youtu.be/zUYYnv2j6Pw \'Fallout\')\n*REVISION Zero (Dec20th)***', inline: true }
 			)
 			.setFooter('Command -g y5seasons');
 
